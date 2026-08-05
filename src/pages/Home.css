@@ -1,0 +1,1147 @@
+/* ==========================================================
+   HOME GLOBAL
+========================================================== */
+
+.home {
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+
+.hero {
+
+    position:relative;
+
+    min-height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+
+.hero-background {
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    z-index:-2;
+
+}
+
+
+
+.hero-overlay {
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(15,23,42,.85),
+        rgba(15,23,42,.45)
+    );
+
+
+    z-index:-1;
+
+}
+
+
+
+
+.hero-content {
+
+
+    max-width:700px;
+
+
+    color:white;
+
+
+    padding-top:60px;
+
+}
+
+
+
+
+.hero-tag {
+
+
+    display:inline-block;
+
+
+    background:rgba(37,99,235,.15);
+
+
+    color:#60a5fa;
+
+
+    padding:8px 18px;
+
+
+    border-radius:30px;
+
+
+    font-size:14px;
+
+
+    font-weight:600;
+
+
+    letter-spacing:1px;
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.hero-content h1 {
+
+
+    font-size:clamp(2.5rem,5vw,4.5rem);
+
+
+    line-height:1.1;
+
+
+    color:white;
+
+
+    margin-bottom:25px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+.hero-content p {
+
+
+    color:#e2e8f0;
+
+
+    font-size:18px;
+
+
+    max-width:600px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+
+
+.hero-buttons {
+
+
+    display:flex;
+
+
+    gap:20px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.btn-primary {
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    padding:14px 32px;
+
+
+    background:var(--primary);
+
+
+    color:white;
+
+
+    border-radius:var(--radius-md);
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.btn-primary:hover {
+
+
+    background:var(--primary-dark);
+
+
+    color:white;
+
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+.btn-outline {
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    padding:14px 32px;
+
+
+    border:2px solid white;
+
+
+    color:white;
+
+
+    border-radius:var(--radius-md);
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-outline:hover {
+
+
+    background:white;
+
+
+    color:var(--primary);
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+
+
+.home-section-heading {
+
+
+    text-align:center;
+
+
+    max-width:700px;
+
+
+    margin:0 auto 50px;
+
+
+}
+
+
+
+.home-section-heading span {
+
+
+    color:var(--primary);
+
+
+    font-size:14px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+.home-section-heading h2 {
+
+
+    margin:15px 0;
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.home-section-heading p {
+
+
+    color:var(--text-light);
+
+
+    font-size:17px;
+
+
+}
+
+/* ==========================================================
+   SERVICES SECTION
+========================================================== */
+
+
+.services-section {
+
+    padding:90px 0;
+
+    background:var(--bg);
+
+}
+
+
+
+.services-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+/* ==========================================================
+   SERVICE CARD
+========================================================== */
+
+
+.service-card {
+
+
+    background:var(--surface);
+
+
+    border-radius:var(--radius-lg);
+
+
+    overflow:hidden;
+
+
+    box-shadow:var(--shadow-md);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.service-card:hover {
+
+
+    transform:translateY(-10px);
+
+
+    box-shadow:var(--shadow-lg);
+
+
+}
+
+
+
+
+.service-card img {
+
+
+    width:100%;
+
+
+    height:220px;
+
+
+    object-fit:cover;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+
+.service-card:hover img {
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+.service-content {
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+.service-content h3 {
+
+
+    font-size:22px;
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+.service-content p {
+
+
+    font-size:15px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+.service-content a {
+
+
+    color:var(--primary);
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+.service-content a:hover {
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   WHY CHOOSE SECTION
+========================================================== */
+
+
+.why-section {
+
+
+    padding:90px 0;
+
+
+    background:white;
+
+
+}
+
+
+
+
+.why-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:60px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+.why-content span {
+
+
+    color:var(--primary);
+
+
+    font-size:14px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+.why-content h2 {
+
+
+    margin:15px 0 20px;
+
+
+    font-size:40px;
+
+
+}
+
+
+
+
+.why-content p {
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+.why-content ul {
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+.why-content li {
+
+
+    margin-bottom:12px;
+
+
+    font-size:16px;
+
+
+    color:var(--text);
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+.why-image img {
+
+
+    width:100%;
+
+
+    height:450px;
+
+
+    object-fit:cover;
+
+
+    border-radius:var(--radius-lg);
+
+
+    box-shadow:var(--shadow-lg);
+
+
+}
+
+/* ==========================================================
+   TRACKING SECTION
+========================================================== */
+
+
+.tracking-section {
+
+    padding:80px 0;
+
+}
+
+
+
+.tracking-box {
+
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+
+    border-radius:var(--radius-lg);
+
+
+    padding:50px;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    gap:30px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+.tracking-content span {
+
+
+    font-size:14px;
+
+
+    font-weight:700;
+
+
+    letter-spacing:2px;
+
+
+    color:#dbeafe;
+
+
+}
+
+
+
+
+.tracking-content h2 {
+
+
+    color:white;
+
+
+    margin:15px 0;
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+.tracking-content p {
+
+
+    color:#e0f2fe;
+
+
+    max-width:550px;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   STATS SECTION
+========================================================== */
+
+
+.stats-section {
+
+
+    padding:80px 0;
+
+
+    background:#f1f5f9;
+
+
+}
+
+
+
+
+.stats-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.stat-card {
+
+
+    background:white;
+
+
+    padding:35px 20px;
+
+
+    text-align:center;
+
+
+    border-radius:var(--radius-md);
+
+
+    box-shadow:var(--shadow-md);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.stat-card:hover {
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+.stat-card h3 {
+
+
+    font-size:42px;
+
+
+    color:var(--primary);
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+.stat-card p {
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   CTA SECTION
+========================================================== */
+
+
+.cta-section {
+
+
+    padding:90px 0;
+
+
+}
+
+
+
+.cta-box {
+
+
+    text-align:center;
+
+
+    padding:60px 30px;
+
+
+    border-radius:var(--radius-lg);
+
+
+    background:#0f172a;
+
+
+}
+
+
+
+.cta-box h2 {
+
+
+    color:white;
+
+
+    font-size:40px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.cta-box p {
+
+
+    color:#cbd5e1;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   TABLET RESPONSIVE
+========================================================== */
+
+
+@media(max-width:992px){
+
+
+
+.services-grid {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.why-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.why-image img {
+
+
+    height:350px;
+
+
+}
+
+
+
+.stats-grid {
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+
+.tracking-box {
+
+
+    flex-direction:column;
+
+
+    text-align:center;
+
+
+}
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   MOBILE RESPONSIVE
+========================================================== */
+
+
+@media(max-width:600px){
+
+
+
+.hero {
+
+
+    min-height:550px;
+
+
+}
+
+
+
+.hero-content {
+
+
+    text-align:center;
+
+
+}
+
+
+
+.hero-buttons {
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.hero-content h1 {
+
+
+    font-size:38px;
+
+
+}
+
+
+
+.home-section-heading h2,
+
+
+.why-content h2,
+
+
+.tracking-content h2,
+
+
+.cta-box h2 {
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+.services-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.service-card img {
+
+
+    height:200px;
+
+
+}
+
+
+
+
+.why-section,
+
+
+.services-section,
+
+
+.stats-section,
+
+
+.cta-section {
+
+
+    padding:60px 0;
+
+
+}
+
+
+
+
+.stats-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.tracking-box {
+
+
+    padding:35px 20px;
+
+
+}
+
+
+
+.btn-primary,
+.btn-outline {
+
+
+    width:100%;
+
+
+}
+
+
+
+}

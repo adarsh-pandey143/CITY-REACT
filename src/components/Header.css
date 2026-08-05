@@ -1,0 +1,981 @@
+/* ==========================================================
+   HEADER BASE
+========================================================== */
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* ==========================================================
+   TOP BAR
+========================================================== */
+
+.header-top {
+
+    background: var(--primary);
+    color: var(--text-white);
+    padding: 10px 0;
+
+}
+
+
+.header-top-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.header-contact {
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+
+.header-contact a {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    transition: var(--transition);
+
+}
+
+
+.header-contact a:hover {
+
+    opacity: .8;
+
+}
+
+
+.header-contact svg {
+
+    font-size: 14px;
+
+}
+
+
+.header-right-top {
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #fff;
+
+}
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+
+.navbar {
+
+    width: 100%;
+
+    background: var(--surface);
+
+    transition: var(--transition);
+
+}
+
+
+.navbar.sticky {
+
+    position: fixed;
+
+    top:0;
+
+    left:0;
+
+    background: rgba(255,255,255,.92);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: var(--shadow-md);
+
+    animation: slideDown .3s ease;
+
+}
+
+
+
+@keyframes slideDown {
+
+    from{
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================================
+   NAVBAR CONTENT
+========================================================== */
+
+
+.navbar-content {
+
+    min-height: 85px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+}
+
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+
+.logo {
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+.logo-image {
+
+    width:150px;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================================
+   NAVIGATION MENU
+========================================================== */
+
+
+.nav-menu {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin:0;
+
+    padding:0;
+
+     list-style:none;
+
+}
+
+
+
+/* Menu Items */
+
+.nav-menu li {
+
+    position:relative;
+     list-style:none;
+
+}
+
+
+
+/* Links */
+
+.nav-menu li a {
+
+    color:var(--text);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    transition:var(--transition);
+
+    position:relative;
+
+    list-style:none;
+
+}
+
+
+
+/* Hover */
+
+.nav-menu li a:hover {
+
+    color:var(--primary);
+
+}
+
+
+
+/* Active Link */
+
+.nav-menu li a.active {
+
+    color:var(--primary);
+
+}
+
+
+
+/* Underline Animation */
+
+.nav-menu li a::after {
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+
+
+.nav-menu li a:hover::after,
+.nav-menu li a.active::after {
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   SERVICE DROPDOWN BUTTON
+========================================================== */
+
+
+.dropdown-toggle {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    transition:var(--transition);
+
+}
+
+
+
+.dropdown-toggle:hover {
+
+    color:var(--primary);
+
+}
+
+
+
+.dropdown-toggle svg {
+
+    font-size:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.dropdown-toggle .rotate {
+
+    transform:rotate(180deg);
+
+}
+
+
+
+/* ==========================================================
+   DROPDOWN MENU
+========================================================== */
+
+
+.dropdown-menu {
+
+    position:absolute;
+
+    top:45px;
+
+    left:0;
+
+
+    width:220px;
+
+
+    background:var(--surface);
+
+
+    border-radius:var(--radius-md);
+
+
+    box-shadow:var(--shadow-lg);
+
+
+    padding:12px 0;
+
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(15px);
+
+
+    transition:var(--transition);
+
+}
+
+
+
+/* Show Dropdown */
+
+.dropdown-menu.active {
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+
+
+.dropdown-menu li {
+
+    width:100%;
+
+}
+
+
+
+.dropdown-menu li a {
+
+    display:block;
+
+    padding:12px 20px;
+
+    font-size:14px;
+
+    text-transform:none;
+
+    font-weight:500;
+
+}
+
+
+
+.dropdown-menu li a::after {
+
+    display:none;
+
+}
+
+
+
+.dropdown-menu li a:hover {
+
+    background:var(--bg);
+
+    color:var(--primary);
+
+}
+
+
+
+/* ==========================================================
+   NAVBAR RIGHT SECTION
+========================================================== */
+
+
+.navbar-right {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+/* ==========================================================
+   THEME BUTTON
+========================================================== */
+
+
+.theme-toggle {
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.theme-toggle:hover {
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================================================
+   GET QUOTE BUTTON
+========================================================== */
+
+
+.quote-btn {
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    transition:var(--transition);
+
+}
+
+
+
+.quote-btn:hover {
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+
+/* ==========================================================
+   MOBILE MENU BUTTON
+========================================================== */
+
+
+.mobile-menu-toggle {
+
+    display:none;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:8px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+/* ==========================================================
+   MOBILE OVERLAY
+========================================================== */
+
+
+.mobile-overlay {
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:998;
+
+}
+
+
+
+.mobile-overlay.active {
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+/* ==========================================================
+   TABLET RESPONSIVE
+========================================================== */
+
+
+@media(max-width:1100px){
+
+
+    .nav-menu {
+
+        gap:18px;
+
+    }
+
+
+    .nav-menu li a,
+    .dropdown-toggle {
+
+        font-size:14px;
+
+    }
+
+
+    .quote-btn {
+
+        padding:10px 18px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE MENU
+========================================================== */
+
+
+@media(max-width:768px){
+
+
+    .header-top {
+
+        padding:12px 0;
+
+    }
+
+
+    .header-top-content {
+
+        justify-content:center;
+
+    }
+
+
+    .header-contact {
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:12px;
+
+    }
+
+
+    .header-right-top {
+
+        display:none;
+
+    }
+
+
+
+    /* Navbar */
+
+
+    .navbar-content {
+
+        min-height:75px;
+
+    }
+
+
+
+    .logo-image {
+
+        width:120px;
+
+    }
+
+
+
+    /* Show Mobile Button */
+
+
+    .mobile-menu-toggle {
+
+        display:flex;
+
+    }
+
+
+
+    .theme-toggle {
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+
+
+    .quote-btn {
+
+        display:none;
+
+    }
+
+
+
+    /* Navigation Drawer */
+
+
+    .nav-menu {
+
+
+        position:fixed;
+
+
+        top:0;
+
+
+        right:-100%;
+
+
+        width:280px;
+
+
+        height:100vh;
+
+
+        background:var(--surface);
+
+
+        flex-direction:column;
+
+
+        align-items:flex-start;
+
+
+        padding:100px 30px 30px;
+
+
+        gap:25px;
+
+
+        box-shadow:-5px 0 20px rgba(0,0,0,.15);
+
+
+        transition:.4s;
+
+
+        z-index:999;
+
+
+        overflow-y:auto;
+
+
+    }
+
+
+
+    .nav-menu.active {
+
+
+        right:0;
+
+
+    }
+
+
+
+    .nav-menu li {
+
+
+        width:100%;
+
+
+    }
+
+
+
+    .nav-menu li a {
+
+
+        display:block;
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+    .nav-menu li a::after {
+
+
+        display:none;
+
+
+    }
+
+
+
+    /* Dropdown */
+
+
+    .dropdown-toggle {
+
+
+        width:100%;
+
+
+        justify-content:space-between;
+
+
+    }
+
+
+
+    .dropdown-menu {
+
+
+        position:static;
+
+
+        width:100%;
+
+
+        box-shadow:none;
+
+
+        margin-top:15px;
+
+
+        padding:0;
+
+
+        display:none;
+
+
+        opacity:1;
+
+
+        visibility:visible;
+
+
+        transform:none;
+
+
+    }
+
+
+
+    .dropdown-menu.active {
+
+
+        display:block;
+
+
+    }
+
+
+
+    .dropdown-menu li a {
+
+
+        padding:12px 15px;
+
+
+        background:var(--bg);
+
+
+        border-radius:8px;
+
+
+        margin-bottom:8px;
+
+
+    }
+
+
+
+}
+
+
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+
+@media(max-width:480px){
+
+
+    .header-contact a span {
+
+
+        font-size:12px;
+
+
+    }
+
+
+
+    .navbar-content {
+
+
+        gap:10px;
+
+
+    }
+
+
+
+    .logo-image {
+
+
+        width:100px;
+
+
+    }
+
+
+
+    .navbar-right {
+
+
+        gap:8px;
+
+
+    }
+
+
+
+    .mobile-menu-toggle,
+    .theme-toggle {
+
+
+        width:36px;
+
+
+        height:36px;
+
+
+    }
+
+
+
+}

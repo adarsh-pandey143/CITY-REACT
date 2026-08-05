@@ -1,0 +1,292 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+/* ==========================================================
+   ROOT COLORS
+========================================================== */
+
+:root {
+
+
+    /* Brand */
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+    --primary-light:#60A5FA;
+
+
+    --secondary:#06B6D4;
+
+
+    /* Status */
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+
+    /* Background */
+
+    --bg:#F8FAFC;
+    --surface:#FFFFFF;
+
+
+    /* Text */
+
+    --text:#0F172A;
+    --text-light:#64748B;
+    --text-white:#FFFFFF;
+
+
+    /* Border */
+
+    --border:#E2E8F0;
+
+
+
+    /* Shadows */
+
+    --shadow-sm:
+    0 2px 8px rgba(15,23,42,.06);
+
+
+    --shadow-md:
+    0 10px 25px rgba(15,23,42,.10);
+
+
+    --shadow-lg:
+    0 20px 45px rgba(15,23,42,.15);
+
+
+
+    /* Radius */
+
+    --radius-sm:6px;
+    --radius-md:12px;
+    --radius-lg:18px;
+
+
+
+    /* Animation */
+
+    --transition:.3s ease;
+
+}
+
+
+/* ==========================================================
+   HTML
+========================================================== */
+
+
+html {
+
+    scroll-behavior:smooth;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+
+body {
+
+
+    font-family:
+    "Roboto",
+    "Open Sans",
+    Arial,
+    sans-serif;
+
+
+    background:var(--bg);
+
+    color:var(--text);
+
+
+    line-height:1.6;
+
+
+    overflow-x:hidden;
+
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+
+    color:var(--text);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+
+
+p {
+
+
+    color:var(--text-light);
+
+}
+
+
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+
+
+a:hover {
+
+    color:var(--primary);
+
+}
+
+
+
+/* ==========================================================
+   BUTTON RESET
+========================================================== */
+
+
+button {
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+
+.container {
+
+
+    width:min(1200px, calc(100% - 40px));
+
+
+    margin:auto;
+
+
+}
+
+
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+
+::selection {
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+
+::-webkit-scrollbar {
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:#EDF2F7;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:var(--primary);
+
+    border-radius:50px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:var(--primary-dark);
+
+}

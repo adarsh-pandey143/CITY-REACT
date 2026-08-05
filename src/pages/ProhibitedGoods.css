@@ -1,0 +1,114 @@
+.prohibited-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: clamp(25px, 3vw, 35px);
+  margin: 40px 0;
+  width: 100%;
+}
+
+.prohibited-item-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: clamp(30px, 4vw, 40px) clamp(25px, 3vw, 30px);
+  border-radius: 16px;
+  box-shadow: 
+    0 8px 32px var(--shadow),
+    0 2px 8px rgba(0, 128, 129, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-theme .prohibited-item-card {
+  background: rgba(30, 41, 59, 0.7);
+  box-shadow: 
+    0 8px 32px var(--shadow),
+    0 2px 8px rgba(0, 128, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.prohibited-item-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.dark-theme .prohibited-item-card:hover {
+  background: rgba(30, 41, 59, 0.85);
+}
+
+.prohibited-item-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f97316 0%, rgba(249, 115, 22, 0.5) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.prohibited-item-card:hover::before {
+  transform: scaleX(1);
+}
+
+.prohibited-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 128, 129, 0.15);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.prohibited-icon {
+  font-size: clamp(48px, 6vw, 64px);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  filter: grayscale(0.2);
+  transition: transform 0.3s ease;
+}
+
+.prohibited-item-card:hover .prohibited-icon {
+  transform: scale(1.1);
+}
+
+.prohibited-item-card h3 {
+  color: #008081;
+  margin-bottom: 15px;
+  font-size: clamp(18px, 2.2vw, 20px);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+.prohibited-item-card p {
+  color: #475569;
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .prohibited-items-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .prohibited-item-card {
+    padding: 25px 20px;
+  }
+
+  .prohibited-icon {
+    font-size: 48px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+}
+
