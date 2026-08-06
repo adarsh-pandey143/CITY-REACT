@@ -16,275 +16,610 @@
 ========================================================== */
 
 
-.hero {
+/* ==========================================================
+   HERO SLIDER
+========================================================== */
+
+.hero{
 
     position:relative;
-
-    min-height:650px;
-
+    min-height:700px;
+    overflow:hidden;
     display:flex;
-
     align-items:center;
-
 }
 
+/* ==========================================================
+   SLIDES
+========================================================== */
 
-
-.hero-background {
-
+.hero-slide{
 
     position:absolute;
-
     inset:0;
-
 
     background-size:cover;
-
     background-position:center;
+    background-repeat:no-repeat;
 
+    opacity:0;
+    visibility:hidden;
 
-    z-index:-2;
+    transform:scale(1);
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease,
+        transform 8s linear;
 
 }
 
+.hero-slide.active{
 
+    opacity:1;
+    visibility:visible;
 
-.hero-overlay {
+    animation:
+        heroZoom 8s linear forwards;
 
+}
+
+/* ==========================================================
+   ZOOM EFFECT
+========================================================== */
+
+@keyframes heroZoom{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        transform:scale(1.10);
+
+    }
+
+}
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+.hero-overlay{
 
     position:absolute;
-
     inset:0;
-
 
     background:
     linear-gradient(
         90deg,
-        rgba(15,23,42,.85),
-        rgba(15,23,42,.45)
+        rgba(15,23,42,.82),
+        rgba(15,23,42,.40),
+        rgba(15,23,42,.20)
     );
 
+}
 
-    z-index:-1;
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.hero .container{
+
+    position:relative;
+    z-index:5;
 
 }
 
+/* ==========================================================
+   CONTENT
+========================================================== */
 
+.hero-content{
 
+    max-width:720px;
+    color:#fff;
 
-.hero-content {
-
-
-    max-width:700px;
-
-
-    color:white;
-
-
-    padding-top:60px;
+    animation:
+        heroContent .9s ease;
 
 }
 
+@keyframes heroContent{
 
+    from{
 
+        opacity:0;
+        transform:translateY(40px);
 
-.hero-tag {
+    }
 
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   TAG
+========================================================== */
+
+.hero-tag{
 
     display:inline-block;
 
+    padding:10px 22px;
 
-    background:rgba(37,99,235,.15);
+    border-radius:50px;
 
+    background:
+    rgba(255,255,255,.12);
 
-    color:#60a5fa;
+    backdrop-filter:blur(8px);
 
+    color:#fff;
 
-    padding:8px 18px;
+    letter-spacing:2px;
 
+    font-size:13px;
 
-    border-radius:30px;
-
-
-    font-size:14px;
-
-
-    font-weight:600;
-
-
-    letter-spacing:1px;
-
-
-    margin-bottom:20px;
-
-}
-
-
-
-
-.hero-content h1 {
-
-
-    font-size:clamp(2.5rem,5vw,4.5rem);
-
-
-    line-height:1.1;
-
-
-    color:white;
-
+    font-weight:700;
 
     margin-bottom:25px;
 
+    border:1px solid
+    rgba(255,255,255,.15);
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.hero-content h1{
+
+    color:#fff;
+
+    font-size:
+    clamp(3rem,6vw,5rem);
+
+    line-height:1.08;
 
     font-weight:900;
 
+    margin-bottom:25px;
+
+    text-shadow:
+    0 10px 25px
+    rgba(0,0,0,.35);
 
 }
 
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
 
-
-
-.hero-content p {
-
+.hero-content p{
 
     color:#e2e8f0;
 
-
     font-size:18px;
 
+    line-height:1.9;
 
-    max-width:600px;
+    max-width:620px;
 
-
-    margin-bottom:35px;
-
+    margin-bottom:40px;
 
 }
-
-
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
 
 
 /* ==========================================================
    HERO BUTTONS
 ========================================================== */
 
-
-
-.hero-buttons {
-
+.hero-buttons{
 
     display:flex;
-
-
     gap:20px;
-
-
     flex-wrap:wrap;
 
-
 }
 
-
-
-.btn-primary {
-
+.btn-primary{
 
     display:inline-flex;
-
-
     align-items:center;
-
-
     justify-content:center;
 
+    min-width:180px;
+    height:56px;
 
-    padding:14px 32px;
+    border-radius:14px;
 
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
 
-    background:var(--primary);
+    color:#fff;
 
+    font-weight:700;
 
-    color:white;
+    transition:.35s;
 
-
-    border-radius:var(--radius-md);
-
-
-    font-weight:600;
-
-
-    transition:.3s;
-
-
-}
-
-
-
-
-.btn-primary:hover {
-
-
-    background:var(--primary-dark);
-
-
-    color:white;
-
-
-    transform:translateY(-3px);
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.30);
 
 }
 
+.btn-primary:hover{
 
+    transform:
+        translateY(-4px);
 
+    box-shadow:
+    0 25px 45px rgba(37,99,235,.45);
 
-.btn-outline {
+    color:#fff;
 
+}
+
+.btn-outline{
 
     display:inline-flex;
-
-
     align-items:center;
-
-
     justify-content:center;
 
+    min-width:180px;
+    height:56px;
 
-    padding:14px 32px;
+    border-radius:14px;
 
+    border:2px solid
+    rgba(255,255,255,.55);
 
-    border:2px solid white;
+    color:#fff;
 
+    backdrop-filter:blur(10px);
 
-    color:white;
-
-
-    border-radius:var(--radius-md);
-
-
-    font-weight:600;
-
-
-    transition:.3s;
-
+    transition:.35s;
 
 }
 
+.btn-outline:hover{
 
-
-.btn-outline:hover {
-
-
-    background:white;
-
+    background:#fff;
 
     color:var(--primary);
 
+    transform:
+        translateY(-4px);
 
 }
 
+/* ==========================================================
+   ARROWS
+========================================================== */
 
+.hero-arrow{
 
+    position:absolute;
+
+    top:50%;
+
+    transform:
+        translateY(-50%);
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    border:1px solid
+    rgba(255,255,255,.25);
+
+    background:
+    rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    z-index:20;
+
+}
+
+.hero-arrow:hover{
+
+    background:#2563eb;
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+
+}
+
+.hero-arrow.left{
+
+    left:35px;
+
+}
+
+.hero-arrow.right{
+
+    right:35px;
+
+}
+
+/* ==========================================================
+   DOTS
+========================================================== */
+
+.hero-dots{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:35px;
+
+    transform:
+        translateX(-50%);
+
+    display:flex;
+
+    gap:12px;
+
+    z-index:20;
+
+}
+
+.dot{
+
+    width:13px;
+    height:13px;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.40);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.dot:hover{
+
+    transform:scale(1.2);
+
+}
+
+.dot.active{
+
+    width:38px;
+
+    border-radius:50px;
+
+    background:#2563eb;
+
+}
+
+/* ==========================================================
+   HERO RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+    .hero{
+        min-height:650px;
+    }
+
+    .hero-content{
+        max-width:620px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .hero{
+
+        min-height:600px;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+        text-align:center;
+
+    }
+
+    .hero-content p{
+
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-arrow{
+
+        width:52px;
+        height:52px;
+
+        font-size:20px;
+
+    }
+
+    .hero-arrow.left{
+
+        left:20px;
+
+    }
+
+    .hero-arrow.right{
+
+        right:20px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:550px;
+
+    }
+
+    .hero-content{
+
+        padding-top:30px;
+
+    }
+
+    .hero-tag{
+
+        font-size:12px;
+
+        padding:8px 18px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:42px;
+
+        line-height:1.2;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+        margin-bottom:30px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .btn-primary,
+    .btn-outline{
+
+        width:260px;
+
+    }
+
+    .hero-arrow{
+
+        display:none;
+
+    }
+
+    .hero-dots{
+
+        bottom:20px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .hero{
+
+        min-height:500px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .btn-primary,
+    .btn-outline{
+
+        width:100%;
+
+        max-width:280px;
+
+        height:52px;
+
+    }
+
+    .dot{
+
+        width:10px;
+        height:10px;
+
+    }
+
+    .dot.active{
+
+        width:28px;
+
+    }
+
+}
+
+/* ==========================================================
+   SMOOTH PERFORMANCE
+========================================================== */
+
+.hero-slide{
+
+    will-change:opacity,transform;
+
+}
+
+.hero-content{
+
+    will-change:transform,opacity;
+
+}
 
 
 /* ==========================================================
@@ -631,6 +966,8 @@
 
 
     font-weight:500;
+
+    list-style: none;
 
 
 }

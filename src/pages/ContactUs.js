@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 
-import contactBanner from "../assets/images/sea.jpg";
+import contactBanner from "../assets/images/contact.jpg";
 
 const ContactUs = () => {
 
@@ -215,7 +215,7 @@ return (
 
 <div className="company-info">
 
-  <h2>Why Contact RA Logistics?</h2>
+  <h2>Why Contact WWW Express?</h2>
 
   <p>
     We provide reliable logistics and transportation services
@@ -268,7 +268,7 @@ return (
         <div className="map-wrapper">
 
             <iframe
-                title="RA Logistics Location"
+                title="WWW Express Location"
                 src="https://www.google.com/maps?q=New+Delhi,+India&output=embed"
                 loading="lazy"
                 allowFullScreen

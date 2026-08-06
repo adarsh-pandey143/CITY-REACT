@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import "./Header.css";
-// import logo from "../assets/images/logo1.jpg";
+ import logo from "../assets/images/logo2.png";
 
 const Header = () => {
 
@@ -144,7 +144,7 @@ const Header = () => {
 
                   <FaEnvelope />
 
-                  <span>info@ralogistics.com</span>
+                  <span>info@wwwexpress.com</span>
 
                 </a>
 
@@ -175,7 +175,7 @@ const Header = () => {
               <Link to="/" className="logo">
 
                 <img
-                  src={""}
+                  src={logo}
                   alt="WWW Logo"
                   className="logo-image"
                 />
@@ -324,7 +324,7 @@ const Header = () => {
                 {/* Get Quote Button */}
 
                 <Link
-                  to="/contact-us"
+                  to="/NotFound"
                   className="quote-btn"
                   onClick={() => setMobileMenu(false)}
                 >

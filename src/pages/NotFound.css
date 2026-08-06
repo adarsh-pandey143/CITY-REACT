@@ -1,0 +1,462 @@
+/* ==========================================================
+   NOT FOUND PAGE
+========================================================== */
+
+.notfound-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef5ff
+    );
+
+    overflow:hidden;
+
+    position:relative;
+
+    padding:100px 0;
+
+}
+
+
+/* ==========================================================
+   BACKGROUND SHAPES
+========================================================== */
+
+.notfound-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(37,99,235,.12),
+        transparent 70%
+    );
+
+    top:-120px;
+    left:-120px;
+
+}
+
+.notfound-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(34,197,94,.10),
+        transparent 70%
+    );
+
+    right:-80px;
+    bottom:-80px;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.notfound-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================================
+   LEFT CONTENT
+========================================================== */
+
+.notfound-content{
+
+    max-width:600px;
+
+}
+
+.error-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    background:#dbeafe;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:22px;
+
+}
+
+.notfound-content h1{
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    line-height:1.1;
+
+    color:var(--text);
+
+    margin-bottom:25px;
+
+    font-weight:900;
+
+}
+
+.notfound-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+
+    margin-bottom:40px;
+
+}
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.notfound-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline-dark{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 34px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    background:#fff;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-outline-dark:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================================================
+   RIGHT IMAGE
+========================================================== */
+
+.notfound-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.notfound-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    animation:floatImage 4s ease-in-out infinite;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================================
+   BIG 404
+========================================================== */
+
+.error-number{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:180px;
+
+    font-weight:900;
+
+    color:rgba(37,99,235,.08);
+
+    z-index:1;
+
+    user-select:none;
+
+    letter-spacing:10px;
+
+}
+
+
+/* ==========================================================
+   FLOAT ANIMATION
+========================================================== */
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .notfound-page{
+
+        padding:80px 0;
+
+    }
+
+    .notfound-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .notfound-content{
+
+        max-width:100%;
+
+    }
+
+    .notfound-buttons{
+
+        justify-content:center;
+
+    }
+
+    .notfound-image{
+
+        order:-1;
+
+    }
+
+    .notfound-image img{
+
+        max-width:420px;
+
+    }
+
+    .error-number{
+
+        font-size:140px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .notfound-page{
+
+        padding:70px 0;
+
+    }
+
+    .notfound-content h1{
+
+        font-size:42px;
+
+    }
+
+    .notfound-content p{
+
+        font-size:16px;
+
+    }
+
+    .error-number{
+
+        font-size:110px;
+
+    }
+
+    .notfound-image img{
+
+        max-width:320px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .notfound-page{
+
+        padding:50px 0;
+
+    }
+
+    .error-tag{
+
+        font-size:12px;
+
+        letter-spacing:1px;
+
+    }
+
+    .notfound-content h1{
+
+        font-size:34px;
+
+    }
+
+    .notfound-content p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .notfound-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .notfound-buttons .btn-primary,
+    .notfound-buttons .btn-outline-dark{
+
+        width:100%;
+
+    }
+
+    .notfound-image img{
+
+        max-width:260px;
+
+    }
+
+    .error-number{
+
+        font-size:90px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   EXTRA HOVER EFFECTS
+========================================================== */
+
+.notfound-image{
+
+    transition:.4s;
+
+}
+
+.notfound-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+.notfound-content h1{
+
+    transition:.3s;
+
+}
+
+.notfound-content h1:hover{
+
+    color:var(--primary);
+
+}

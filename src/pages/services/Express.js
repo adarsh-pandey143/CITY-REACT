@@ -101,7 +101,7 @@ AIR FREIGHT - EXPRESS
 
 <p>
 
-RA LOGISTICS provides reliable express
+WWW Express provides reliable express
 delivery solutions designed for urgent
 and time-sensitive shipments.
 
@@ -287,7 +287,7 @@ Need Urgent Delivery?
 
 <p>
 
-Get in touch with RA LOGISTICS
+Get in touch with WWW Express
 for express shipment solutions.
 
 </p>

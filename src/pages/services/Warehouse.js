@@ -101,7 +101,7 @@ WAREHOUSE SERVICES
 
 <p>
 
-RA LOGISTICS provides complete warehousing
+WWW Express provides complete warehousing
 solutions with modern facilities, technology
 and experienced logistics professionals.
 
@@ -285,7 +285,7 @@ Need Reliable Warehousing?
 <p>
 
 Optimize your supply chain with
-RA LOGISTICS warehouse solutions.
+WWW Express warehouse solutions.
 
 </p>
 

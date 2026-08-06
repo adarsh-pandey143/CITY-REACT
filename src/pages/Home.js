@@ -1,18 +1,71 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 
 import heroBg from "../assets/images/main.jpg";
 
-import roadImg from "../assets/images/g1.jpg";
+import roadImg from "../assets/images/road.jpg";
 import airImg from "../assets/images/air.jpg";
-import seaImg from "../assets/images/sea.jpg";
+import seaImg from "../assets/images/sea1.jpg";
 import warehouseImg from "../assets/images/ware.jpg";
+
+import hero1 from "../assets/images/hero1.jpg";
+import hero2 from "../assets/images/hero2.jpg";
+import hero3 from "../assets/images/hero3.jpg";
+import hero4 from "../assets/images/hero4.jpg";
 
 
 const Home = () => {
+ const heroSlides = [
+        {
+            image: hero2,
+            tag: "FAST • SAFE • RELIABLE",
+            title: "Smart Logistics Solutions For Your Business",
+            description: "Providing reliable transportation, express delivery and warehouse solutions with nationwide network coverage."
+        },
+        {
+            image: hero4,
+            tag: "ROAD TRANSPORT",
+            title: "Reliable Road Transportation Across India",
+            description: "Fast, secure and cost-effective road freight services with nationwide coverage, real-time shipment tracking and guaranteed on-time delivery."
+         },
+        {
+            image: hero3,
+            tag: "AIR FREIGHT",
+            title: "Express Air Cargo Services",
+            description: "Fast and secure air cargo solutions for urgent and high-value shipments."
+        },
+        {
+            image: hero1,
+            tag: "WAREHOUSING",
+            title: "Modern Warehouse Management",
+            description: "Inventory management, secure storage and nationwide distribution services."
+        }
+    ];
 
+
+    const [current, setCurrent] = useState(0);
+
+    useEffect(() => {
+
+        const timer = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % heroSlides.length);
+        }, 5000);
+
+        return () => clearInterval(timer);
+
+    }, [heroSlides.length]);
+
+    const nextSlide = () => {
+        setCurrent((prev) => (prev + 1) % heroSlides.length);
+    };
+
+    const prevSlide = () => {
+        setCurrent((prev) =>
+            prev === 0 ? heroSlides.length - 1 : prev - 1
+        );
+    };
 
 return (
 
@@ -24,86 +77,85 @@ return (
 
 <section className="hero">
 
+    {heroSlides.map((slide, index) => (
 
-<div
-className="hero-overlay"
-></div>
+        <div
+            key={index}
+            className={`hero-slide ${index === current ? "active" : ""}`}
+            style={{
+                backgroundImage: `url(${slide.image})`
+            }}
+        >
+            <div className="hero-overlay"></div>
+        </div>
 
+    ))}
 
-<div
-className="hero-background"
-style={{
-backgroundImage:`url(${heroBg})`
-}}
-></div>
+    <div className="container">
 
+        <div className="hero-content">
 
+            <span className="hero-tag">
+                {heroSlides[current].tag}
+            </span>
 
-<div className="container">
+            <h1>
+                {heroSlides[current].title}
+            </h1>
 
+            <p>
+                {heroSlides[current].description}
+            </p>
 
-<div className="hero-content">
+            <div className="hero-buttons">
 
+                <Link
+                    to="/contact-us"
+                    className="btn-primary"
+                >
+                    Get Quote
+                </Link>
 
-<span className="hero-tag">
+                <Link
+                    to="/tracking"
+                    className="btn-outline"
+                >
+                    Track Shipment
+                </Link>
 
-FAST • SAFE • RELIABLE
+            </div>
 
-</span>
+        </div>
 
+    </div>
 
-<h1>
+    <button
+        className="hero-arrow left"
+        onClick={prevSlide}
+    >
+        ❮
+    </button>
 
-Smart Logistics
-<br/>
-Solutions For Your Business
+    <button
+        className="hero-arrow right"
+        onClick={nextSlide}
+    >
+        ❯
+    </button>
 
-</h1>
+    <div className="hero-dots">
 
+        {heroSlides.map((_, index) => (
 
-<p>
+            <span
+                key={index}
+                className={index === current ? "dot active" : "dot"}
+                onClick={() => setCurrent(index)}
+            />
 
-Providing reliable transportation,
-express delivery and warehouse solutions
-with nationwide network coverage.
+        ))}
 
-</p>
-
-
-
-<div className="hero-buttons">
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Get Quote
-
-</Link>
-
-
-
-<Link
-to="/tracking"
-className="btn-outline"
->
-
-Track Shipment
-
-</Link>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
+    </div>
 
 </section>
 
@@ -357,7 +409,7 @@ Your Trusted Logistics Partner
 
 <p>
 
-RA LOGISTICS delivers reliable,
+WWW Express delivers reliable,
 cost-effective and technology-driven
 logistics solutions for businesses.
 
@@ -628,7 +680,7 @@ Need Reliable Logistics Support?
 
 <p>
 
-Contact RA LOGISTICS today
+Contact WWW Express today
 for customized shipping solutions.
 
 </p>

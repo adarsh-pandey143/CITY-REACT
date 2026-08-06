@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../pages/Page.css";
 
-import careerBanner from "../assets/images/g1.jpg";
+import careerBanner from "../assets/images/careers.jpg";
 
 const Careers = () => {
 
@@ -29,7 +29,7 @@ return (
 
                 <h1>
                     Build Your Career
-                    With RA Logistics
+                    With WWW Express
                 </h1>
 
                 <p>

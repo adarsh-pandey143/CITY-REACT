@@ -94,7 +94,7 @@ Nationwide Logistics Coverage
 
 <p>
 
-RA LOGISTICS has developed a strong
+WWW Express has developed a strong
 transportation network to provide fast,
 safe and reliable delivery solutions.
 Our extensive network helps businesses
@@ -314,7 +314,7 @@ Need Logistics Support?
 
 <p>
 
-Connect with RA LOGISTICS for
+Connect with WWW Express for
 complete transportation solutions.
 
 </p>

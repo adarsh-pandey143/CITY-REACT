@@ -62,7 +62,7 @@ const Footer = () => {
 
 
               <h3>
-                RA LOGISTICS
+                WWW Express
               </h3>
 
 
@@ -208,7 +208,7 @@ const Footer = () => {
                 <li>
                   Email:
                   <br/>
-                  info@ralogistics.com
+                  info@wwwexpress.com
                 </li>
 
 
@@ -235,7 +235,7 @@ const Footer = () => {
 
             <p>
 
-              © 2018 RA LOGISTICS. All Rights Reserved.
+              © 2018 WWW Express. All Rights Reserved.
 
             </p>
 

@@ -102,8 +102,8 @@ const Tracking = () => {
   };
 
   return (
-    <div className="page">
-      <div className="page-content">
+    <div className="track-page">
+      <div className="track-page-content">
         <div className="container">
           <div className="tracking-section">
             <div className="tracking-form-container">

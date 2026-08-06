@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 import heroImg from "../assets/images/ware.jpg";
-import companyImg from "../assets/images/main.jpg";
+import companyImg from "../assets/images/careers1.jpg";
 import chairmanImg from "../assets/images/owner.jpg";
 
 const AboutUs = () => {
@@ -112,7 +112,7 @@ return (
 
   <img
     src={companyImg}
-    alt="RA Logistics"
+    alt="WWW Express"
   />
 
 </div>

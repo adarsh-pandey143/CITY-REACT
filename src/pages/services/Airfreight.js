@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../pages/Page.css";
 
-import airImage from "../../assets/images/sea.jpg";
+import airImage from "../../assets/images/sea1.jpg";
 
 
 const Airfreight = () => {
@@ -97,7 +97,7 @@ SEA DELIVERY - AIR FREIGHT
 
 <p>
 
-RA LOGISTICS provides professional air freight
+WWW Express provides professional air freight
 solutions for domestic and international cargo.
 Our services are designed for businesses that
 need speed, security and reliable delivery.
@@ -275,7 +275,7 @@ Need Fast Air Cargo Solution?
 
 <p>
 
-Contact RA LOGISTICS for customized
+Contact WWW Express for customized
 air freight services.
 
 </p>

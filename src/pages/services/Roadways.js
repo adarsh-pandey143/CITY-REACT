@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../../pages/Page.css";
 
-import roadImage from "../../assets/images/g1.jpg";
+import roadImage from "../../assets/images/road.jpg";
 
 
 const Roadways = () => {
@@ -102,7 +102,7 @@ GROUND SHIPPING - ROADWAYS
 
 <p>
 
-RA LOGISTICS provides complete road freight
+WWW Express provides complete road freight
 solutions including LTL, FTL and part load
 services with nationwide coverage.
 
@@ -285,7 +285,7 @@ Need Reliable Road Transport?
 
 <p>
 
-Contact RA LOGISTICS for
+Contact WWW Express for
 safe and efficient road freight solutions.
 
 </p>
