@@ -62,25 +62,23 @@ const Footer = () => {
 
 
               <h3>
-                WWW Express
+                World Wide Courier Cargo
               </h3>
 
 
-              <p>
+            <p>
+  At World Wide Courier Cargo, we offer end-to-end courier,
+  cargo and freight solutions backed by a strong nationwide
+  and international network, ensuring every shipment is
+  delivered safely, efficiently and on time.
+</p>
 
-                Providing reliable logistics solutions with
-                wide area coverage and better services under
-                one umbrella.
 
-              </p>
-
-
-              <p>
-
-                We focus on safe, fast and efficient
-                transportation solutions for our valuable clients.
-
-              </p>
+             <p>
+  Trusted courier and cargo solutions with nationwide and
+  worldwide delivery, designed to move your shipments
+  safely, quickly and efficiently.
+</p>
 
 
             </div>
@@ -201,21 +199,21 @@ const Footer = () => {
                 <li>
                   Phone:
                   <br/>
-                  +91 99588 26252
+                  +91 70426 99313
                 </li>
 
 
                 <li>
                   Email:
                   <br/>
-                  info@wwwexpress.com
+                  info@worldwidecouriercargo.com
                 </li>
 
 
                 <li>
                   Location:
                   <br/>
-                  India
+                   Gurugram, Haryana, India
                 </li>
 
 
@@ -230,27 +228,18 @@ const Footer = () => {
 
 
 
-          <div className="footer-bottom">
+      <div className="footer-bottom">
 
+  <p>
+    © 2018 - {new Date().getFullYear()} World Wide Courier Cargo. All Rights Reserved.
+  </p>
 
-            <p>
+  <p>
+    Website Designed & Developed By
+    <span> SIZIL SOFTEC PVT. LTD.</span>
+  </p>
 
-              © 2018 WWW Express. All Rights Reserved.
-
-            </p>
-
-
-            <p>
-
-              Designed By:
-              <span>
-                SIZIL SOFTEC PVT. LTD.
-              </span>
-
-            </p>
-
-
-          </div>
+</div>
 
 
         </div>

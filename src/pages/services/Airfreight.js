@@ -17,287 +17,203 @@ return (
 
 
 <section
-className="service-hero"
-style={{
-backgroundImage:`url(${airImage})`
-}}
+  className="service-hero"
+  style={{
+    backgroundImage: `url(${airImage})`
+  }}
 >
 
+  <div className="service-overlay"></div>
 
-<div className="service-overlay"></div>
+  <div className="container">
 
+    <div className="service-hero-content">
 
-<div className="container">
+      <span>AIR FREIGHT SERVICES</span>
 
+      <h1>
+        Fast & Reliable Air Cargo Solutions
+      </h1>
 
-<div className="service-hero-content">
+      <p>
+        World Wide Courier Cargo provides secure,
+        time-sensitive and efficient air freight
+        services for businesses requiring faster
+        domestic and international cargo movement.
+      </p>
 
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Quote
+      </Link>
 
-<span>
-AIR LOGISTICS
-</span>
+    </div>
 
-
-<h1>
-Air Freight Services
-</h1>
-
-
-<p>
-
-Fast, secure and reliable air cargo
-solutions for time critical shipments.
-
-</p>
-
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Get Quote
-
-</Link>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
-
-
 
 {/* ================= CONTENT ================= */}
 
 
 <section className="service-content-section">
 
+  <div className="container">
 
-<div className="container">
+    {/* ================= INTRO ================= */}
 
+    <div className="service-intro">
 
+      <span className="section-tag">
+        AIR FREIGHT SOLUTIONS
+      </span>
 
-<div className="service-intro">
+      <h2>
+        Fast, Secure & Time-Critical Air Cargo Services
+      </h2>
 
+      <p>
+        World Wide Courier Cargo offers dependable air freight
+        solutions for businesses that require speed, security
+        and efficiency. From urgent documents to commercial
+        cargo, we ensure timely transportation through our
+        trusted logistics network while maintaining the highest
+        standards of safety and service quality.
+      </p>
 
-<h2>
+    </div>
 
-SEA DELIVERY - AIR FREIGHT
+    {/* ================= FEATURES ================= */}
 
-</h2>
+    <div className="feature-grid">
 
+      <div className="feature-card">
 
-<p>
+        <h3>✈ Domestic Air Freight</h3>
 
-WWW Express provides professional air freight
-solutions for domestic and international cargo.
-Our services are designed for businesses that
-need speed, security and reliable delivery.
+        <p>
+          Fast and secure delivery connecting major
+          airports and commercial hubs across India.
+        </p>
 
-</p>
+      </div>
 
+      <div className="feature-card">
 
-</div>
+        <h3>🌍 International Air Cargo</h3>
 
+        <p>
+          Reliable international shipping through
+          trusted airline partners and global logistics
+          connections.
+        </p>
 
+      </div>
 
+      <div className="feature-card">
 
+        <h3>⚡ Express Priority Service</h3>
 
+        <p>
+          Dedicated solutions for urgent shipments
+          requiring the fastest possible delivery.
+        </p>
 
+      </div>
 
-<div className="feature-grid">
+      <div className="feature-card">
 
+        <h3>📦 Commercial Cargo</h3>
 
+        <p>
+          Safe handling of commercial, industrial and
+          high-value cargo with complete shipment care.
+        </p>
 
-<div className="feature-card">
+      </div>
 
+      <div className="feature-card">
 
-<h3>
-✈ Domestic Air Cargo
-</h3>
+        <h3>🛡 Secure Handling</h3>
 
+        <p>
+          Professional packaging coordination and
+          secure cargo management from pickup to delivery.
+        </p>
 
-<p>
+      </div>
 
-Fast transportation of goods
-across major Indian cities.
+      <div className="feature-card">
 
-</p>
+        <h3>📍 Live Shipment Tracking</h3>
 
+        <p>
+          Stay informed with real-time shipment
+          updates throughout the transportation process.
+        </p>
 
-</div>
+      </div>
 
+    </div>
 
+    {/* ================= BENEFITS ================= */}
 
+    <div className="service-benefits">
 
+      <h2>
+        Why Choose World Wide Courier Cargo?
+      </h2>
 
-<div className="feature-card">
+      <ul>
 
+        <li>✓ Fast and dependable air freight solutions</li>
 
-<h3>
-🌎 International Freight
-</h3>
+        <li>✓ Domestic & international cargo support</li>
 
+        <li>✓ Time-critical express shipment handling</li>
 
-<p>
+        <li>✓ Safe and secure transportation process</li>
 
-Global air cargo solutions
-with reliable carrier networks.
+        <li>✓ Real-time shipment tracking</li>
 
-</p>
+        <li>✓ Professional logistics specialists</li>
 
+        <li>✓ Competitive pricing with transparent service</li>
 
-</div>
+        <li>✓ Dedicated customer support</li>
 
+      </ul>
 
+    </div>
 
+    {/* ================= CTA ================= */}
 
+    <div className="service-cta">
 
-<div className="feature-card">
+      <h2>
+        Ready To Ship By Air?
+      </h2>
 
+      <p>
+        Contact World Wide Courier Cargo today for
+        customized air freight solutions tailored to
+        your business requirements. Our logistics team
+        is ready to provide fast, secure and reliable
+        transportation services.
+      </p>
 
-<h3>
-⚡ Express Air Service
-</h3>
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Free Quote
+      </Link>
 
+    </div>
 
-<p>
-
-Priority delivery for
-urgent shipments.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div className="feature-card">
-
-
-<h3>
-📦 Heavy Cargo Handling
-</h3>
-
-
-<p>
-
-Safe handling of large and
-special cargo requirements.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-{/* ================= WHY AIR ================= */}
-
-
-
-<div className="service-benefits">
-
-
-<h2>
-
-Why Choose Our Air Freight?
-
-</h2>
-
-
-
-<ul>
-
-
-<li>
-✓ Faster delivery for urgent shipments
-</li>
-
-
-<li>
-✓ Professional cargo handling
-</li>
-
-
-<li>
-✓ Real-time shipment tracking
-</li>
-
-
-<li>
-✓ Competitive freight solutions
-</li>
-
-
-<li>
-✓ Experienced logistics team
-</li>
-
-
-</ul>
-
-
-</div>
-
-
-
-
-
-<div className="service-cta">
-
-
-<h2>
-
-Need Fast Air Cargo Solution?
-
-</h2>
-
-
-<p>
-
-Contact WWW Express for customized
-air freight services.
-
-</p>
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Contact Us
-
-</Link>
-
-
-</div>
-
-
-
-
-</div>
-
+  </div>
 
 </section>
 

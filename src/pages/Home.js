@@ -17,32 +17,39 @@ import hero4 from "../assets/images/hero4.jpg";
 
 
 const Home = () => {
- const heroSlides = [
-        {
-            image: hero2,
-            tag: "FAST • SAFE • RELIABLE",
-            title: "Smart Logistics Solutions For Your Business",
-            description: "Providing reliable transportation, express delivery and warehouse solutions with nationwide network coverage."
-        },
-        {
-            image: hero4,
-            tag: "ROAD TRANSPORT",
-            title: "Reliable Road Transportation Across India",
-            description: "Fast, secure and cost-effective road freight services with nationwide coverage, real-time shipment tracking and guaranteed on-time delivery."
-         },
-        {
-            image: hero3,
-            tag: "AIR FREIGHT",
-            title: "Express Air Cargo Services",
-            description: "Fast and secure air cargo solutions for urgent and high-value shipments."
-        },
-        {
-            image: hero1,
-            tag: "WAREHOUSING",
-            title: "Modern Warehouse Management",
-            description: "Inventory management, secure storage and nationwide distribution services."
-        }
-    ];
+const heroSlides = [
+  {
+    image: hero2,
+    tag: "WORLD WIDE COURIER CARGO",
+    title: "Trusted Logistics Solutions Across India",
+    description:
+      "Delivering reliable courier, transportation and supply chain solutions with speed, safety and nationwide network coverage for businesses of every size."
+  },
+
+  {
+    image: hero4,
+    tag: "ROAD TRANSPORT",
+    title: "Reliable Road Transportation Services",
+    description:
+      "Comprehensive Full Truck Load (FTL), Less Than Truck Load (LTL) and door-to-door transportation services with real-time shipment tracking across India."
+  },
+
+  {
+    image: hero3,
+    tag: "EXPRESS DELIVERY",
+    title: "Fast & Time-Critical Express Delivery",
+    description:
+      "Efficient express delivery solutions for urgent documents, parcels and commercial shipments with secure handling and on-time delivery."
+  },
+
+  {
+    image: hero1,
+    tag: "WAREHOUSING",
+    title: "Smart Warehousing & Distribution",
+    description:
+      "Secure warehousing, inventory management, order fulfillment and nationwide distribution solutions to keep your business moving efficiently."
+  }
+];
 
 
     const [current, setCurrent] = useState(0);
@@ -110,7 +117,7 @@ return (
             <div className="hero-buttons">
 
                 <Link
-                    to="/contact-us"
+                    to="/NotFound"
                     className="btn-primary"
                 >
                     Get Quote
@@ -169,208 +176,146 @@ return (
 
 <section className="services-section">
 
+  <div className="container">
 
-<div className="container">
+    <div className="home-section-heading">
 
+      <span>
+        OUR SERVICES
+      </span>
 
+      <h2>
+        Complete Logistics & Cargo Solutions Under One Roof
+      </h2>
 
-<div className="home-section-heading">
+      <p>
+        World Wide Courier Cargo offers comprehensive logistics,
+        courier and cargo transportation services designed to
+        meet the needs of businesses and individuals. With a
+        strong PAN India network, experienced professionals and
+        customer-focused operations, we ensure every shipment is
+        delivered safely, efficiently and on time.
+      </p>
 
+    </div>
 
-<span>
-OUR SERVICES
-</span>
+    <div className="services-grid">
 
+      {/* ================= ROAD ================= */}
 
-<h2>
+      <div className="service-card">
 
-Complete Logistics Solutions
+        <img
+          src={roadImg}
+          alt="Road Transport"
+        />
 
-</h2>
+        <div className="service-content">
 
+          <h3>
+            Road Transportation
+          </h3>
 
-<p>
+          <p>
+            Reliable Full Truck Load (FTL), Less Than Truck Load
+            (LTL) and door-to-door transportation services across India.
+          </p>
 
-We provide end-to-end logistics services
-designed for speed, safety and reliability.
+          <Link to="/services/roadways">
+            Read More →
+          </Link>
 
-</p>
+        </div>
 
+      </div>
 
-</div>
+      {/* ================= EXPRESS ================= */}
 
+      <div className="service-card">
 
+        <img
+          src={airImg}
+          alt="Express Delivery"
+        />
 
-<div className="services-grid">
+        <div className="service-content">
 
+          <h3>
+            Express Delivery
+          </h3>
 
+          <p>
+            Fast and time-sensitive delivery solutions for
+            urgent documents, parcels and commercial shipments.
+          </p>
 
-<div className="service-card">
+          <Link to="/services/express">
+            Read More →
+          </Link>
 
+        </div>
 
-<img
-src={roadImg}
-alt="Road Transport"
-/>
+      </div>
 
+      {/* ================= AIR ================= */}
 
-<div className="service-content">
+      <div className="service-card">
 
+        <img
+          src={seaImg}
+          alt="Air Freight"
+        />
 
-<h3>
-Road Transport
-</h3>
+        <div className="service-content">
 
+          <h3>
+            Air Freight
+          </h3>
 
-<p>
+          <p>
+            Secure domestic and international air cargo
+            solutions with reliable transit and timely delivery.
+          </p>
 
-Reliable road transportation
-for domestic shipments.
+          <Link to="/services/airfreight">
+            Read More →
+          </Link>
 
-</p>
+        </div>
 
+      </div>
 
-<Link to="/services/roadways">
+      {/* ================= WAREHOUSE ================= */}
 
-Read More →
+      <div className="service-card">
 
-</Link>
+        <img
+          src={warehouseImg}
+          alt="Warehousing"
+        />
 
+        <div className="service-content">
 
-</div>
+          <h3>
+            Warehousing Solutions
+          </h3>
 
+          <p>
+            Secure storage, inventory management and
+            efficient distribution services for your business.
+          </p>
 
-</div>
+          <Link to="/services/warehouse">
+            Read More →
+          </Link>
 
+        </div>
 
+      </div>
 
-<div className="service-card">
+    </div>
 
-
-<img
-src={airImg}
-alt="Express Delivery"
-/>
-
-
-<div className="service-content">
-
-
-<h3>
-Express Delivery
-</h3>
-
-
-<p>
-
-Fast and secure express
-delivery solutions.
-
-</p>
-
-
-<Link to="/services/express">
-
-Read More →
-
-</Link>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div className="service-card">
-
-
-<img
-src={seaImg}
-alt="Air Freight"
-/>
-
-
-<div className="service-content">
-
-
-<h3>
-Air Freight
-</h3>
-
-
-<p>
-
-Time critical cargo
-transportation solutions.
-
-</p>
-
-
-<Link to="/services/airfreight">
-
-Read More →
-
-</Link>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div className="service-card">
-
-
-<img
-src={warehouseImg}
-alt="Warehouse"
-/>
-
-
-<div className="service-content">
-
-
-<h3>
-Warehousing
-</h3>
-
-
-<p>
-
-Modern storage and
-distribution facilities.
-
-</p>
-
-
-<Link to="/services/warehouse">
-
-Read More →
-
-</Link>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
 
@@ -399,20 +344,15 @@ Read More →
 WHY CHOOSE US
 </span>
 
-
 <h2>
-
-Your Trusted Logistics Partner
-
+  Your Trusted Worldwide Courier & Cargo Partner
 </h2>
 
 
 <p>
-
-WWW Express delivers reliable,
-cost-effective and technology-driven
-logistics solutions for businesses.
-
+  Delivering trusted courier and cargo solutions with
+  speed, security and excellence for businesses and
+  individuals around the world.
 </p>
 
 
@@ -420,24 +360,10 @@ logistics solutions for businesses.
 <ul>
 
 
-<li>
-✓ Wide Network Coverage
-</li>
-
-
-<li>
-✓ Fast & Secure Delivery
-</li>
-
-
-<li>
-✓ Experienced Logistics Team
-</li>
-
-
-<li>
-✓ Customer Focused Service
-</li>
+<li>✓ Domestic & International Shipping</li>
+<li>✓ Fast, Safe & On-Time Delivery</li>
+<li>✓ Real-Time Shipment Tracking</li>
+<li>✓ Trusted Customer Support</li>
 
 
 </ul>
@@ -507,17 +433,13 @@ TRACK YOUR SHIPMENT
 
 
 <h2>
-
-Where Is Your Package?
-
+  Track Your Shipment Anytime, Anywhere
 </h2>
 
-
 <p>
-
-Enter your shipment details and
-get real-time tracking information.
-
+  Enter your Consignment Number (C/N) or AWB Number to get
+  real-time shipment status, delivery updates and complete
+  tracking details across our nationwide network.
 </p>
 
 
@@ -660,8 +582,6 @@ Customer Support
 
 {/* ================= CTA SECTION ================= */}
 
-
-
 <section className="cta-section">
 
 
@@ -672,17 +592,13 @@ Customer Support
 
 
 <h2>
-
-Need Reliable Logistics Support?
-
+  Ready To Ship Anywhere In The World?
 </h2>
 
-
 <p>
-
-Contact WWW Express today
-for customized shipping solutions.
-
+  Get in touch with World Wide Courier Cargo for reliable
+  domestic courier, international shipping and customized
+  cargo solutions at competitive prices.
 </p>
 
 

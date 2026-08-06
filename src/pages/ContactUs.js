@@ -11,136 +11,135 @@ return (
 
     {/* ================= HERO ================= */}
 
-    <section
-        className="contact-hero"
-        style={{
-            backgroundImage:`url(${contactBanner})`
-        }}
-    >
+   <section
+  className="contact-hero"
+  style={{
+    backgroundImage: `url(${contactBanner})`
+  }}
+>
 
-        <div className="contact-overlay"></div>
+  <div className="contact-overlay"></div>
 
-        <div className="container">
+  <div className="container">
 
-            <div className="contact-hero-content">
+    <div className="contact-hero-content">
 
-                <span>CONTACT US</span>
+      <span>CONTACT US</span>
 
-                <h1>
-                    Let's Move Your Business Forward
-                </h1>
+      <h1>
+        We're Here To Support
+        Your Logistics Needs
+      </h1>
 
-                <p>
-                    Our logistics experts are always ready to help you
-                    with transportation, warehousing and supply chain
-                    solutions across India.
-                </p>
+      <p>
+        Get in touch with World Wide Courier Cargo for
+        reliable courier, cargo and logistics solutions.
+        Our experienced team is ready to assist you with
+        shipment inquiries, transportation services and
+        customized logistics support across India.
+      </p>
 
-            </div>
+    </div>
 
-        </div>
+  </div>
 
-    </section>
+</section>
 
     {/* ================= CONTACT INFO ================= */}
 
-    <section className="contact-info-section">
+ <section className="contact-info-section">
 
-        <div className="container">
+  <div className="container">
 
-            <div className="contact-section-heading">
+    <div className="contact-section-heading">
 
-                <span>GET IN TOUCH</span>
+      <span>GET IN TOUCH</span>
 
-                <h2>Contact Information</h2>
+      <h2>
+        Contact World Wide Courier Cargo
+      </h2>
 
-            </div>
+      <p>
+        Our team is always ready to assist you with courier,
+        cargo and logistics solutions. Feel free to contact us
+        for shipment inquiries, business partnerships or any
+        transportation requirements.
+      </p>
 
-            <div className="contact-grid">
+    </div>
 
-              {/* ================= PHONE ================= */}
+    <div className="contact-grid">
 
-<div className="contact-card">
+      {/* ================= PHONE ================= */}
 
-  <div className="contact-icon">
-    📞
+      <div className="contact-card">
+
+        <div className="contact-icon">📞</div>
+
+        <h3>Call Us</h3>
+
+        <p>+91 70426 99313</p>
+
+      </div>
+
+      {/* ================= EMAIL ================= */}
+
+      <div className="contact-card">
+
+        <div className="contact-icon">✉️</div>
+
+        <h3>Email Us</h3>
+
+        <p>info@worldwidecouriercargo.com</p>
+
+      </div>
+
+      {/* ================= OFFICE ================= */}
+
+      <div className="contact-card">
+
+        <div className="contact-icon">📍</div>
+
+        <h3>Corporate Office</h3>
+
+        <p>
+          1st Floor, H. No. 168,<br />
+          Pawan Kataria Road,<br />
+          Gali Number B,<br />
+          Gurugram, Haryana – 122001,<br />
+          India
+        </p>
+
+      </div>
+
+      {/* ================= REGISTRATION ================= */}
+
+      <div className="contact-card">
+
+        <div className="contact-icon">🧾</div>
+
+        <h3>Business Information</h3>
+
+        <p>
+          <strong>Trade Name:</strong><br />
+          World Wide Courier Cargo
+        </p>
+
+        <p>
+          <strong>Legal Name:</strong><br />
+          Shashi Ranjan Panday
+        </p>
+
+        <p>
+          <strong>GSTIN / Registration No.:</strong><br />
+          06DYLPP8013E1ZC
+        </p>
+
+      </div>
+
+    </div>
+
   </div>
-
-  <h3>Call Us</h3>
-
-  <p>
-    +91 99588 26252
-  </p>
-
-  <p>
-    +91 93128 77460
-  </p>
-
-</div>
-
-{/* ================= EMAIL ================= */}
-
-<div className="contact-card">
-
-  <div className="contact-icon">
-    ✉️
-  </div>
-
-  <h3>Email</h3>
-
-  <p>
-    info@ralogistics.in
-  </p>
-
-  <p>
-    support@ralogistics.in
-  </p>
-
-</div>
-
-{/* ================= OFFICE ================= */}
-
-<div className="contact-card">
-
-  <div className="contact-icon">
-    📍
-  </div>
-
-  <h3>Corporate Office</h3>
-
-  <p>
-    New Delhi, India
-  </p>
-
-  <p>
-    Serving PAN India Logistics Network
-  </p>
-
-</div>
-
-{/* ================= HOURS ================= */}
-
-<div className="contact-card">
-
-  <div className="contact-icon">
-    🕒
-  </div>
-
-  <h3>Working Hours</h3>
-
-  <p>
-    Monday – Saturday
-  </p>
-
-  <p>
-    09:00 AM – 07:00 PM
-  </p>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
@@ -154,108 +153,116 @@ return (
 
       {/* ================= LEFT SIDE ================= */}
 
-<div className="contact-form-box">
+      <div className="contact-form-box">
 
-  <h2>Send Us A Message</h2>
+        <h2>
+          Send Us A Message
+        </h2>
 
-  <p>
-    Fill out the form below and our logistics team will contact you
-    as soon as possible.
-  </p>
+        <p>
+          Have a question about our courier, cargo or
+          logistics services? Fill out the form below
+          and our team will get back to you with the
+          right solution as quickly as possible.
+        </p>
 
-  <form className="contact-form">
+        <form className="contact-form">
 
-    <div className="form-group">
-      <input
-        type="text"
-        placeholder="Full Name"
-      />
-    </div>
+          <div className="form-group">
+            <input
+              type="text"
+              placeholder="Full Name"
+            />
+          </div>
 
-    <div className="form-group">
-      <input
-        type="email"
-        placeholder="Email Address"
-      />
-    </div>
+          <div className="form-group">
+            <input
+              type="email"
+              placeholder="Email Address"
+            />
+          </div>
 
-    <div className="form-group">
-      <input
-        type="tel"
-        placeholder="Phone Number"
-      />
-    </div>
+          <div className="form-group">
+            <input
+              type="tel"
+              placeholder="Phone Number"
+            />
+          </div>
 
-    <div className="form-group">
-      <input
-        type="text"
-        placeholder="Company Name"
-      />
-    </div>
+          <div className="form-group">
+            <input
+              type="text"
+              placeholder="Company Name (Optional)"
+            />
+          </div>
 
-    <div className="form-group">
-      <textarea
-        rows="6"
-        placeholder="Tell us about your logistics requirement..."
-      ></textarea>
-    </div>
+          <div className="form-group">
+            <textarea
+              rows="6"
+              placeholder="Tell us about your shipment or logistics requirements..."
+            ></textarea>
+          </div>
 
-    <button
-      type="submit"
-      className="btn-primary"
-    >
-      Send Message
-    </button>
+          <button
+            type="submit"
+            className="btn-primary"
+          >
+            Send Message
+          </button>
 
-  </form>
+        </form>
 
-</div>
+      </div>
 
-{/* ================= RIGHT SIDE ================= */}
+      {/* ================= RIGHT SIDE ================= */}
 
-<div className="company-info">
+      <div className="company-info">
 
-  <h2>Why Contact WWW Express?</h2>
+        <h2>
+          Why Choose World Wide Courier Cargo?
+        </h2>
 
-  <p>
-    We provide reliable logistics and transportation services
-    for businesses across India with a strong distribution
-    network and experienced operations team.
-  </p>
+        <p>
+          World Wide Courier Cargo is committed to providing
+          reliable, secure and cost-effective courier, cargo
+          and logistics solutions. Our experienced team and
+          strong transportation network ensure every shipment
+          is delivered safely and on time.
+        </p>
 
-  <div className="info-list">
+        <div className="info-list">
 
-    <div className="info-item">
-      ✅ Road Transportation
-    </div>
+          <div className="info-item">
+            ✅ Domestic Courier Services
+          </div>
 
-    <div className="info-item">
-      ✅ Air Freight Services
-    </div>
+          <div className="info-item">
+            ✅ Cargo Transportation Solutions
+          </div>
 
-    <div className="info-item">
-      ✅ Warehousing Solutions
-    </div>
+          <div className="info-item">
+            ✅ Road Freight Services
+          </div>
 
-    <div className="info-item">
-      ✅ Express Delivery
-    </div>
+          <div className="info-item">
+            ✅ Express & Time-Critical Deliveries
+          </div>
 
-    <div className="info-item">
-      ✅ PAN India Network
-    </div>
+          <div className="info-item">
+            ✅ PAN India Service Network
+          </div>
 
-    <div className="info-item">
-      ✅ Safe & Secure Delivery
+          <div className="info-item">
+            ✅ Safe, Secure & On-Time Delivery
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
@@ -267,12 +274,13 @@ return (
 
         <div className="map-wrapper">
 
-            <iframe
-                title="WWW Express Location"
-                src="https://www.google.com/maps?q=New+Delhi,+India&output=embed"
-                loading="lazy"
-                allowFullScreen
-            ></iframe>
+          <iframe
+  title="World Wide Courier Cargo - Gurugram Office"
+  src="https://www.google.com/maps?q=H+No+168,+Pawan+Kataria+Road,+Gali+Number+B,+Gurugram,+Haryana+122001,+India&output=embed"
+  loading="lazy"
+  allowFullScreen
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
 
         </div>
 

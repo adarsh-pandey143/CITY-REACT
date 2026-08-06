@@ -28,13 +28,13 @@ return (
 
           <span>WELCOME TO</span>
 
-          <h1>R A LOGISTICS</h1>
+        <h1>World Wide Courier Cargo</h1>
 
-          <p>
-            Delivering reliable logistics, transportation and
-            supply chain solutions across India with
-            speed, safety and commitment.
-          </p>
+<p>
+  World Wide Courier Cargo provides reliable domestic and
+  international courier, cargo and logistics solutions with
+  a commitment to speed, safety and customer satisfaction.
+</p>
 
           <Link
             to="/contact-us"
@@ -61,48 +61,50 @@ return (
 
 <div className="company-content">
 
-  <span className="section-tag">
-    ABOUT COMPANY
-  </span>
+<span className="section-tag">
+  ABOUT COMPANY
+</span>
 
-  <h2>
-    Your Trusted Logistics Partner Across India
-  </h2>
+<h2>
+  Your Trusted Courier & Cargo Partner Across India
+</h2>
 
-  <p>
-    R A LOGISTICS has been providing reliable transportation,
-    courier and supply chain solutions to businesses across
-    India. We combine modern technology, experienced
-    professionals and a strong transportation network to
-    deliver every shipment safely and on time.
-  </p>
+<p>
+  World Wide Courier Cargo is a leading courier, cargo and
+  logistics company committed to providing fast, secure and
+  reliable transportation solutions across India. Backed by
+  a strong delivery network, advanced tracking technology
+  and an experienced team, we ensure every shipment reaches
+  its destination safely and on time.
+</p>
 
-  <p>
-    From small parcels to large commercial consignments,
-    our team ensures secure handling, live tracking and
-    cost-effective logistics solutions that help our
-    customers grow their business.
-  </p>
+<p>
+  From important documents and parcels to commercial cargo
+  and bulk consignments, we offer customized logistics
+  solutions designed to meet the unique requirements of
+  businesses and individuals. Our focus on quality service,
+  timely delivery and customer satisfaction has made us a
+  trusted logistics partner nationwide.
+</p>
+<div className="company-points">
 
-  <div className="company-points">
-
-    <div className="point">
-      ✔ PAN India Network
-    </div>
-
-    <div className="point">
-      ✔ Fast & Secure Delivery
-    </div>
-
-    <div className="point">
-      ✔ Experienced Logistics Team
-    </div>
-
-    <div className="point">
-      ✔ Real-Time Shipment Tracking
-    </div>
-
+  <div className="point">
+    ✔ Domestic & International Network
   </div>
+
+  <div className="point">
+    ✔ Fast, Safe & On-Time Delivery
+  </div>
+
+  <div className="point">
+    ✔ Real-Time Shipment Tracking
+  </div>
+
+  <div className="point">
+    ✔ Customer-Focused Logistics Solutions
+  </div>
+
+</div>
 
 </div>
 
@@ -134,8 +136,14 @@ return (
       <span>WHY CHOOSE US</span>
 
       <h2>
-        We Deliver More Than Packages
+        Delivering Excellence, Every Step Of The Way
       </h2>
+
+      <p>
+        World Wide Courier Cargo combines speed, security and
+        technology to provide dependable courier, cargo and
+        logistics solutions for businesses and individuals.
+      </p>
 
     </div>
 
@@ -143,59 +151,62 @@ return (
 
       <div className="why-card">
 
-  <div className="why-icon">🚚</div>
+        <div className="why-icon">🚚</div>
 
-  <h3>Fast Delivery</h3>
+        <h3>Fast & On-Time Delivery</h3>
 
-  <p>
-    We ensure every shipment reaches its destination safely,
-    quickly and within the committed delivery schedule.
-  </p>
+        <p>
+          Our dedicated transportation network ensures every
+          shipment is delivered safely and within the promised
+          delivery schedule.
+        </p>
 
-</div>
+      </div>
 
-<div className="why-card">
+      <div className="why-card">
 
-  <div className="why-icon">📦</div>
+        <div className="why-icon">📦</div>
 
-  <h3>Safe Cargo Handling</h3>
+        <h3>Secure Cargo Handling</h3>
 
-  <p>
-    Every package is handled with professional care using
-    secure loading, unloading and transportation practices.
-  </p>
+        <p>
+          Every parcel and cargo shipment is handled with
+          professional care to ensure maximum safety during
+          transit and delivery.
+        </p>
 
-</div>
+      </div>
 
-<div className="why-card">
+      <div className="why-card">
 
-  <div className="why-icon">📍</div>
+        <div className="why-icon">📍</div>
 
-  <h3>Live Tracking</h3>
+        <h3>Real-Time Shipment Tracking</h3>
 
-  <p>
-    Stay updated with your shipment status through our
-    tracking system and customer support team.
-  </p>
+        <p>
+          Track your shipment anytime with our advanced
+          tracking system and receive timely delivery updates.
+        </p>
 
-</div>
+      </div>
 
-<div className="why-card">
+      <div className="why-card">
 
-  <div className="why-icon">🤝</div>
+        <div className="why-icon">🌍</div>
 
-  <h3>Trusted Service</h3>
+        <h3>Nationwide & Worldwide Network</h3>
 
-  <p>
-    Years of industry experience and thousands of successful
-    deliveries have made us a trusted logistics partner.
-  </p>
+        <p>
+          We provide reliable domestic and international
+          courier and cargo services through our extensive
+          logistics network.
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
@@ -223,41 +234,45 @@ return (
 <div className="chairman-content">
 
   <span className="section-tag">
-    CHAIRMAN MESSAGE
+    CHAIRMAN'S MESSAGE
   </span>
 
   <h2>
-    A Message From Our Leadership
+    A Message From Our Founder & Chairman
   </h2>
 
   <p>
-    At R A LOGISTICS, our mission has always been to provide
-    dependable, transparent and customer-focused logistics
-    solutions. Every shipment entrusted to us represents our
-    commitment to quality, reliability and excellence.
+    At World Wide Courier Cargo, we believe that every shipment
+    represents a promise of trust, reliability and customer
+    satisfaction. Our mission is to provide fast, secure and
+    efficient courier, cargo and logistics solutions that
+    consistently exceed our customers' expectations.
   </p>
 
   <p>
-    We continuously invest in our people, transportation
-    network and technology to deliver faster, safer and more
-    efficient logistics services across India. Our customers'
-    trust inspires us to improve every day.
+    Through continuous investment in advanced technology,
+    a strong transportation network and a dedicated team of
+    professionals, we strive to deliver excellence in every
+    shipment. Our focus has always been on building long-term
+    relationships through quality service, transparency and
+    operational excellence.
   </p>
 
   <p>
-    We sincerely thank all our clients, partners and employees
-    for being an important part of our journey. Together, we
-    will continue building a stronger and more reliable
-    logistics network for the future.
+    I sincerely thank our valued customers, business partners
+    and employees for their continued trust and support.
+    Together, we will continue expanding our network and
+    delivering world-class courier and cargo solutions for
+    many years to come.
   </p>
 
   <div className="signature">
 
-    <h4>Dinanath Upadhyay</h4>
+    <h4>Shashi Ranjan Panday</h4>
 
     <span>Founder & Chairman</span>
 
-    <p>R A LOGISTICS</p>
+    <p>World Wide Courier Cargo</p>
 
   </div>
 
@@ -279,55 +294,60 @@ return (
 
       {/* ================= VISION ================= */}
 
-<div className="vmv-card">
+      <div className="vmv-card">
 
-  <div className="vmv-icon">👁️</div>
+        <div className="vmv-icon">🌍</div>
 
-  <h3>Our Vision</h3>
+        <h3>Our Vision</h3>
 
-  <p>
-    To become India's most trusted logistics company by
-    delivering innovative, reliable and customer-focused
-    transportation solutions.
-  </p>
+        <p>
+          To become a globally trusted courier, cargo and
+          logistics company by delivering innovative,
+          reliable and customer-centric transportation
+          solutions that connect businesses and people
+          across India and the world.
+        </p>
 
-</div>
+      </div>
 
-{/* ================= MISSION ================= */}
+      {/* ================= MISSION ================= */}
 
-<div className="vmv-card">
+      <div className="vmv-card">
 
-  <div className="vmv-icon">🎯</div>
+        <div className="vmv-icon">🚀</div>
 
-  <h3>Our Mission</h3>
+        <h3>Our Mission</h3>
 
-  <p>
-    To provide safe, timely and cost-effective logistics
-    services while continuously improving our technology,
-    operations and customer experience.
-  </p>
+        <p>
+          To provide fast, secure and cost-effective courier,
+          cargo and logistics services through advanced
+          technology, an experienced team and an efficient
+          transportation network while exceeding customer
+          expectations.
+        </p>
 
-</div>
+      </div>
 
-{/* ================= VALUES ================= */}
+      {/* ================= VALUES ================= */}
 
-<div className="vmv-card">
+      <div className="vmv-card">
 
-  <div className="vmv-icon">⭐</div>
+        <div className="vmv-icon">🤝</div>
 
-  <h3>Our Values</h3>
+        <h3>Our Core Values</h3>
 
-  <p>
-    Integrity, customer satisfaction, teamwork, innovation,
-    transparency and commitment drive every shipment we
-    deliver.
-  </p>
+        <p>
+          Integrity, reliability, customer satisfaction,
+          transparency, innovation and operational
+          excellence are the values that guide every
+          shipment we deliver.
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
@@ -341,17 +361,17 @@ return (
 
       <div className="about-stat-card">
         <h2>15+</h2>
-        <span>Years Experience</span>
+        <span>Years of Industry Experience</span>
+      </div>
+
+      <div className="about-stat-card">
+        <h2>10K+</h2>
+        <span>Successful Shipments Delivered</span>
       </div>
 
       <div className="about-stat-card">
         <h2>5000+</h2>
-        <span>Happy Clients</span>
-      </div>
-
-      <div className="about-stat-card">
-        <h2>150+</h2>
-        <span>Vehicles</span>
+        <span>Satisfied Customers</span>
       </div>
 
       <div className="about-stat-card">
@@ -371,18 +391,23 @@ return (
 
   <div className="container">
 
-    <h2>Let's Move Your Business Forward</h2>
+    <h2>
+      Ready To Ship With World Wide Courier Cargo?
+    </h2>
 
     <p>
-      Partner with R A LOGISTICS for secure, fast and
-      dependable transportation solutions across India.
+      Whether you need domestic courier services,
+      international cargo solutions or customized
+      logistics support, our team is ready to help
+      your business move faster with reliable and
+      cost-effective transportation services.
     </p>
 
     <Link
-      to="/contact-us"
+      to="/NotFound"
       className="btn-primary"
     >
-      Get a Free Quote
+      Request a Free Quote
     </Link>
 
   </div>

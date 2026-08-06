@@ -17,304 +17,212 @@ return (
 
 {/* ================= HERO ================= */}
 
-
 <section
-className="service-hero"
-style={{
-backgroundImage:`url(${warehouseImage})`
-}}
+  className="service-hero"
+  style={{
+    backgroundImage: `url(${warehouseImage})`
+  }}
 >
 
+  <div className="service-overlay"></div>
 
-<div className="service-overlay"></div>
+  <div className="container">
 
+    <div className="service-hero-content">
 
-<div className="container">
+      <span>
+        WAREHOUSING & DISTRIBUTION
+      </span>
 
+      <h1>
+        Secure Warehouse & Inventory Management Solutions
+      </h1>
 
-<div className="service-hero-content">
+      <p>
+        World Wide Courier Cargo offers modern warehousing,
+        inventory management and distribution services to
+        help businesses store, manage and deliver goods
+        efficiently. 
+      </p>
 
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Free Quote
+      </Link>
 
-<span>
-WAREHOUSING SOLUTIONS
-</span>
+    </div>
 
-
-<h1>
-Smart Warehouse Management
-</h1>
-
-
-<p>
-
-Secure storage, inventory management
-and distribution solutions for your business.
-
-</p>
-
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Get Quote
-
-</Link>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
-
-
-
 
 {/* ================= CONTENT ================= */}
 
-
-
 <section className="service-content-section">
 
+  <div className="container">
 
-<div className="container">
+    {/* ================= INTRO ================= */}
 
+    <div className="service-intro">
 
+      <span className="section-tag">
+        WAREHOUSING SOLUTIONS
+      </span>
 
-<div className="service-intro">
+      <h2>
+        Smart Warehousing & Inventory Management Services
+      </h2>
 
+      <p>
+        World Wide Courier Cargo provides secure warehousing,
+        inventory management and distribution solutions
+        designed to support businesses of every size. Our
+        modern storage facilities, efficient operations and
+        experienced logistics professionals ensure your goods
+        remain safe, organized and ready for timely dispatch.
+      </p>
 
-<h2>
+    </div>
 
-WAREHOUSE SERVICES
+    {/* ================= FEATURES ================= */}
 
-</h2>
+    <div className="feature-grid">
 
+      <div className="feature-card">
 
-<p>
+        <h3>🏢 Secure Storage Facilities</h3>
 
-WWW Express provides complete warehousing
-solutions with modern facilities, technology
-and experienced logistics professionals.
+        <p>
+          Spacious and secure warehouses designed
+          for safe storage of commercial goods,
+          parcels and industrial cargo.
+        </p>
 
-</p>
+      </div>
 
+      <div className="feature-card">
 
-</div>
+        <h3>📊 Inventory Management</h3>
 
+        <p>
+          Efficient inventory monitoring with
+          organized stock control for improved
+          supply chain operations.
+        </p>
 
+      </div>
 
+      <div className="feature-card">
 
+        <h3>📦 Pick, Pack & Dispatch</h3>
 
+        <p>
+          Fast order processing, professional
+          packaging and accurate dispatch for
+          timely deliveries.
+        </p>
 
+      </div>
 
-<div className="feature-grid">
+      <div className="feature-card">
 
+        <h3>🚚 Distribution Services</h3>
 
+        <p>
+          Seamless distribution solutions ensuring
+          smooth movement of goods across multiple
+          destinations.
+        </p>
 
-<div className="feature-card">
+      </div>
 
+      <div className="feature-card">
 
-<h3>
-🏢 Storage Facility
-</h3>
+        <h3>🛡 Safe Cargo Handling</h3>
 
+        <p>
+          Professional loading, unloading and
+          storage practices to protect every
+          shipment from damage.
+        </p>
 
-<p>
+      </div>
 
-Secure and organized storage
-for all types of goods.
+      <div className="feature-card">
 
-</p>
+        <h3>📍 Logistics Coordination</h3>
 
+        <p>
+          Integrated warehouse and transportation
+          support for faster order fulfillment
+          and efficient supply chain management.
+        </p>
 
-</div>
+      </div>
 
+    </div>
 
+    {/* ================= BENEFITS ================= */}
 
+    <div className="service-benefits">
 
+      <h2>
+        Why Choose Our Warehousing Services?
+      </h2>
 
-<div className="feature-card">
+      <ul>
 
+        <li>✓ Secure and well-managed warehouse facilities</li>
 
-<h3>
-📊 Inventory Management
-</h3>
+        <li>✓ Efficient inventory management system</li>
 
+        <li>✓ Professional cargo handling and storage</li>
 
-<p>
+        <li>✓ Fast pick, pack and dispatch operations</li>
 
-Real-time inventory control
-and stock management.
+        <li>✓ Reliable distribution and logistics support</li>
 
-</p>
+        <li>✓ Flexible storage solutions for businesses</li>
 
+        <li>✓ Experienced warehouse management team</li>
 
-</div>
+        <li>✓ End-to-end supply chain assistance</li>
 
+      </ul>
 
+    </div>
 
+    {/* ================= CTA ================= */}
 
+    <div className="service-cta">
 
-<div className="feature-card">
+      <h2>
+        Looking For Reliable Warehousing Solutions?
+      </h2>
 
+      <p>
+        Partner with World Wide Courier Cargo for
+        secure warehousing, efficient inventory
+        management and dependable distribution
+        services that keep your supply chain moving
+        smoothly and efficiently.
+      </p>
 
-<h3>
-📦 Pick & Pack
-</h3>
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Free Quote
+      </Link>
 
+    </div>
 
-<p>
-
-Fast order processing and
-efficient packaging solutions.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div className="feature-card">
-
-
-<h3>
-🚚 Distribution
-</h3>
-
-
-<p>
-
-Smooth transportation and
-supply chain management.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-{/* ================= BENEFITS ================= */}
-
-
-
-<div className="service-benefits">
-
-
-<h2>
-
-Why Choose Our Warehouse?
-
-</h2>
-
-
-
-<ul>
-
-
-<li>
-✓ Strategically located warehouses
-</li>
-
-
-<li>
-✓ Advanced inventory technology
-</li>
-
-
-<li>
-✓ Secure storage environment
-</li>
-
-
-<li>
-✓ Professional handling team
-</li>
-
-
-<li>
-✓ Complete logistics support
-</li>
-
-
-</ul>
-
-
-</div>
-
-
-
-
-
-
-
-{/* ================= CTA ================= */}
-
-
-
-<div className="service-cta">
-
-
-<h2>
-
-Need Reliable Warehousing?
-
-</h2>
-
-
-<p>
-
-Optimize your supply chain with
-WWW Express warehouse solutions.
-
-</p>
-
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Contact Us
-
-</Link>
-
-
-
-</div>
-
-
-
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
 
 </div>
 

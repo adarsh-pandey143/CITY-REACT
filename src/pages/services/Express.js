@@ -19,305 +19,205 @@ return (
 
 
 <section
-className="service-hero"
-style={{
-backgroundImage:`url(${expressImage})`
-}}
+  className="service-hero"
+  style={{
+    backgroundImage: `url(${expressImage})`
+  }}
 >
 
+  <div className="service-overlay"></div>
 
-<div className="service-overlay"></div>
+  <div className="container">
 
+    <div className="service-hero-content">
 
-<div className="container">
+      <span>
+        EXPRESS DELIVERY
+      </span>
 
+      <h1>
+        Fast, Reliable & Time-Critical Delivery Services
+      </h1>
 
-<div className="service-hero-content">
+      <p>
+        World Wide Courier Cargo provides express delivery
+        solutions for urgent documents, parcels and commercial
+        shipments. We ensure fast transit, secure handling and
+        on-time delivery through our trusted logistics network.
+      </p>
 
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Free Quote
+      </Link>
 
-<span>
-EXPRESS LOGISTICS
-</span>
+    </div>
 
-
-<h1>
-Express Delivery Services
-</h1>
-
-
-<p>
-
-Fast and secure delivery solutions
-for your urgent business requirements.
-
-</p>
-
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Get Quote
-
-</Link>
-
-
-</div>
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
-
-
-
 
 {/* ================= CONTENT ================= */}
 
-
-
 <section className="service-content-section">
 
+  <div className="container">
 
-<div className="container">
+    {/* ================= INTRO ================= */}
 
+    <div className="service-intro">
 
+      <span className="section-tag">
+        EXPRESS DELIVERY SOLUTIONS
+      </span>
 
-<div className="service-intro">
+      <h2>
+        Fast, Secure & Time-Sensitive Delivery Services
+      </h2>
 
+      <p>
+        World Wide Courier Cargo specializes in express
+        delivery solutions for businesses and individuals
+        who require fast, reliable and secure transportation.
+        Whether it's important documents, parcels or commercial
+        shipments, we ensure every delivery reaches its
+        destination safely and on schedule.
+      </p>
 
-<h2>
+    </div>
 
-AIR FREIGHT - EXPRESS
+    {/* ================= FEATURES ================= */}
 
-</h2>
+    <div className="feature-grid">
 
+      <div className="feature-card">
 
-<p>
+        <h3>⚡ Same Day Delivery</h3>
 
-WWW Express provides reliable express
-delivery solutions designed for urgent
-and time-sensitive shipments.
+        <p>
+          Rapid delivery solutions for urgent shipments
+          requiring immediate transportation.
+        </p>
 
-Our priority is speed, safety and customer
-satisfaction.
+      </div>
 
-</p>
+      <div className="feature-card">
 
+        <h3>🚚 Next Day Delivery</h3>
 
-</div>
+        <p>
+          Reliable next-day delivery service with
+          committed transit schedules.
+        </p>
 
+      </div>
 
+      <div className="feature-card">
 
+        <h3>📍 Live Shipment Tracking</h3>
 
+        <p>
+          Monitor your shipment in real time from
+          pickup to final delivery.
+        </p>
 
+      </div>
 
+      <div className="feature-card">
 
-<div className="feature-grid">
+        <h3>📦 Secure Package Handling</h3>
 
+        <p>
+          Every shipment is handled carefully to
+          ensure maximum safety during transit.
+        </p>
 
+      </div>
 
-<div className="feature-card">
+      <div className="feature-card">
 
+        <h3>🕒 Time-Critical Deliveries</h3>
 
-<h3>
-⚡ Same Day Delivery
-</h3>
+        <p>
+          Dedicated transportation solutions for
+          urgent business and commercial consignments.
+        </p>
 
+      </div>
 
-<p>
+      <div className="feature-card">
 
-Quick delivery solutions for
-urgent shipments.
+        <h3>🤝 Dedicated Customer Support</h3>
 
-</p>
+        <p>
+          Our support team keeps you informed and
+          assists you throughout the delivery process.
+        </p>
 
+      </div>
 
-</div>
+    </div>
 
+    {/* ================= BENEFITS ================= */}
 
+    <div className="service-benefits">
 
+      <h2>
+        Why Choose Our Express Delivery Service?
+      </h2>
 
+      <ul>
 
-<div className="feature-card">
+        <li>✓ Fast and dependable delivery solutions</li>
 
+        <li>✓ Priority handling for urgent shipments</li>
 
-<h3>
-🚚 Next Day Delivery
-</h3>
+        <li>✓ Real-time shipment tracking</li>
 
+        <li>✓ Safe and secure package transportation</li>
 
-<p>
+        <li>✓ Experienced logistics professionals</li>
 
-Guaranteed delivery schedules
-with dedicated routes.
+        <li>✓ Wide service coverage across India</li>
 
-</p>
+        <li>✓ Transparent communication and customer support</li>
 
+        <li>✓ Cost-effective express logistics solutions</li>
 
-</div>
+      </ul>
 
+    </div>
 
+    {/* ================= CTA ================= */}
 
+    <div className="service-cta">
 
+      <h2>
+        Need An Urgent Delivery Solution?
+      </h2>
 
-<div className="feature-card">
+      <p>
+        Contact World Wide Courier Cargo today for
+        fast, secure and reliable express delivery
+        services. Our logistics experts are ready
+        to provide customized solutions for your
+        business and personal shipping needs.
+      </p>
 
+      <Link
+        to="/NotFound"
+        className="btn-primary"
+      >
+        Request A Free Quote
+      </Link>
 
-<h3>
-📍 Real Time Tracking
-</h3>
+    </div>
 
-
-<p>
-
-Track your shipment status
-anytime anywhere.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div className="feature-card">
-
-
-<h3>
-📦 Secure Handling
-</h3>
-
-
-<p>
-
-Professional packaging and
-careful cargo management.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-{/* ================= BENEFITS ================= */}
-
-
-
-<div className="service-benefits">
-
-
-<h2>
-
-Why Choose Express Service?
-
-</h2>
-
-
-
-<ul>
-
-
-<li>
-✓ Fast delivery for urgent shipments
-</li>
-
-
-<li>
-✓ Priority shipment handling
-</li>
-
-
-<li>
-✓ Real-time shipment monitoring
-</li>
-
-
-<li>
-✓ Reliable transportation network
-</li>
-
-
-<li>
-✓ Professional logistics support
-</li>
-
-
-</ul>
-
-
-</div>
-
-
-
-
-
-
-
-{/* ================= CTA ================= */}
-
-
-
-<div className="service-cta">
-
-
-<h2>
-
-Need Urgent Delivery?
-
-</h2>
-
-
-<p>
-
-Get in touch with WWW Express
-for express shipment solutions.
-
-</p>
-
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Contact Us
-
-</Link>
-
-
-
-</div>
-
-
-
-
-
-</div>
-
+  </div>
 
 </section>
-
-
-
 
 </div>
 

@@ -201,14 +201,15 @@
 
 
 
-.footer-bottom span {
+.footer-bottom span{
+    color: var(--primary);
+    font-weight: 700;
+    margin-left: 6px;
+    transition: .3s;
+}
 
-    color:#38bdf8;
-
-    font-weight:600;
-
-    margin-left:5px;
-
+.footer-bottom span:hover{
+    color: var(--primary-dark);
 }
 
 

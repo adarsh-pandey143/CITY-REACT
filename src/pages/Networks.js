@@ -29,35 +29,30 @@ style={{
 
 <div className="container">
 
-
 <div className="network-hero-content">
 
+  <span>
+    OUR NETWORK
+  </span>
 
-<span>
-OUR NETWORK
-</span>
+  <h1>
+    A Strong Nationwide Logistics Network
+  </h1>
 
+  <p>
+    With an extensive network of branches, transportation
+    partners and delivery hubs, World Wide Courier Cargo
+    ensures safe, timely and efficient movement of
+    shipments across India, backed by advanced tracking
+    technology and dedicated customer support.
+  </p>
 
-<h1>
-Strong Logistics Network Across India
-</h1>
-
-
-<p>
-
-Connecting businesses with reliable
-transportation and delivery solutions.
-
-</p>
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-Get Quote
-</Link>
-
+  <Link
+    to="/NotFound"
+    className="btn-primary"
+  >
+    Get Free Quote
+  </Link>
 
 </div>
 
@@ -86,144 +81,98 @@ Get Quote
 
 <div className="network-intro">
 
+  <h2>
+    Nationwide & Worldwide Logistics Network
+  </h2>
 
-<h2>
-Nationwide Logistics Coverage
-</h2>
-
-
-<p>
-
-WWW Express has developed a strong
-transportation network to provide fast,
-safe and reliable delivery solutions.
-Our extensive network helps businesses
-move goods efficiently across India.
-
-</p>
-
+  <p>
+    World Wide Courier Cargo has built a strong and
+    reliable logistics network to provide seamless
+    courier, cargo and transportation services across
+    India and international destinations. Our extensive
+    branch network, experienced professionals and modern
+    logistics infrastructure ensure every shipment is
+    delivered safely, efficiently and on time.
+  </p>
 
 </div>
-
-
-
-
-
 
 
 {/* ================= CARDS ================= */}
 
-
-
 <div className="network-grid">
 
+  <div className="network-card">
 
+    <div className="network-icon">
+      🚚
+    </div>
 
-<div className="network-card">
+    <h3>
+      Road Transportation
+    </h3>
 
+    <p>
+      Our extensive road transportation network ensures
+      fast, secure and on-time movement of parcels,
+      cargo and commercial shipments across India.
+    </p>
 
-<div className="network-icon">
-🚚
-</div>
+  </div>
 
+  <div className="network-card">
 
-<h3>
-Road Connectivity
-</h3>
+    <div className="network-icon">
+      🏢
+    </div>
 
+    <h3>
+      Branch Network
+    </h3>
 
-<p>
+    <p>
+      Strategically located branches and service centers
+      enable efficient pickup, processing and timely
+      delivery across multiple regions.
+    </p>
 
-Strong road transportation network
-for smooth movement of cargo.
+  </div>
 
-</p>
+  <div className="network-card">
 
+    <div className="network-icon">
+      📦
+    </div>
 
-</div>
+    <h3>
+      Smart Distribution
+    </h3>
 
+    <p>
+      Our organized distribution system ensures smooth
+      handling, secure storage and reliable last-mile
+      delivery for every shipment.
+    </p>
 
+  </div>
 
+  <div className="network-card">
 
+    <div className="network-icon">
+      🌍
+    </div>
 
-<div className="network-card">
+    <h3>
+      Nationwide Coverage
+    </h3>
 
+    <p>
+      Serving businesses and individuals through a
+      comprehensive logistics network connecting major
+      cities and commercial hubs across India.
+    </p>
 
-<div className="network-icon">
-🏢
-</div>
-
-
-<h3>
-Branch Network
-</h3>
-
-
-<p>
-
-Strategically located branches
-for better service coverage.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div className="network-card">
-
-
-<div className="network-icon">
-📦
-</div>
-
-
-<h3>
-Distribution Network
-</h3>
-
-
-<p>
-
-Efficient distribution system
-for timely deliveries.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div className="network-card">
-
-
-<div className="network-icon">
-🌐
-</div>
-
-
-<h3>
-Pan India Reach
-</h3>
-
-
-<p>
-
-Connecting major cities and
-business locations across India.
-
-</p>
-
-
-</div>
-
-
+  </div>
 
 </div>
 
@@ -238,59 +187,60 @@ business locations across India.
 
 <div className="coverage-box">
 
+  <h2>
+    Our Network Strength
+  </h2>
 
-<h2>
-Our Network Strength
-</h2>
+  <p>
+    World Wide Courier Cargo is committed to delivering
+    reliable courier, cargo and logistics services through
+    an extensive transportation network, experienced
+    professionals and customer-focused operations.
+  </p>
 
+  <div className="coverage-grid">
 
+    <div>
 
-<div className="coverage-grid">
+      <h3>100+</h3>
 
+      <p>
+        Service Locations
+      </p>
 
-<div>
-<h3>
-100+
-</h3>
-<p>
-Locations Covered
-</p>
-</div>
+    </div>
 
+    <div>
 
-<div>
-<h3>
-24/7
-</h3>
-<p>
-Customer Support
-</p>
-</div>
+      <h3>24×7</h3>
 
+      <p>
+        Customer Support
+      </p>
 
-<div>
-<h3>
-10+
-</h3>
-<p>
-Years Experience
-</p>
-</div>
+    </div>
 
+    <div>
 
-<div>
-<h3>
-1000+
-</h3>
-<p>
-Successful Deliveries
-</p>
-</div>
+      <h3>10+</h3>
 
+      <p>
+        Years of Experience
+      </p>
 
+    </div>
 
-</div>
+    <div>
 
+      <h3>1000+</h3>
+
+      <p>
+        Successful Deliveries
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -306,29 +256,25 @@ Successful Deliveries
 
 <div className="network-cta">
 
+  <h2>
+    Let's Build A Stronger Supply Chain Together
+  </h2>
 
-<h2>
-Need Logistics Support?
-</h2>
+  <p>
+    Partner with World Wide Courier Cargo for
+    fast, secure and technology-driven courier,
+    cargo and logistics services across India.
+    We are committed to delivering reliable
+    transportation solutions for businesses
+    of every size.
+  </p>
 
-
-<p>
-
-Connect with WWW Express for
-complete transportation solutions.
-
-</p>
-
-
-<Link
-to="/contact-us"
-className="btn-primary"
->
-
-Contact Us
-
-</Link>
-
+  <Link
+    to="/contact-us"
+    className="btn-primary"
+  >
+    Contact Our Team
+  </Link>
 
 </div>
 

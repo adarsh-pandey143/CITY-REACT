@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 import "./Header.css";
- import logo from "../assets/images/logo2.png";
+ import logo from "../assets/images/logo2-removebg-preview.png";
 
 const Header = () => {
 
@@ -124,37 +124,27 @@ const Header = () => {
 
               <div className="header-contact">
 
-                <a href="tel:+919958826252">
+                <a href="tel:+917042699313">
 
                   <FaPhoneAlt />
 
-                  <span>+91 99588 26252</span>
+                  <span>+91 70426 99313</span>
 
                 </a>
 
-                <a href="tel:+919312877460">
-
-                  <FaPhoneAlt />
-
-                  <span>+91 93128 77460</span>
-
-                </a>
-
-                <a href="mailto:info@ralogistics.com">
+                <a href="mailto:info@worldwidecouriercargo.com">
 
                   <FaEnvelope />
 
-                  <span>info@wwwexpress.com</span>
+                  <span>info@worldwidecouriercargo.com</span>
 
                 </a>
 
               </div>
 
               <div className="header-right-top">
-
-                <span>Fast • Safe • Reliable Logistics</span>
-
-              </div>
+    <span>🧾 GSTIN : 06DYLPP8013E1ZC</span>
+</div>
 
             </div>
 

@@ -12,130 +12,140 @@ return (
 
     {/* ================= HERO ================= */}
 
-    <section
-        className="career-hero"
-        style={{
-            backgroundImage:`url(${careerBanner})`
-        }}
-    >
+   <section
+  className="career-hero"
+  style={{
+    backgroundImage: `url(${careerBanner})`
+  }}
+>
 
-        <div className="career-overlay"></div>
+  <div className="career-overlay"></div>
 
-        <div className="container">
+  <div className="container">
 
-            <div className="career-hero-content">
+    <div className="career-hero-content">
 
-                <span>CAREER</span>
+      <span>CAREERS</span>
 
-                <h1>
-                    Build Your Career
-                    With WWW Express
-                </h1>
+      <h1>
+        Build Your Future With
+        World Wide Courier Cargo
+      </h1>
 
-                <p>
-                    Join a fast growing logistics company where
-                    innovation, teamwork and customer satisfaction
-                    drive everything we do.
-                </p>
+      <p>
+        Join World Wide Courier Cargo and become part of a
+        dynamic team delivering trusted courier, cargo and
+        logistics solutions. We believe in innovation,
+        teamwork and creating opportunities for talented
+        professionals to grow and succeed.
+      </p>
 
-                <Link
-                    to="/contact-us"
-                    className="btn-primary"
-                >
-                    Apply Today
-                </Link>
+      <Link
+        to="/contact-us"
+        className="btn-primary"
+      >
+        Apply Now
+      </Link>
 
-            </div>
+    </div>
 
-        </div>
+  </div>
 
-    </section>
+</section>
 
     {/* ================= WHY JOIN ================= */}
 
-    <section className="why-join">
+<section className="why-join">
 
-        <div className="container">
+  <div className="container">
 
-            <div className="career-section-heading">
+    <div className="career-section-heading">
 
-                <span>WHY JOIN US</span>
+      <span>WHY JOIN US</span>
 
-                <h2>
-                    Grow With One Of India's Trusted Logistics Companies
-                </h2>
+      <h2>
+        Build A Rewarding Career With World Wide Courier Cargo
+      </h2>
 
-            </div>
+      <p>
+        At World Wide Courier Cargo, we believe our people are
+        our greatest strength. We provide a professional work
+        environment where talent is recognized, innovation is
+        encouraged and every employee has the opportunity to
+        learn, grow and succeed.
+      </p>
 
-            <div className="join-grid">
+    </div>
 
+    <div className="join-grid">
 
-              {/* ================= CARD 1 ================= */}
+      {/* ================= CARD 1 ================= */}
 
-<div className="join-card">
+      <div className="join-card">
 
-  <div className="join-icon">🚀</div>
+        <div className="join-icon">🚀</div>
 
-  <h3>Career Growth</h3>
+        <h3>Career Growth</h3>
 
-  <p>
-    We believe in developing talent by providing continuous
-    learning opportunities, training programs and career
-    advancement paths.
-  </p>
+        <p>
+          Build a successful career through continuous learning,
+          professional development and long-term growth
+          opportunities within our organization.
+        </p>
 
-</div>
+      </div>
 
-{/* ================= CARD 2 ================= */}
+      {/* ================= CARD 2 ================= */}
 
-<div className="join-card">
+      <div className="join-card">
 
-  <div className="join-icon">🤝</div>
+        <div className="join-icon">🤝</div>
 
-  <h3>Supportive Team</h3>
+        <h3>Collaborative Workplace</h3>
 
-  <p>
-    Work with experienced professionals in a collaborative
-    environment where every employee is valued and respected.
-  </p>
+        <p>
+          Work alongside experienced professionals in a positive,
+          respectful and team-oriented environment that values
+          every individual's contribution.
+        </p>
 
-</div>
+      </div>
 
-{/* ================= CARD 3 ================= */}
+      {/* ================= CARD 3 ================= */}
 
-<div className="join-card">
+      <div className="join-card">
 
-  <div className="join-icon">📈</div>
+        <div className="join-icon">📚</div>
 
-  <h3>Learning Culture</h3>
+        <h3>Learning & Development</h3>
 
-  <p>
-    Gain practical experience in logistics, transportation,
-    warehousing and supply chain management while building
-    your professional skills.
-  </p>
+        <p>
+          Gain hands-on experience in courier, cargo,
+          transportation and logistics while enhancing your
+          technical and leadership skills.
+        </p>
 
-</div>
+      </div>
 
-{/* ================= CARD 4 ================= */}
+      {/* ================= CARD 4 ================= */}
 
-<div className="join-card">
+      <div className="join-card">
 
-  <div className="join-icon">🏆</div>
+        <div className="join-icon">🏆</div>
 
-  <h3>Performance Rewards</h3>
+        <h3>Recognition & Rewards</h3>
 
-  <p>
-    We recognize dedication and excellence through
-    performance-based growth, appreciation and long-term
-    career opportunities.
-  </p>
+        <p>
+          We appreciate dedication and outstanding performance
+          through career advancement, recognition programs and
+          rewarding opportunities.
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
@@ -147,9 +157,18 @@ return (
 
     <div className="career-section-heading">
 
-      <span>CURRENT OPENINGS</span>
+      <span>CURRENT OPPORTUNITIES</span>
 
-      <h2>Available Positions</h2>
+      <h2>
+        Join Our Growing Team
+      </h2>
+
+      <p>
+        World Wide Courier Cargo is looking for passionate,
+        dedicated and talented professionals who are ready
+        to build a successful career in the courier, cargo
+        and logistics industry.
+      </p>
 
     </div>
 
@@ -157,99 +176,99 @@ return (
 
       {/* ================= JOB 1 ================= */}
 
-<div className="job-card">
+      <div className="job-card">
 
-  <div className="job-info">
+        <div className="job-info">
 
-    <h3>Delivery Executive</h3>
+          <h3>Delivery Executive</h3>
 
-    <p>
-      Full Time • Delhi NCR
-    </p>
+          <p>
+            📍 Delhi NCR • Full Time
+          </p>
+
+        </div>
+
+        <Link
+          to="/contact-us"
+          className="apply-btn"
+        >
+          Apply Now
+        </Link>
+
+      </div>
+
+      {/* ================= JOB 2 ================= */}
+
+      <div className="job-card">
+
+        <div className="job-info">
+
+          <h3>Operations Executive</h3>
+
+          <p>
+            📍 Noida • Full Time
+          </p>
+
+        </div>
+
+        <Link
+          to="/contact-us"
+          className="apply-btn"
+        >
+          Apply Now
+        </Link>
+
+      </div>
+
+      {/* ================= JOB 3 ================= */}
+
+      <div className="job-card">
+
+        <div className="job-info">
+
+          <h3>Warehouse Supervisor</h3>
+
+          <p>
+            📍 Ghaziabad • Full Time
+          </p>
+
+        </div>
+
+        <Link
+          to="/contact-us"
+          className="apply-btn"
+        >
+          Apply Now
+        </Link>
+
+      </div>
+
+      {/* ================= JOB 4 ================= */}
+
+      <div className="job-card">
+
+        <div className="job-info">
+
+          <h3>Customer Support Executive</h3>
+
+          <p>
+            📍 New Delhi • Full Time
+          </p>
+
+        </div>
+
+        <Link
+          to="/contact-us"
+          className="apply-btn"
+        >
+          Apply Now
+        </Link>
+
+      </div>
+
+    </div>
 
   </div>
-
-  <Link
-    to="/contact-us"
-    className="apply-btn"
-  >
-    Apply Now
-  </Link>
-
-</div>
-
-{/* ================= JOB 2 ================= */}
-
-<div className="job-card">
-
-  <div className="job-info">
-
-    <h3>Operations Executive</h3>
-
-    <p>
-      Full Time • Noida
-    </p>
-
-  </div>
-
-  <Link
-    to="/contact-us"
-    className="apply-btn"
-  >
-    Apply Now
-  </Link>
-
-</div>
-
-{/* ================= JOB 3 ================= */}
-
-<div className="job-card">
-
-  <div className="job-info">
-
-    <h3>Warehouse Supervisor</h3>
-
-    <p>
-      Full Time • Ghaziabad
-    </p>
-
-  </div>
-
-  <Link
-    to="/contact-us"
-    className="apply-btn"
-  >
-    Apply Now
-  </Link>
-
-</div>
-
-{/* ================= JOB 4 ================= */}
-
-<div className="job-card">
-
-  <div className="job-info">
-
-    <h3>Customer Support Executive</h3>
-
-    <p>
-      Full Time • New Delhi
-    </p>
-
-  </div>
-
-  <Link
-    to="/contact-us"
-    className="apply-btn"
-  >
-    Apply Now
-  </Link>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
@@ -264,46 +283,83 @@ return (
 
       <span>EMPLOYEE BENEFITS</span>
 
-      <h2>What We Offer</h2>
+      <h2>
+        Why You'll Love Working With Us
+      </h2>
+
+      <p>
+        At World Wide Courier Cargo, we are committed to
+        creating a workplace where employees feel valued,
+        supported and inspired to achieve their full
+        potential while building a successful career.
+      </p>
 
     </div>
 
     <div className="benefits-grid">
 
-      <div className="benefit-card">
-        <div className="benefit-icon">💼</div>
-        <h3>Professional Growth</h3>
-        <p>
-          Continuous learning opportunities, skill development programs,
-          and career advancement within the organization.
-        </p>
-      </div>
+      {/* ================= BENEFIT 1 ================= */}
 
       <div className="benefit-card">
-        <div className="benefit-icon">🎓</div>
-        <h3>Training Programs</h3>
+
+        <div className="benefit-icon">📚</div>
+
+        <h3>Career Development</h3>
+
         <p>
-          Hands-on logistics training, operational workshops,
-          and industry best practices.
+          Build your future through continuous learning,
+          professional development and opportunities for
+          long-term career growth.
         </p>
+
       </div>
 
+      {/* ================= BENEFIT 2 ================= */}
+
       <div className="benefit-card">
+
+        <div className="benefit-icon">🎯</div>
+
+        <h3>Training & Skill Enhancement</h3>
+
+        <p>
+          Receive practical training, operational guidance
+          and industry exposure to strengthen your technical
+          and professional skills.
+        </p>
+
+      </div>
+
+      {/* ================= BENEFIT 3 ================= */}
+
+      <div className="benefit-card">
+
         <div className="benefit-icon">🤝</div>
-        <h3>Supportive Team</h3>
+
+        <h3>Positive Work Environment</h3>
+
         <p>
-          Work with experienced professionals in a collaborative,
-          positive and growth-oriented environment.
+          Work with a supportive team that values
+          collaboration, mutual respect and shared
+          success across every department.
         </p>
+
       </div>
 
+      {/* ================= BENEFIT 4 ================= */}
+
       <div className="benefit-card">
-        <div className="benefit-icon">📈</div>
-        <h3>Performance Rewards</h3>
+
+        <div className="benefit-icon">🏆</div>
+
+        <h3>Recognition & Rewards</h3>
+
         <p>
-          Competitive salary, incentives, recognition programs
-          and long-term career stability.
+          We appreciate dedication through competitive
+          compensation, performance recognition and
+          rewarding career opportunities.
         </p>
+
       </div>
 
     </div>
@@ -318,11 +374,16 @@ return (
 
   <div className="container">
 
-    <h2>Ready To Join R A Logistics?</h2>
+    <h2>
+      Ready To Build Your Career With World Wide Courier Cargo?
+    </h2>
 
     <p>
-      We are always looking for talented and passionate professionals.
-      If you are ready to build your future with us, send your resume today.
+      We are always looking for dedicated, talented and
+      passionate professionals who want to grow with a
+      trusted courier, cargo and logistics company.
+      Join our team and be a part of delivering excellence
+      across India.
     </p>
 
     <Link

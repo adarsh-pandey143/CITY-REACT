@@ -15,12 +15,14 @@ import ProhibitedGoods from './pages/ProhibitedGoods';
 import Tracking from './pages/Tracking';
 import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound';
+import ScrollToTop from "./components/ScrollToTop";
 import './App.css';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
+         <ScrollToTop />
         <div className="App">
           <Header />
           <main>
