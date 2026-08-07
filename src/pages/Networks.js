@@ -130,11 +130,12 @@ style={{
       Branch Network
     </h3>
 
-    <p>
-      Strategically located branches and service centers
-      enable efficient pickup, processing and timely
-      delivery across multiple regions.
-    </p>
+   <p>
+  <strong>Hyderabad Branch:</strong><br />
+  Plot No. 640-B, Sreeram Nagar Colony,<br />
+  Kondapur Village,<br />
+  Hyderabad – 500084.
+</p>
 
   </div>
 

@@ -86,13 +86,23 @@ return (
 
       <div className="contact-card">
 
-        <div className="contact-icon">✉️</div>
+  <div className="contact-icon">✉️</div>
 
-        <h3>Email Us</h3>
+  <h3>Email Us</h3>
 
-        <p>info@worldwidecouriercargo.com</p>
+  <p>
+    <a href="mailto:info@worldwidecouriercargo.com">
+      info@worldwidecouriercargo.com
+    </a>
+  </p>
 
-      </div>
+  <p>
+    <a href="mailto:shashi.ranjan@worldwidecouriercargo.com">
+      shashi.ranjan@worldwidecouriercargo.com
+    </a>
+  </p>
+
+</div>
 
       {/* ================= OFFICE ================= */}
 
