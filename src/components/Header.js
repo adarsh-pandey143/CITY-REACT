@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 // import { useTheme } from "../context/ThemeContext";
@@ -11,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 import "./Header.css";
- import logo from "../assets/images/logo2-removebg-preview.png";
+import logo from "../assets/images/logo4withoutbg.png";
 
 const Header = () => {
 
@@ -27,17 +28,20 @@ const Header = () => {
 
   const dropdownRef = useRef(null);
 
+
   const toggleMenu = () => {
 
     setMobileMenu(!mobileMenu);
 
   };
 
+
   const toggleServices = () => {
 
     setServiceMenu(!serviceMenu);
 
   };
+
 
   useEffect(() => {
 
@@ -57,6 +61,7 @@ const Header = () => {
 
   }, []);
 
+
   useEffect(() => {
 
     const closeMenus = (e) => {
@@ -70,6 +75,7 @@ const Header = () => {
 
       }
 
+
       if (
         menuRef.current &&
         !menuRef.current.contains(e.target)
@@ -81,6 +87,7 @@ const Header = () => {
 
     };
 
+
     document.addEventListener("mousedown", closeMenus);
 
     return () => {
@@ -90,6 +97,7 @@ const Header = () => {
     };
 
   }, []);
+
 
   useEffect(() => {
 
@@ -103,6 +111,7 @@ const Header = () => {
 
   }, [mobileMenu]);
 
+
   return (
 
     <>
@@ -112,9 +121,11 @@ const Header = () => {
         onClick={() => setMobileMenu(false)}
       />
 
+
       <header className="header">
 
-          {/* ================= TOP BAR ================= */}
+
+        {/* ================= TOP BAR ================= */}
 
         <div className="header-top">
 
@@ -124,33 +135,38 @@ const Header = () => {
 
               <div className="header-contact">
 
-                <a href="tel:+917042699313">
+                <a href="tel:+919212306365">
 
                   <FaPhoneAlt />
 
-                  <span>+91 70426 99313</span>
+                  <span>+91 92123 06365</span>
 
                 </a>
 
-                <a href="mailto:info@worldwidecouriercargo.com">
+
+                <a href="mailto:info@cityexpcargo.com">
 
                   <FaEnvelope />
 
-                  <span>info@worldwidecouriercargo.com</span>
+                  <span>info@cityexpcargo.com</span>
 
                 </a>
 
               </div>
 
+
               <div className="header-right-top">
-    <span>🧾 GSTIN : 06DYLPP8013E1ZC</span>
-</div>
+
+                <span>🧾 GSTIN : 06DYLPP8013E1ZC</span>
+
+              </div>
 
             </div>
 
           </div>
 
         </div>
+
 
         {/* ================= NAVBAR ================= */}
 
@@ -160,55 +176,84 @@ const Header = () => {
 
             <div className="navbar-content">
 
+
               {/* Logo */}
 
               <Link to="/" className="logo">
 
                 <img
                   src={logo}
-                  alt="WWW Logo"
+                  alt="City Express Cargo Logo"
                   className="logo-image"
                 />
 
               </Link>
 
-                            {/* ================= Navigation ================= */}
+
+              {/* ================= Navigation ================= */}
 
               <ul
                 ref={menuRef}
                 className={`nav-menu ${mobileMenu ? "active" : ""}`}
               >
 
+
                 <li>
-                  <NavLink to="/" onClick={() => setMobileMenu(false)}>
+
+                  <NavLink
+                    to="/"
+                    onClick={() => setMobileMenu(false)}
+                  >
                     Home
                   </NavLink>
+
                 </li>
 
+
                 <li>
-                  <NavLink to="/about-us" onClick={() => setMobileMenu(false)}>
+
+                  <NavLink
+                    to="/about-us"
+                    onClick={() => setMobileMenu(false)}
+                  >
                     About Us
                   </NavLink>
+
                 </li>
+
 
                 <li>
-                  <NavLink to="/networks" onClick={() => setMobileMenu(false)}>
+
+                  <NavLink
+                    to="/networks"
+                    onClick={() => setMobileMenu(false)}
+                  >
                     Networks
                   </NavLink>
+
                 </li>
 
-                <li className="dropdown" ref={dropdownRef}>
+
+                {/* ================= SERVICES ================= */}
+
+                <li
+                  className="dropdown"
+                  ref={dropdownRef}
+                >
 
                   <button
                     className="dropdown-toggle"
                     onClick={toggleServices}
                   >
+
                     Services
 
                     <FaChevronDown
                       className={serviceMenu ? "rotate" : ""}
                     />
+
                   </button>
+
 
                   <ul
                     className={`dropdown-menu ${
@@ -216,100 +261,234 @@ const Header = () => {
                     }`}
                   >
 
+
+                    {/* 1. Road Transport */}
+
                     <li>
+
                       <NavLink
                         to="/services/roadways"
                         onClick={() => {
+
                           setMobileMenu(false);
+
                           setServiceMenu(false);
+
                         }}
                       >
                         Road Transport
                       </NavLink>
+
                     </li>
 
+
+                    {/* 2. Express Delivery */}
+
                     <li>
+
                       <NavLink
                         to="/services/express"
                         onClick={() => {
+
                           setMobileMenu(false);
+
                           setServiceMenu(false);
+
                         }}
                       >
                         Express Delivery
                       </NavLink>
+
                     </li>
 
+
+                    {/* 3. Air Freight */}
+
                     <li>
+
                       <NavLink
                         to="/services/airfreight"
                         onClick={() => {
+
                           setMobileMenu(false);
+
                           setServiceMenu(false);
+
                         }}
                       >
                         Air Freight
                       </NavLink>
+
                     </li>
 
+
+                    {/* 4. Warehousing */}
+
                     <li>
+
                       <NavLink
                         to="/services/warehouse"
                         onClick={() => {
+
                           setMobileMenu(false);
+
                           setServiceMenu(false);
+
                         }}
                       >
                         Warehousing
                       </NavLink>
+
                     </li>
+
+
+                    {/* 5. Surface Cargo */}
+
+                    <li>
+
+                      <NavLink
+                        to="/services/surface"
+                        onClick={() => {
+
+                          setMobileMenu(false);
+
+                          setServiceMenu(false);
+
+                        }}
+                      >
+                        Surface Cargo
+                      </NavLink>
+
+                    </li>
+
+
+                    {/* 6. FTL Service */}
+
+                    <li>
+
+                      <NavLink
+                        to="/services/FltService"
+                        onClick={() => {
+
+                          setMobileMenu(false);
+
+                          setServiceMenu(false);
+
+                        }}
+                      >
+                        FTL Service
+                      </NavLink>
+
+                    </li>
+
+
+                    {/* 7. E-Commerce */}
+
+                    <li>
+
+                      <NavLink
+                        to="/services/ecommerce"
+                        onClick={() => {
+
+                          setMobileMenu(false);
+
+                          setServiceMenu(false);
+
+                        }}
+                      >
+                        E-Commerce
+                      </NavLink>
+
+                    </li>
+
+
+                    {/* 8. By Train */}
+
+                    <li>
+
+                      <NavLink
+                        to="/services/train"
+                        onClick={() => {
+
+                          setMobileMenu(false);
+
+                          setServiceMenu(false);
+
+                        }}
+                      >
+                        Cargo By Train
+                      </NavLink>
+
+                    </li>
+
 
                   </ul>
 
                 </li>
 
+
+                {/* ================= TRACKING ================= */}
+
                 <li>
+
                   <NavLink
                     to="/tracking"
                     onClick={() => setMobileMenu(false)}
                   >
                     Tracking
                   </NavLink>
+
                 </li>
 
+
+                {/* ================= CAREERS ================= */}
+
                 <li>
+
                   <NavLink
                     to="/careers"
                     onClick={() => setMobileMenu(false)}
                   >
                     Careers
                   </NavLink>
+
                 </li>
 
+
+                {/* ================= CONTACT ================= */}
+
                 <li>
+
                   <NavLink
                     to="/contact-us"
                     onClick={() => setMobileMenu(false)}
                   >
                     Contact
                   </NavLink>
+
                 </li>
+
 
               </ul>
 
-                            {/* ================= Right Side ================= */}
+
+              {/* ================= Right Side ================= */}
 
               <div className="navbar-right">
 
+
                 {/* Theme Toggle */}
 
-                {/* <button
+                {/* 
+                <button
                   className="theme-toggle"
                   onClick={toggleTheme}
                   aria-label="Toggle Theme"
                 >
                   {isDarkMode ? <FaSun /> : <FaMoon />}
-                </button> */}
+                </button>
+                */}
+
 
                 {/* Get Quote Button */}
 
@@ -321,6 +500,7 @@ const Header = () => {
                   Get Quote
                 </Link>
 
+
                 {/* Mobile Menu Button */}
 
                 <button
@@ -328,10 +508,14 @@ const Header = () => {
                   onClick={toggleMenu}
                   aria-label="Toggle Menu"
                 >
+
                   {mobileMenu ? <FaTimes /> : <FaBars />}
+
                 </button>
 
+
               </div>
+
 
             </div>
 
@@ -347,4 +531,6 @@ const Header = () => {
 
 };
 
+
 export default Header;
+

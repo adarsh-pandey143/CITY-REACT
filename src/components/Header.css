@@ -15,9 +15,12 @@
 
 .header-top {
 
-    background: var(--primary);
+    background: var(--primary-dark);
     color: var(--text-white);
-    padding: 10px 0;
+
+    padding: 9px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.10);
 
 }
 
@@ -27,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: 20px;
 
 }
@@ -36,7 +40,8 @@
 
     display: flex;
     align-items: center;
-    gap: 25px;
+
+    gap: 15px;
 
 }
 
@@ -45,51 +50,65 @@
 
     display: flex;
     align-items: center;
+
     gap: 8px;
 
     color: #fff;
 
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
 
     transition: var(--transition);
 
-    padding:6px 14px;
-    border:1px solid rgba(255,255,255,.2);
+    padding: 5px 12px;
 
-     border-radius:30px;
-    background:rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
 
-    font-weight:600;
-    backdrop-filter:blur(10px);
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.07);
 
 }
 
 
 .header-contact a:hover {
 
-    opacity: .8;
+    background: rgba(255,255,255,.15);
 
-} 
+    color: #fff;
 
-
-.header-contact svg {
-
-    font-size: 14px;
+    transform: translateY(-1px);
 
 }
 
 
-.header-right-top span{
-    display:inline-flex;
-    align-items:center;
-    padding:6px 14px;
-    border:1px solid rgba(255,255,255,.2);
-    border-radius:30px;
-    background:rgba(255,255,255,.08);
-    color:#fff;
-    font-size:14px;
-    font-weight:600;
-    backdrop-filter:blur(10px);
+.header-contact svg {
+
+    font-size: 13px;
+
+}
+
+
+.header-right-top span {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 13px;
+
+    border: 1px solid rgba(255,255,255,.16);
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,.07);
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
 }
 
 
@@ -97,12 +116,13 @@
    NAVBAR
 ========================================================== */
 
-
 .navbar {
 
     width: 100%;
 
     background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
 
     transition: var(--transition);
 
@@ -113,33 +133,35 @@
 
     position: fixed;
 
-    top:0;
+    top: 0;
+    left: 0;
 
-    left:0;
+    background: rgba(255,255,255,.96);
 
-    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(14px);
 
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(14px);
 
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 30px rgba(0,43,115,.10);
+
+    border-bottom: 1px solid rgba(0,59,149,.10);
 
     animation: slideDown .3s ease;
 
 }
 
 
-
 @keyframes slideDown {
 
-    from{
+    from {
 
-        transform:translateY(-100%);
+        transform: translateY(-100%);
 
     }
 
-    to{
+    to {
 
-        transform:translateY(0);
+        transform: translateY(0);
 
     }
 
@@ -150,151 +172,158 @@
    NAVBAR CONTENT
 ========================================================== */
 
-
 .navbar-content {
 
-    min-height: 85px;
+    min-height: 82px;
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    gap:30px;
+    gap: 30px;
 
 }
-
 
 
 /* ==========================================================
    LOGO
 ========================================================== */
 
-
 .logo {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
+
+    flex-shrink: 0;
 
 }
 
 
 .logo-image {
 
-    width:150px;
+    width: 150px;
 
-    height:auto;
+    height: auto;
 
-    object-fit:contain;
+    object-fit: contain;
+
+    transition: var(--transition);
 
 }
+
+
+.logo:hover .logo-image {
+
+    transform: scale(1.02);
+
+}
+
 
 /* ==========================================================
    NAVIGATION MENU
 ========================================================== */
 
-
 .nav-menu {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    gap:30px;
+    gap: 28px;
 
-    margin:0;
+    margin: 0;
 
-    padding:0;
+    padding: 0;
 
-     list-style:none;
+    list-style: none;
 
 }
-
 
 
 /* Menu Items */
 
 .nav-menu li {
 
-    position:relative;
-     list-style:none;
+    position: relative;
+
+    list-style: none;
 
 }
-
 
 
 /* Links */
 
 .nav-menu li a {
 
-    color:var(--text);
+    color: var(--text);
 
-    font-size:15px;
+    font-size: 14px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    transition:var(--transition);
+    transition: var(--transition);
 
-    position:relative;
+    position: relative;
 
-    list-style:none;
+    list-style: none;
+
+    letter-spacing: .2px;
 
 }
-
 
 
 /* Hover */
 
 .nav-menu li a:hover {
 
-    color:var(--primary);
+    color: var(--primary);
 
 }
-
 
 
 /* Active Link */
 
 .nav-menu li a.active {
 
-    color:var(--primary);
+    color: var(--primary);
 
 }
-
 
 
 /* Underline Animation */
 
 .nav-menu li a::after {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    left:0;
+    left: 0;
 
-    bottom:-8px;
+    bottom: -8px;
 
-    width:0;
+    width: 0;
 
-    height:2px;
+    height: 2px;
 
-    background:var(--primary);
+    background: var(--primary);
 
-    transition:var(--transition);
+    border-radius: 10px;
+
+    transition: var(--transition);
 
 }
-
 
 
 .nav-menu li a:hover::after,
 .nav-menu li a.active::after {
 
-    width:100%;
+    width: 100%;
 
 }
 
@@ -303,343 +332,375 @@
    SERVICE DROPDOWN BUTTON
 ========================================================== */
 
-
 .dropdown-toggle {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    gap:8px;
+    gap: 7px;
 
-    border:none;
+    border: none;
 
-    background:none;
+    background: none;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    color:var(--text);
+    color: var(--text);
 
-    font-size:15px;
+    font-size: 14px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    transition:var(--transition);
+    transition: var(--transition);
+
+    letter-spacing: .2px;
 
 }
-
 
 
 .dropdown-toggle:hover {
 
-    color:var(--primary);
+    color: var(--primary);
 
 }
-
 
 
 .dropdown-toggle svg {
 
-    font-size:12px;
+    font-size: 11px;
 
-    transition:.3s;
+    transition: .3s ease;
 
 }
-
 
 
 .dropdown-toggle .rotate {
 
-    transform:rotate(180deg);
+    transform: rotate(180deg);
 
 }
-
 
 
 /* ==========================================================
    DROPDOWN MENU
 ========================================================== */
 
-
 .dropdown-menu {
 
-    position:absolute;
+    position: absolute;
 
-    top:45px;
+    top: 43px;
 
-    left:0;
+    left: -10px;
 
+    width: 230px;
 
-    width:220px;
+    background: var(--surface);
 
+    border: 1px solid var(--border);
 
-    background:var(--surface);
+    border-radius: var(--radius-md);
 
+    box-shadow: var(--shadow-lg);
 
-    border-radius:var(--radius-md);
+    padding: 8px 0;
 
+    opacity: 0;
 
-    box-shadow:var(--shadow-lg);
+    visibility: hidden;
 
+    transform: translateY(10px);
 
-    padding:12px 0;
-
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:translateY(15px);
-
-
-    transition:var(--transition);
+    transition: var(--transition);
 
 }
 
 
+/* Small top accent */
 
-/* Show Dropdown */
+.dropdown-menu::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -5px;
+
+    left: 22px;
+
+    width: 10px;
+
+    height: 10px;
+
+    background: var(--surface);
+
+    border-left: 1px solid var(--border);
+
+    border-top: 1px solid var(--border);
+
+    transform: rotate(45deg);
+
+}
+
 
 .dropdown-menu.active {
 
-    opacity:1;
+    opacity: 1;
 
-    visibility:visible;
+    visibility: visible;
 
-    transform:translateY(0);
+    transform: translateY(0);
 
 }
-
 
 
 .dropdown-menu li {
 
-    width:100%;
+    width: 100%;
 
 }
-
 
 
 .dropdown-menu li a {
 
-    display:block;
+    display: block;
 
-    padding:12px 20px;
+    padding: 11px 18px;
 
-    font-size:14px;
+    font-size: 13px;
 
-    text-transform:none;
+    text-transform: none;
 
-    font-weight:500;
+    font-weight: 500;
+
+    color: var(--text);
 
 }
-
 
 
 .dropdown-menu li a::after {
 
-    display:none;
+    display: none;
 
 }
-
 
 
 .dropdown-menu li a:hover {
 
-    background:var(--bg);
+    background: var(--bg);
 
-    color:var(--primary);
+    color: var(--primary);
+
+    padding-left: 23px;
 
 }
-
 
 
 /* ==========================================================
    NAVBAR RIGHT SECTION
 ========================================================== */
 
-
 .navbar-right {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    gap:15px;
+    gap: 12px;
 
 }
-
 
 
 /* ==========================================================
    THEME BUTTON
 ========================================================== */
 
+/*
+   Agar Theme/Dark-Light button website se remove kar diya hai
+   to is complete .theme-toggle section ko delete kar sakte ho.
+*/
 
 .theme-toggle {
 
-    width:42px;
+    width: 40px;
 
-    height:42px;
+    height: 40px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    border:1px solid var(--border);
+    border: 1px solid var(--border);
 
-    background:var(--surface);
+    background: var(--surface);
 
-    color:var(--text);
+    color: var(--text);
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    font-size:18px;
+    font-size: 17px;
 
-    transition:var(--transition);
+    transition: var(--transition);
 
 }
-
 
 
 .theme-toggle:hover {
 
-    background:var(--primary);
+    background: var(--primary);
 
-    color:#fff;
+    border-color: var(--primary);
 
-    transform:translateY(-3px);
+    color: #fff;
+
+    transform: translateY(-2px);
 
 }
-
 
 
 /* ==========================================================
    GET QUOTE BUTTON
 ========================================================== */
 
-
 .quote-btn {
 
-    padding:12px 25px;
+    padding: 12px 23px;
 
-    border-radius:50px;
+    border-radius: 50px;
 
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-dark)
     );
 
-    color:#fff !important;
+    color: #fff !important;
 
-    font-size:14px;
+    font-size: 13px;
 
-    font-weight:700;
+    font-weight: 700;
 
-    text-transform:uppercase;
+    text-transform: uppercase;
 
-    transition:var(--transition);
+    letter-spacing: .3px;
+
+    transition: var(--transition);
+
+    box-shadow: 0 5px 15px rgba(0,59,149,.18);
 
 }
-
 
 
 .quote-btn:hover {
 
-    transform:translateY(-3px);
+    transform: translateY(-3px);
 
-    box-shadow:var(--shadow-md);
+    background: linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary)
+    );
+
+    box-shadow: 0 10px 22px rgba(0,43,115,.22);
 
 }
-
 
 
 /* ==========================================================
    MOBILE MENU BUTTON
 ========================================================== */
 
-
 .mobile-menu-toggle {
 
-    display:none;
+    display: none;
 
-    width:42px;
+    width: 42px;
 
-    height:42px;
+    height: 42px;
 
-    border-radius:8px;
+    border-radius: 8px;
 
-    background:var(--primary);
+    background: var(--primary);
 
-    color:#fff;
+    color: #fff;
 
-    border:none;
+    border: none;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    font-size:20px;
+    font-size: 20px;
 
-    justify-content:center;
+    justify-content: center;
 
-    align-items:center;
+    align-items: center;
+
+    transition: var(--transition);
 
 }
 
+
+.mobile-menu-toggle:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+
+}
 
 
 /* ==========================================================
    MOBILE OVERLAY
 ========================================================== */
 
-
 .mobile-overlay {
 
-    position:fixed;
+    position: fixed;
 
-    inset:0;
+    inset: 0;
 
-    background:rgba(0,0,0,.45);
+    background: rgba(0,20,55,.48);
 
-    opacity:0;
+    backdrop-filter: blur(2px);
 
-    visibility:hidden;
+    -webkit-backdrop-filter: blur(2px);
 
-    transition:.3s;
+    opacity: 0;
 
-    z-index:998;
+    visibility: hidden;
+
+    transition: .3s;
+
+    z-index: 998;
 
 }
-
 
 
 .mobile-overlay.active {
 
-    opacity:1;
+    opacity: 1;
 
-    visibility:visible;
+    visibility: visible;
 
 }
-
 
 
 /* ==========================================================
    TABLET RESPONSIVE
 ========================================================== */
 
-
-@media(max-width:1100px){
+@media(max-width:1100px) {
 
 
     .nav-menu {
 
-        gap:18px;
+        gap: 18px;
 
     }
 
@@ -647,347 +708,304 @@
     .nav-menu li a,
     .dropdown-toggle {
 
-        font-size:14px;
+        font-size: 13px;
 
     }
 
 
     .quote-btn {
 
-        padding:10px 18px;
+        padding: 10px 17px;
 
     }
 
 
 }
 
+
 /* ==========================================================
    MOBILE RESPONSIVE MENU
 ========================================================== */
 
-
-@media(max-width:768px){
+@media(max-width:768px) {
 
 
     .header-top {
 
-        padding:12px 0;
+        padding: 10px 0;
 
     }
 
 
     .header-top-content {
 
-        justify-content:center;
+        justify-content: center;
 
     }
 
 
     .header-contact {
 
-        flex-wrap:wrap;
+        flex-wrap: wrap;
 
-        justify-content:center;
+        justify-content: center;
 
-        gap:12px;
+        gap: 8px;
 
     }
 
 
-    .header-right-top{
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-}
+    .header-right-top {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+    }
 
 
     /* Navbar */
 
-
     .navbar-content {
 
-        min-height:75px;
+        min-height: 72px;
 
     }
-
 
 
     .logo-image {
 
-        width:120px;
+        width: 120px;
 
     }
-
 
 
     /* Show Mobile Button */
 
-
     .mobile-menu-toggle {
 
-        display:flex;
+        display: flex;
 
     }
-
 
 
     .theme-toggle {
 
-        width:38px;
+        width: 38px;
 
-        height:38px;
+        height: 38px;
 
     }
-
 
 
     .quote-btn {
 
-        display:none;
+        display: none;
 
     }
-
 
 
     /* Navigation Drawer */
 
-
     .nav-menu {
 
+        position: fixed;
 
-        position:fixed;
+        top: 0;
 
+        right: -100%;
 
-        top:0;
+        width: 290px;
 
+        height: 100vh;
 
-        right:-100%;
+        background: var(--surface);
 
+        flex-direction: column;
 
-        width:280px;
+        align-items: flex-start;
 
+        padding: 100px 25px 30px;
 
-        height:100vh;
+        gap: 20px;
 
+        box-shadow: -10px 0 30px rgba(0,43,115,.15);
 
-        background:var(--surface);
+        border-left: 1px solid var(--border);
 
+        transition: .4s ease;
 
-        flex-direction:column;
+        z-index: 999;
 
-
-        align-items:flex-start;
-
-
-        padding:100px 30px 30px;
-
-
-        gap:25px;
-
-
-        box-shadow:-5px 0 20px rgba(0,0,0,.15);
-
-
-        transition:.4s;
-
-
-        z-index:999;
-
-
-        overflow-y:auto;
-
+        overflow-y: auto;
 
     }
-
 
 
     .nav-menu.active {
 
-
-        right:0;
-
+        right: 0;
 
     }
-
 
 
     .nav-menu li {
 
-
-        width:100%;
-
+        width: 100%;
 
     }
-
 
 
     .nav-menu li a {
 
+        display: block;
 
-        display:block;
+        font-size: 15px;
 
-
-        font-size:16px;
-
+        padding: 8px 0;
 
     }
-
 
 
     .nav-menu li a::after {
 
-
-        display:none;
-
+        display: none;
 
     }
 
+
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+
+        color: var(--primary);
+
+    }
 
 
     /* Dropdown */
 
-
     .dropdown-toggle {
 
+        width: 100%;
 
-        width:100%;
+        justify-content: space-between;
 
-
-        justify-content:space-between;
-
+        padding: 8px 0;
 
     }
-
 
 
     .dropdown-menu {
 
+        position: static;
 
-        position:static;
+        width: 100%;
 
+        box-shadow: none;
 
-        width:100%;
+        border: none;
 
+        margin-top: 10px;
 
-        box-shadow:none;
+        padding: 0;
 
+        display: none;
 
-        margin-top:15px;
+        opacity: 1;
 
+        visibility: visible;
 
-        padding:0;
-
-
-        display:none;
-
-
-        opacity:1;
-
-
-        visibility:visible;
-
-
-        transform:none;
-
+        transform: none;
 
     }
 
+
+    .dropdown-menu::before {
+
+        display: none;
+
+    }
 
 
     .dropdown-menu.active {
 
-
-        display:block;
-
+        display: block;
 
     }
-
 
 
     .dropdown-menu li a {
 
+        padding: 11px 15px;
 
-        padding:12px 15px;
+        background: var(--bg);
 
+        border-radius: 8px;
 
-        background:var(--bg);
+        margin-bottom: 7px;
 
-
-        border-radius:8px;
-
-
-        margin-bottom:8px;
-
+        font-size: 13px;
 
     }
 
 
+    .dropdown-menu li a:hover {
+
+        padding-left: 18px;
+
+        background: #EAF1FB;
+
+    }
+
 
 }
-
-
 
 
 /* ==========================================================
    SMALL MOBILE
 ========================================================== */
 
-
-@media(max-width:480px){
+@media(max-width:480px) {
 
 
     .header-contact a span {
 
-
-        font-size:12px;
-
+        font-size: 11px;
 
     }
-
 
 
     .navbar-content {
 
-
-        gap:10px;
-
+        gap: 10px;
 
     }
-
 
 
     .logo-image {
 
-
-        width:100px;
-
+        width: 105px;
 
     }
-
 
 
     .navbar-right {
 
-
-        gap:8px;
-
+        gap: 7px;
 
     }
-
 
 
     .mobile-menu-toggle,
     .theme-toggle {
 
+        width: 36px;
 
-        width:36px;
-
-
-        height:36px;
-
+        height: 36px;
 
     }
-
 
 
 }

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -31,19 +32,19 @@ return (
     <div className="service-hero-content">
 
       <span>
-        ROAD TRANSPORT SERVICES
+        DOMESTIC CARGO SERVICES
       </span>
 
       <h1>
-        Reliable Road Transportation Across India
+        Reliable Domestic Cargo Services Across India
       </h1>
 
       <p>
-        World Wide Courier Cargo offers dependable road
-        transportation solutions for businesses of all sizes.
-        Our extensive network, modern fleet and experienced
-        logistics professionals ensure safe, timely and
-        cost-effective delivery of your shipments across India.
+        City Express Cargo provides reliable domestic cargo
+        transportation solutions for businesses and individuals.
+        With efficient transportation, secure cargo handling and
+        dependable delivery services, we help move shipments
+        safely and efficiently across India.
       </p>
 
       <Link
@@ -59,156 +60,177 @@ return (
 
 </section>
 
+
+
 {/* ================= CONTENT ================= */}
 
 <section className="service-content-section">
 
   <div className="container">
 
+
     {/* ================= INTRO ================= */}
 
     <div className="service-intro">
 
       <span className="section-tag">
-        ROAD TRANSPORT SOLUTIONS
+        DOMESTIC CARGO SOLUTIONS
       </span>
 
       <h2>
-        Safe, Reliable & Nationwide Road Transportation
+        Safe, Reliable & Efficient Domestic Cargo Transportation
       </h2>
 
       <p>
-        World Wide Courier Cargo provides comprehensive road
-        transportation services for businesses across India.
-        From small consignments to full truck loads, our
-        experienced logistics team ensures every shipment is
-        transported safely, efficiently and delivered on time
-        through our extensive transportation network.
+        City Express Cargo offers dependable domestic cargo
+        transportation services for shipments of different sizes
+        and requirements. From small consignments to large
+        commercial shipments and full truck loads, our focus is
+        on safe handling, efficient movement and timely delivery
+        across major destinations in India.
       </p>
 
     </div>
 
+
+
     {/* ================= FEATURES ================= */}
 
     <div className="feature-grid">
+
 
       <div className="feature-card">
 
         <h3>🚛 Full Truck Load (FTL)</h3>
 
         <p>
-          Dedicated vehicles for bulk cargo,
-          industrial goods and large commercial
-          consignments with direct transportation.
+          Dedicated transportation solutions for large-volume
+          and commercial shipments with dedicated vehicle
+          capacity for efficient movement.
         </p>
 
       </div>
+
+
 
       <div className="feature-card">
 
-        <h3>📦 Less Than Truck Load (LTL)</h3>
+        <h3>📦 Cargo Transportation</h3>
 
         <p>
-          Cost-effective transportation solutions
-          for smaller shipments with reliable
-          nationwide delivery.
+          Reliable transportation for parcels, commercial goods
+          and general cargo with secure handling throughout
+          the shipment journey.
         </p>
 
       </div>
+
+
 
       <div className="feature-card">
 
         <h3>🏠 Door-to-Door Delivery</h3>
 
         <p>
-          Complete pickup and delivery services
-          from your location directly to the
-          customer's destination.
+          Convenient pickup and delivery solutions from the
+          sender's location to the required destination with
+          efficient shipment handling.
         </p>
 
       </div>
+
+
 
       <div className="feature-card">
 
-        <h3>⚡ Express Road Freight</h3>
+        <h3>⚡ Timely Delivery</h3>
 
         <p>
-          Fast and dependable road transportation
-          for urgent and time-sensitive shipments.
+          Efficient transportation planning and coordinated
+          operations to help ensure shipments reach their
+          destinations on time.
         </p>
 
       </div>
+
+
 
       <div className="feature-card">
 
         <h3>🛡 Safe Cargo Handling</h3>
 
         <p>
-          Professional loading, transportation and
-          unloading practices ensuring maximum
-          shipment safety.
+          Careful loading, transportation and unloading
+          practices help protect cargo throughout its
+          domestic journey.
         </p>
 
       </div>
+
+
 
       <div className="feature-card">
 
-        <h3>📍 Live Shipment Tracking</h3>
+        <h3>📍 Shipment Tracking</h3>
 
         <p>
-          Monitor your shipment throughout its
-          journey with real-time tracking and
-          timely status updates.
+          Track your shipment and receive timely status updates
+          to stay informed about your cargo during transportation.
         </p>
 
       </div>
 
+
     </div>
+
+
 
     {/* ================= BENEFITS ================= */}
 
     <div className="service-benefits">
 
       <h2>
-        Why Choose Our Road Transport Services?
+        Why Choose Our Domestic Cargo Services?
       </h2>
 
       <ul>
 
-        <li>✓ Extensive PAN India transportation network</li>
+        <li>✓ Reliable domestic cargo transportation across India</li>
 
-        <li>✓ Full Truck Load (FTL) & LTL solutions</li>
+        <li>✓ Solutions for small, medium and large consignments</li>
 
-        <li>✓ Safe and secure cargo transportation</li>
+        <li>✓ Full Truck Load (FTL) transportation solutions</li>
 
-        <li>✓ Experienced drivers and logistics professionals</li>
+        <li>✓ Safe and secure cargo handling</li>
 
-        <li>✓ Door-to-door pickup and delivery service</li>
+        <li>✓ Door-to-door pickup and delivery options</li>
 
-        <li>✓ Real-time shipment tracking</li>
+        <li>✓ Efficient shipment tracking and status updates</li>
 
-        <li>✓ On-time delivery commitment</li>
+        <li>✓ Timely and dependable cargo movement</li>
 
-        <li>✓ Competitive pricing with reliable service</li>
+        <li>✓ Cost-effective transportation solutions</li>
 
       </ul>
 
     </div>
+
+
 
     {/* ================= CTA ================= */}
 
     <div className="service-cta">
 
       <h2>
-        Looking For Reliable Road Transportation?
+        Looking For Reliable Domestic Cargo Services?
       </h2>
 
       <p>
-        Partner with World Wide Courier Cargo for
-        dependable road freight solutions across India.
-        Our experienced logistics team is committed to
-        delivering your shipments safely, efficiently
-        and always on schedule.
+        Choose City Express Cargo for dependable domestic
+        transportation solutions across India. Whether you
+        need to move individual consignments or large commercial
+        shipments, our team is committed to providing safe,
+        efficient and reliable cargo transportation.
       </p>
 
       <Link
@@ -219,6 +241,7 @@ return (
       </Link>
 
     </div>
+
 
   </div>
 

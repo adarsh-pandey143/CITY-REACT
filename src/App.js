@@ -10,6 +10,9 @@ import Roadways from './pages/services/Roadways';
 import Express from './pages/services/Express';
 import Airfreight from './pages/services/Airfreight';
 import Warehouse from './pages/services/Warehouse';
+import Surface from './pages/services/surface';
+import Ecommerce from './pages/services/ecommerce';
+import Train from './pages/services/train';
 import Careers from './pages/Careers';
 import ProhibitedGoods from './pages/ProhibitedGoods';
 import Tracking from './pages/Tracking';
@@ -34,6 +37,9 @@ function App() {
               <Route path="/services/express" element={<Express />} />
               <Route path="/services/airfreight" element={<Airfreight />} />
               <Route path="/services/warehouse" element={<Warehouse />} />
+               <Route path="/services/surface" element={<Surface />} />
+               <Route path="/services/ecommerce" element={<Ecommerce />} />
+               <Route path="/services/train" element={<Train />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/prohibited-goods" element={<ProhibitedGoods />} />
               <Route path="/tracking" element={<Tracking />} />

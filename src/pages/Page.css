@@ -5,941 +5,691 @@
 
 /* ================= HERO ================= */
 
-
 .service-hero {
 
-    min-height:620px;
+    min-height: 620px;
 
-    background-size:cover;
+    background-size: cover;
 
-    background-position:center;
+    background-position: center;
 
-    position:relative;
+    position: relative;
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
 
 .service-overlay {
 
-    position:absolute;
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
     background:
     linear-gradient(
         90deg,
-        rgba(2,6,23,.90),
-        rgba(15,23,42,.55)
+        rgba(2,18,55,.94),
+        rgba(0,43,115,.68)
     );
 
 }
-
-
 
 
 .service-hero .container {
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
 }
-
-
 
 
 .service-hero-content {
 
+    max-width: 750px;
 
-    max-width:750px;
-
-    animation:fadeUp .8s ease;
-
+    animation: fadeUp .8s ease;
 
 }
-
 
 
 .service-hero-content span {
 
+    display: inline-block;
 
-    display:inline-block;
+    padding: 8px 18px;
 
-    padding:8px 18px;
+    background: rgba(59,111,196,.16);
 
-    background:rgba(96,165,250,.15);
+    border: 1px solid rgba(147,190,245,.40);
 
-    border:1px solid rgba(96,165,250,.4);
+    border-radius: 50px;
 
-    border-radius:50px;
+    color: #BFD8F7;
 
-    color:#93c5fd;
+    font-size: 13px;
 
-    font-size:13px;
+    font-weight: 700;
 
-    font-weight:700;
+    letter-spacing: 2px;
 
-    letter-spacing:2px;
-
-    margin-bottom:25px;
-
+    margin-bottom: 25px;
 
 }
-
-
 
 
 .service-hero-content h1 {
 
+    color: #FFFFFF;
 
-    color:white;
+    font-size: clamp(2.8rem,5vw,4.5rem);
 
-    font-size:clamp(2.8rem,5vw,4.5rem);
+    font-weight: 900;
 
-    font-weight:900;
+    line-height: 1.1;
 
-    line-height:1.1;
-
-    margin-bottom:25px;
-
+    margin-bottom: 25px;
 
 }
-
-
-
 
 
 .service-hero-content p {
 
+    color: #E5EDF8;
 
-    color:#e5e7eb;
+    font-size: 19px;
 
-    font-size:19px;
+    max-width: 650px;
 
-    max-width:650px;
+    line-height: 1.8;
 
-    line-height:1.8;
-
-    margin-bottom:35px;
-
+    margin-bottom: 35px;
 
 }
-
-
-
 
 
 /* ================= BUTTON ================= */
 
-
 .btn-primary {
 
+    display: inline-flex;
 
-    display:inline-flex;
+    align-items: center;
 
-    align-items:center;
+    justify-content: center;
 
-    justify-content:center;
+    padding: 14px 35px;
 
-    padding:14px 35px;
-
-    border-radius:50px;
+    border-radius: 50px;
 
     background:
-
     linear-gradient(
         135deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-dark)
     );
 
-    color:white;
+    color: #FFFFFF;
 
-    font-weight:700;
+    font-weight: 700;
 
-    transition:.3s;
+    transition: var(--transition);
 
     box-shadow:
-
-    0 10px 25px rgba(37,99,235,.35);
-
+    0 10px 25px rgba(0,43,115,.30);
 
 }
-
-
 
 
 .btn-primary:hover {
 
+    transform: translateY(-4px);
 
-    transform:translateY(-4px);
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary)
+    );
 
     box-shadow:
+    0 15px 35px rgba(0,43,115,.40);
 
-    0 15px 35px rgba(37,99,235,.45);
-
-    color:white;
-
+    color: #FFFFFF;
 
 }
-
-
-
-
 
 
 /* ================= CONTENT ================= */
 
-
-
 .service-content-section {
 
+    padding: 100px 0;
 
-    padding:100px 0;
-
-    background:#f8fafc;
-
+    background: var(--bg);
 
 }
-
 
 
 .service-intro {
 
+    text-align: center;
 
-    text-align:center;
+    max-width: 850px;
 
-    max-width:850px;
+    margin: auto;
 
-    margin:auto;
-
-    margin-bottom:70px;
-
+    margin-bottom: 70px;
 
 }
-
-
 
 
 .service-intro h2 {
 
+    font-size: 42px;
 
-    font-size:42px;
+    font-weight: 900;
 
-    font-weight:900;
+    margin-bottom: 20px;
 
-    margin-bottom:20px;
-
+    color: var(--text);
 
 }
-
-
 
 
 .service-intro p {
 
+    font-size: 18px;
 
-    font-size:18px;
+    color: var(--text-light);
 
-    color:#64748b;
-
-    line-height:1.9;
-
+    line-height: 1.9;
 
 }
-
-
-
-
 
 
 /* ================= CARDS ================= */
 
-
 .feature-grid {
 
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(4,1fr);
 
-    grid-template-columns:repeat(4,1fr);
+    gap: 30px;
 
-    gap:30px;
-
-    margin-bottom:80px;
-
+    margin-bottom: 80px;
 
 }
-
-
-
 
 
 .feature-card {
 
+    background: var(--surface);
 
-    background:white;
+    padding: 35px 28px;
 
-    padding:35px 28px;
+    border-radius: 20px;
 
-    border-radius:20px;
+    box-shadow: var(--shadow-md);
 
-    box-shadow:
+    border: 1px solid var(--border);
 
-    0 15px 35px rgba(15,23,42,.08);
+    transition: .35s;
 
-    border:1px solid #e2e8f0;
+    position: relative;
 
-    transition:.35s;
-
-    position:relative;
-
-    overflow:hidden;
-
+    overflow: hidden;
 
 }
-
-
-
 
 
 .feature-card::before {
 
+    content: "";
 
-    content:"";
+    position: absolute;
 
-    position:absolute;
+    top: 0;
 
-    top:0;
+    left: 0;
 
-    left:0;
+    width: 100%;
 
-    width:100%;
-
-    height:5px;
-
+    height: 5px;
 
     background:
-
     linear-gradient(
         90deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-light)
     );
 
-
 }
-
-
-
-
 
 
 .feature-card:hover {
 
+    transform: translateY(-12px);
 
-    transform:translateY(-12px);
-
-
-    box-shadow:
-
-    0 25px 50px rgba(15,23,42,.15);
-
+    box-shadow: var(--shadow-lg);
 
 }
-
-
-
-
 
 
 .feature-card h3 {
 
+    font-size: 21px;
 
-    font-size:21px;
+    margin-bottom: 15px;
 
-    margin-bottom:15px;
-
-    color:#0f172a;
-
+    color: var(--text);
 
 }
-
-
 
 
 .feature-card p {
 
+    color: var(--text-light);
 
-    color:#64748b;
-
-    line-height:1.8;
-
+    line-height: 1.8;
 
 }
+
 
 /* ==========================================================
    BENEFITS SECTION
 ========================================================== */
 
-
 .service-benefits {
 
+    background: var(--surface);
 
-    background:white;
+    padding: 60px;
 
-    padding:60px;
+    border-radius: 25px;
 
-    border-radius:25px;
+    box-shadow: var(--shadow-md);
 
-    box-shadow:
+    margin-bottom: 80px;
 
-    0 20px 45px rgba(15,23,42,.08);
-
-    margin-bottom:80px;
-
-    border:1px solid var(--border);
-
+    border: 1px solid var(--border);
 
 }
-
-
-
 
 
 .service-benefits h2 {
 
+    text-align: center;
 
-    text-align:center;
+    font-size: 38px;
 
-    font-size:38px;
+    font-weight: 900;
 
-    font-weight:900;
+    margin-bottom: 40px;
 
-    margin-bottom:40px;
-
-    color:var(--text);
-
+    color: var(--text);
 
 }
-
-
-
 
 
 .service-benefits ul {
 
+    max-width: 700px;
 
-    max-width:700px;
-
-    margin:auto;
-
+    margin: auto;
 
 }
-
-
-
 
 
 .service-benefits li {
 
+    display: flex;
 
-    display:flex;
+    align-items: center;
 
-    align-items:center;
+    gap: 15px;
 
-    gap:15px;
+    padding: 18px 20px;
 
-    padding:18px 20px;
+    margin-bottom: 12px;
 
-    margin-bottom:12px;
+    background: #F3F7FC;
 
-    background:#f8fafc;
+    border-radius: 12px;
 
-    border-radius:12px;
+    color: var(--text);
 
-    color:var(--text);
+    font-size: 17px;
 
-    font-size:17px;
-
-    transition:.3s;
-
+    transition: .3s;
 
 }
-
-
 
 
 .service-benefits li:hover {
 
+    background: #E8F0FA;
 
-    background:#eff6ff;
+    transform: translateX(8px);
 
-    transform:translateX(8px);
-
-    color:var(--primary);
-
+    color: var(--primary);
 
 }
-
-
-
-
 
 
 /* ==========================================================
    CTA SECTION
 ========================================================== */
 
-
 .service-cta {
 
+    position: relative;
 
-    position:relative;
+    overflow: hidden;
 
-    overflow:hidden;
+    text-align: center;
 
-    text-align:center;
+    padding: 80px 40px;
 
-    padding:80px 40px;
-
-    border-radius:30px;
-
+    border-radius: 30px;
 
     background:
-
     linear-gradient(
         135deg,
-        #2563eb,
-        #06b6d4
+        var(--primary),
+        var(--primary-dark)
     );
 
-
-    color:white;
-
+    color: #FFFFFF;
 
 }
-
-
-
-
 
 
 .service-cta::before {
 
+    content: "";
 
-    content:"";
+    position: absolute;
 
-    position:absolute;
+    width: 350px;
 
-    width:350px;
+    height: 350px;
 
-    height:350px;
+    background: rgba(255,255,255,.10);
 
-    background:rgba(255,255,255,.12);
+    border-radius: 50%;
 
-    border-radius:50%;
+    top: -150px;
 
-    top:-150px;
-
-    right:-100px;
-
+    right: -100px;
 
 }
-
-
-
-
 
 
 .service-cta::after {
 
+    content: "";
 
-    content:"";
+    position: absolute;
 
-    position:absolute;
+    width: 250px;
 
-    width:250px;
+    height: 250px;
 
-    height:250px;
+    background: rgba(255,255,255,.07);
 
-    background:rgba(255,255,255,.08);
+    border-radius: 50%;
 
-    border-radius:50%;
+    bottom: -120px;
 
-    bottom:-120px;
-
-    left:-80px;
-
+    left: -80px;
 
 }
-
-
-
 
 
 .service-cta h2 {
 
+    position: relative;
 
-    position:relative;
+    z-index: 2;
 
-    z-index:2;
+    color: #FFFFFF;
 
-    color:white;
+    font-size: 40px;
 
-    font-size:40px;
+    font-weight: 900;
 
-    font-weight:900;
-
-    margin-bottom:20px;
-
+    margin-bottom: 20px;
 
 }
-
-
-
 
 
 .service-cta p {
 
+    position: relative;
 
-    position:relative;
+    z-index: 2;
 
-    z-index:2;
+    color: #DCEAFF;
 
-    color:#e0f2fe;
+    font-size: 18px;
 
-    font-size:18px;
-
-    margin-bottom:35px;
-
+    margin-bottom: 35px;
 
 }
-
-
-
 
 
 .service-cta .btn-primary {
 
+    position: relative;
 
-    position:relative;
+    z-index: 2;
 
-    z-index:2;
+    background: #FFFFFF;
 
-    background:white;
-
-    color:var(--primary);
+    color: var(--primary);
 
 }
-
-
-
 
 
 .service-cta .btn-primary:hover {
 
+    background: #F2F6FB;
 
-    background:#f8fafc;
-
-    color:var(--primary-dark);
-
+    color: var(--primary-dark);
 
 }
-
-
-
-
 
 
 /* ==========================================================
    ANIMATION
 ========================================================== */
 
-
 @keyframes fadeUp {
-
 
     from {
 
+        opacity: 0;
 
-        opacity:0;
-
-        transform:translateY(40px);
-
+        transform: translateY(40px);
 
     }
-
 
     to {
 
+        opacity: 1;
 
-        opacity:1;
-
-        transform:translateY(0);
-
+        transform: translateY(0);
 
     }
 
-
 }
-
-
-
-
 
 
 /* ==========================================================
    TABLET RESPONSIVE
 ========================================================== */
 
-
 @media(max-width:1100px){
 
+    .feature-grid {
 
-.feature-grid {
+        grid-template-columns: repeat(2,1fr);
 
-
-    grid-template-columns:repeat(2,1fr);
-
-
-}
+    }
 
 
+    .service-hero {
 
-.service-hero {
+        min-height: 550px;
 
-
-    min-height:550px;
-
+    }
 
 }
-
-
-}
-
-
-
 
 
 /* ==========================================================
    MOBILE RESPONSIVE
 ========================================================== */
 
-
 @media(max-width:600px){
 
+    .service-hero {
+
+        min-height: 480px;
+
+        background-position: center;
+
+    }
 
 
-.service-hero {
+    .service-hero-content {
+
+        text-align: center;
+
+    }
 
 
-    min-height:480px;
+    .service-hero-content span {
 
-    background-position:center;
+        font-size: 11px;
 
+    }
+
+
+    .service-hero-content h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .service-hero-content p {
+
+        font-size: 16px;
+
+    }
+
+
+    .service-content-section {
+
+        padding: 60px 0;
+
+    }
+
+
+    .service-intro {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .service-intro h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .service-intro p {
+
+        font-size: 16px;
+
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .feature-card {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .service-benefits {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .service-benefits h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .service-benefits li {
+
+        font-size: 15px;
+
+        padding: 15px;
+
+    }
+
+
+    .service-cta {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .service-cta h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .service-cta p {
+
+        font-size: 16px;
+
+    }
 
 }
 
 
-
-
-.service-hero-content {
-
-
-    text-align:center;
-
-
-}
-
-
-
-.service-hero-content span {
-
-
-    font-size:11px;
-
-
-}
-
-
-
-
-.service-hero-content h1 {
-
-
-    font-size:34px;
-
-
-}
-
-
-
-
-.service-hero-content p {
-
-
-    font-size:16px;
-
-
-}
-
-
-
-
-
-.service-content-section {
-
-
-    padding:60px 0;
-
-
-}
-
-
-
-
-
-.service-intro {
-
-
-    margin-bottom:40px;
-
-
-}
-
-
-
-
-
-.service-intro h2 {
-
-
-    font-size:30px;
-
-
-}
-
-
-
-
-.service-intro p {
-
-
-    font-size:16px;
-
-
-}
-
-
-
-
-.feature-grid {
-
-
-    grid-template-columns:1fr;
-
-    gap:20px;
-
-
-}
-
-
-
-
-.feature-card {
-
-
-    padding:28px 22px;
-
-
-}
-
-
-
-
-
-.service-benefits {
-
-
-    padding:30px 20px;
-
-
-}
-
-
-
-
-
-.service-benefits h2 {
-
-
-    font-size:28px;
-
-
-}
-
-
-
-
-.service-benefits li {
-
-
-    font-size:15px;
-
-    padding:15px;
-
-
-}
-
-
-
-
-
-.service-cta {
-
-
-    padding:50px 20px;
-
-
-}
-
-
-
-
-.service-cta h2 {
-
-
-    font-size:30px;
-
-
-}
-
-
-
-
-.service-cta p {
-
-
-    font-size:16px;
-
-
-}
-
-
-
-}
-
-
-
-
-
-/* NETWORK PAGE CSS */
+/* ==========================================================
+   NETWORK PAGE CSS
+========================================================== */
 
 
 /* ==========================================================
@@ -949,276 +699,244 @@
 
 /* ================= HERO ================= */
 
-
 .network-hero {
 
-    min-height:620px;
+    min-height: 620px;
 
-    background-size:cover;
+    background-size: cover;
 
-    background-position:center;
+    background-position: center;
 
-    position:relative;
+    position: relative;
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
 }
 
 
-
 .network-overlay {
 
-    position:absolute;
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
     background:
     linear-gradient(
         90deg,
-        rgba(15,23,42,.90),
-        rgba(15,23,42,.55)
+        rgba(2,18,55,.94),
+        rgba(0,43,115,.65)
     );
 
 }
 
 
-
 .network-hero .container {
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
 }
-
 
 
 .network-hero-content {
 
-    max-width:750px;
+    max-width: 750px;
 
-    animation:fadeUp .8s ease;
+    animation: fadeUp .8s ease;
 
 }
-
 
 
 .network-hero-content span {
 
-    display:inline-block;
+    display: inline-block;
 
-    padding:8px 18px;
+    padding: 8px 18px;
 
-    border-radius:50px;
+    border-radius: 50px;
 
-    background:rgba(37,99,235,.20);
+    background: rgba(59,111,196,.16);
 
-    color:#93c5fd;
+    color: #BFD8F7;
 
-    border:1px solid rgba(147,197,253,.4);
+    border: 1px solid rgba(147,190,245,.40);
 
-    font-size:13px;
+    font-size: 13px;
 
-    font-weight:700;
+    font-weight: 700;
 
-    letter-spacing:2px;
+    letter-spacing: 2px;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
 
 }
-
 
 
 .network-hero-content h1 {
 
-    color:white;
+    color: #FFFFFF;
 
-    font-size:clamp(2.5rem,5vw,4.3rem);
+    font-size: clamp(2.5rem,5vw,4.3rem);
 
-    font-weight:900;
+    font-weight: 900;
 
-    line-height:1.1;
+    line-height: 1.1;
 
-    margin-bottom:25px;
+    margin-bottom: 25px;
 
 }
-
 
 
 .network-hero-content p {
 
-    color:#e2e8f0;
+    color: #E2EBF6;
 
-    font-size:18px;
+    font-size: 18px;
 
-    max-width:620px;
+    max-width: 620px;
 
-    line-height:1.8;
+    line-height: 1.8;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 
 }
-
-
-
-
 
 
 /* ================= CONTENT ================= */
 
-
-
 .network-content {
 
-    padding:100px 0;
+    padding: 100px 0;
 
-    background:#f8fafc;
+    background: var(--bg);
 
 }
-
-
 
 
 .network-intro {
 
-    text-align:center;
+    text-align: center;
 
-    max-width:850px;
+    max-width: 850px;
 
-    margin:auto;
+    margin: auto;
 
-    margin-bottom:70px;
+    margin-bottom: 70px;
 
 }
-
 
 
 .network-intro h2 {
 
-    font-size:42px;
+    font-size: 42px;
 
-    font-weight:900;
+    font-weight: 900;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
-    color:#0f172a;
+    color: var(--text);
 
 }
-
 
 
 .network-intro p {
 
-    color:#64748b;
+    color: var(--text-light);
 
-    font-size:18px;
+    font-size: 18px;
 
-    line-height:1.9;
+    line-height: 1.9;
 
 }
-
-
-
-
 
 
 /* ================= NETWORK CARDS ================= */
 
-
-
 .network-grid {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
 
-    gap:30px;
+    gap: 30px;
 
-    margin-bottom:80px;
+    margin-bottom: 80px;
 
 }
-
-
 
 
 .network-card {
 
-    background:white;
+    background: var(--surface);
 
-    padding:35px 25px;
+    padding: 35px 25px;
 
-    border-radius:20px;
+    border-radius: 20px;
 
-    text-align:center;
+    text-align: center;
 
-    border:1px solid #e2e8f0;
+    border: 1px solid var(--border);
 
-    box-shadow:
+    box-shadow: var(--shadow-md);
 
-    0 15px 35px rgba(15,23,42,.08);
-
-    transition:.35s;
+    transition: .35s;
 
 }
-
 
 
 .network-card:hover {
 
-    transform:translateY(-10px);
+    transform: translateY(-10px);
 
-    box-shadow:
-
-    0 25px 50px rgba(15,23,42,.15);
+    box-shadow: var(--shadow-lg);
 
 }
-
-
 
 
 .network-icon {
 
-    width:75px;
+    width: 75px;
 
-    height:75px;
+    height: 75px;
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    justify-content:center;
+    justify-content: center;
 
-    margin:0 auto 25px;
+    margin: 0 auto 25px;
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    background:#eff6ff;
+    background: #EAF1FB;
 
-    font-size:35px;
+    color: var(--primary);
+
+    font-size: 35px;
 
 }
-
 
 
 .network-card h3 {
 
-    font-size:22px;
+    font-size: 22px;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 
-    color:#0f172a;
+    color: var(--text);
 
 }
 
 
-
 .network-card p {
 
-    color:#64748b;
+    color: var(--text-light);
 
-    line-height:1.7;
+    line-height: 1.7;
 
 }
 
@@ -1227,754 +945,938 @@
    COVERAGE SECTION
 ========================================================== */
 
-
 .coverage-box {
 
-    background:white;
+    background: var(--surface);
 
-    padding:60px 40px;
+    padding: 60px 40px;
 
-    border-radius:25px;
+    border-radius: 25px;
 
-    margin-bottom:80px;
+    margin-bottom: 80px;
 
-    box-shadow:
+    box-shadow: var(--shadow-md);
 
-    0 20px 45px rgba(15,23,42,.08);
-
-    border:1px solid #e2e8f0;
+    border: 1px solid var(--border);
 
 }
-
 
 
 .coverage-box h2 {
 
-    text-align:center;
+    text-align: center;
 
-    font-size:38px;
+    font-size: 38px;
 
-    font-weight:900;
+    font-weight: 900;
 
-    margin-bottom:45px;
+    margin-bottom: 45px;
 
-    color:#0f172a;
+    color: var(--text);
 
 }
-
-
 
 
 .coverage-grid {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
 
-    gap:25px;
+    gap: 25px;
 
 }
-
-
-
 
 
 .coverage-grid div {
 
-    text-align:center;
+    text-align: center;
 
-    padding:25px;
+    padding: 25px;
 
-    border-radius:16px;
+    border-radius: 16px;
 
-    background:#f8fafc;
+    background: #F3F7FC;
 
-    transition:.3s;
+    transition: .3s;
 
 }
-
-
-
 
 
 .coverage-grid div:hover {
 
-    background:#eff6ff;
+    background: #E8F0FA;
 
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 
 }
-
-
 
 
 .coverage-grid h3 {
 
-    font-size:42px;
+    font-size: 42px;
 
-    font-weight:900;
+    font-weight: 900;
 
-    color:#2563eb;
+    color: var(--primary);
 
-    margin-bottom:8px;
+    margin-bottom: 8px;
 
 }
-
-
 
 
 .coverage-grid p {
 
-    color:#64748b;
+    color: var(--text-light);
 
-    font-size:16px;
+    font-size: 16px;
 
 }
-
-
-
-
 
 
 /* ==========================================================
    CTA SECTION
 ========================================================== */
 
-
 .network-cta {
 
-    position:relative;
+    position: relative;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    text-align:center;
+    text-align: center;
 
-    padding:80px 30px;
+    padding: 80px 30px;
 
-    border-radius:30px;
-
+    border-radius: 30px;
 
     background:
-
     linear-gradient(
         135deg,
-        #2563eb,
-        #06b6d4
+        var(--primary),
+        var(--primary-dark)
     );
 
-
 }
-
-
-
 
 
 .network-cta::before {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    width:350px;
+    width: 350px;
 
-    height:350px;
+    height: 350px;
 
-    background:rgba(255,255,255,.12);
+    background: rgba(255,255,255,.10);
 
-    border-radius:50%;
+    border-radius: 50%;
 
-    top:-150px;
+    top: -150px;
 
-    right:-100px;
+    right: -100px;
 
 }
-
-
 
 
 .network-cta h2 {
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
-    color:white;
+    color: #FFFFFF;
 
-    font-size:40px;
+    font-size: 40px;
 
-    font-weight:900;
+    font-weight: 900;
 
-    margin-bottom:20px;
+    margin-bottom: 20px;
 
 }
-
-
 
 
 .network-cta p {
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
-    color:#e0f2fe;
+    color: #DCEAFF;
 
-    font-size:18px;
+    font-size: 18px;
 
-    margin-bottom:35px;
+    margin-bottom: 35px;
 
 }
-
-
 
 
 .network-cta .btn-primary {
 
-    position:relative;
+    position: relative;
 
-    z-index:2;
+    z-index: 2;
 
-    background:white;
+    background: #FFFFFF;
 
-    color:#2563eb;
+    color: var(--primary);
 
 }
-
-
 
 
 .network-cta .btn-primary:hover {
 
-    background:#eff6ff;
+    background: #F2F6FB;
 
-    color:#1d4ed8;
+    color: var(--primary-dark);
 
 }
-
-
-
-
 
 
 /* ==========================================================
    ANIMATION
 ========================================================== */
 
-
 @keyframes fadeUp {
 
     from {
 
-        opacity:0;
+        opacity: 0;
 
-        transform:translateY(40px);
+        transform: translateY(40px);
 
     }
 
-
     to {
 
-        opacity:1;
+        opacity: 1;
 
-        transform:translateY(0);
+        transform: translateY(0);
 
     }
 
 }
-
-
-
-
 
 
 /* ==========================================================
    TABLET
 ========================================================== */
 
-
 @media(max-width:1100px){
 
+    .network-grid {
 
-.network-grid {
+        grid-template-columns: repeat(2,1fr);
 
-    grid-template-columns:repeat(2,1fr);
-
-}
-
+    }
 
 
-.coverage-grid {
+    .coverage-grid {
 
-    grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
 
-}
-
+    }
 
 }
-
-
-
 
 
 /* ==========================================================
    MOBILE
 ========================================================== */
 
-
 @media(max-width:600px){
 
+    .network-hero {
 
-.network-hero {
+        min-height: 480px;
 
-    min-height:480px;
+    }
+
+
+    .network-hero-content {
+
+        text-align: center;
+
+    }
+
+
+    .network-hero-content h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    .network-hero-content p {
+
+        font-size: 16px;
+
+    }
+
+
+    .network-content {
+
+        padding: 60px 0;
+
+    }
+
+
+    .network-intro h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .network-intro p {
+
+        font-size: 16px;
+
+    }
+
+
+    .network-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .coverage-box {
+
+        padding: 35px 20px;
+
+    }
+
+
+    .coverage-box h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .coverage-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .coverage-grid h3 {
+
+        font-size: 35px;
+
+    }
+
+
+    .network-cta {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .network-cta h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .network-cta p {
+
+        font-size: 16px;
+
+    }
 
 }
 
 
+/* ==========================================================
+   CAREER PAGE CSS
+========================================================== */
 
-.network-hero-content {
-
-    text-align:center;
-
-}
-
-
-
-.network-hero-content h1 {
-
-    font-size:34px;
-
-}
-
-
-
-.network-hero-content p {
-
-    font-size:16px;
-
-}
-
-
-
-.network-content {
-
-    padding:60px 0;
-
-}
-
-
-
-.network-intro h2 {
-
-    font-size:30px;
-
-}
-
-
-
-.network-intro p {
-
-    font-size:16px;
-
-}
-
-
-
-.network-grid {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.coverage-box {
-
-    padding:35px 20px;
-
-}
-
-
-
-.coverage-box h2 {
-
-    font-size:28px;
-
-}
-
-
-
-.coverage-grid {
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.coverage-grid h3 {
-
-    font-size:35px;
-
-}
-
-
-
-.network-cta {
-
-    padding:50px 20px;
-
-}
-
-
-
-.network-cta h2 {
-
-    font-size:30px;
-
-}
-
-
-
-.network-cta p {
-
-    font-size:16px;
-
-}
-
-
-}
-
-
-
-
-/* CAREER PAGE CSS */
 
 /* ==========================================================
    CAREER PAGE
 ========================================================== */
 
-.career-page{
-    background:var(--bg);
-    overflow:hidden;
+.career-page {
+
+    background: var(--bg);
+
+    overflow: hidden;
+
 }
+
 
 /* ==========================================================
    HERO
 ========================================================== */
 
-.career-hero{
-    position:relative;
-    min-height:600px;
-    display:flex;
-    align-items:center;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.career-hero {
+
+    position: relative;
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
 }
 
-.career-overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
+
+.career-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
         90deg,
-        rgba(15,23,42,.88),
-        rgba(15,23,42,.55),
-        rgba(15,23,42,.25)
+        rgba(2,18,55,.92),
+        rgba(0,43,115,.58),
+        rgba(0,43,115,.25)
     );
+
 }
 
-.career-hero .container{
-    position:relative;
-    z-index:2;
+
+.career-hero .container {
+
+    position: relative;
+
+    z-index: 2;
+
 }
 
-.career-hero-content{
-    max-width:700px;
-    color:#fff;
+
+.career-hero-content {
+
+    max-width: 700px;
+
+    color: #FFFFFF;
+
 }
 
-.career-hero-content span{
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:50px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.2);
-    letter-spacing:2px;
-    font-size:13px;
-    font-weight:700;
-    margin-bottom:25px;
+
+.career-hero-content span {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.10);
+
+    border: 1px solid rgba(255,255,255,.20);
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+
 }
 
-.career-hero-content h1{
-    color:#fff;
-    font-size:clamp(3rem,5vw,4.7rem);
-    line-height:1.15;
-    margin-bottom:22px;
-    font-weight:900;
+
+.career-hero-content h1 {
+
+    color: #FFFFFF;
+
+    font-size: clamp(3rem,5vw,4.7rem);
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+
+    font-weight: 900;
+
 }
 
-.career-hero-content p{
-    color:#e2e8f0;
-    font-size:18px;
-    line-height:1.9;
-    max-width:620px;
-    margin-bottom:35px;
+
+.career-hero-content p {
+
+    color: #E2EBF6;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    max-width: 620px;
+
+    margin-bottom: 35px;
+
 }
+
 
 /* ==========================================================
    SECTION HEADING
 ========================================================== */
 
-.career-section-heading{
-    text-align:center;
-    margin-bottom:70px;
+.career-section-heading {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
 }
 
-.career-section-heading span{
-    display:inline-block;
-    color:var(--primary);
-    font-weight:700;
-    letter-spacing:2px;
-    font-size:14px;
-    margin-bottom:15px;
+
+.career-section-heading span {
+
+    display: inline-block;
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
 }
 
-.career-section-heading h2{
-    font-size:clamp(2rem,4vw,3rem);
-    color:var(--text);
-    font-weight:800;
+
+.career-section-heading h2 {
+
+    font-size: clamp(2rem,4vw,3rem);
+
+    color: var(--text);
+
+    font-weight: 800;
+
 }
+
 
 /* ==========================================================
    WHY JOIN US
 ========================================================== */
 
-.why-join{
-    padding:100px 0;
-    background:#fff;
+.why-join {
+
+    padding: 100px 0;
+
+    background: var(--surface);
+
 }
 
-.join-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+
+.join-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
 }
 
-.join-card{
-    background:#fff;
-    padding:40px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow-md);
-    border:1px solid var(--border);
-    transition:.35s ease;
-    position:relative;
-    overflow:hidden;
+
+.join-card {
+
+    background: var(--surface);
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+
+    border: 1px solid var(--border);
+
+    transition: .35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
 }
 
-.join-card::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:5px;
-    background:linear-gradient(
+
+.join-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background:
+    linear-gradient(
         90deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-light)
     );
-    transform:scaleX(0);
-    transition:.35s;
-    transform-origin:left;
+
+    transform: scaleX(0);
+
+    transition: .35s;
+
+    transform-origin: left;
+
 }
 
-.join-card:hover::before{
-    transform:scaleX(1);
+
+.join-card:hover::before {
+
+    transform: scaleX(1);
+
 }
 
-.join-card:hover{
-    transform:translateY(-10px);
-    box-shadow:var(--shadow-lg);
+
+.join-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
 }
 
-.join-icon{
-    width:85px;
-    height:85px;
-    margin:auto;
-    margin-bottom:25px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    background:linear-gradient(
+
+.join-icon {
+
+    width: 85px;
+
+    height: 85px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 40px;
+
+    background:
+    linear-gradient(
         135deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-dark)
     );
-    color:#fff;
+
+    color: #FFFFFF;
+
 }
 
-.join-card h3{
-    margin-bottom:18px;
-    font-size:24px;
+
+.join-card h3 {
+
+    margin-bottom: 18px;
+
+    font-size: 24px;
+
 }
 
-.join-card p{
-    font-size:16px;
-    line-height:1.8;
+
+.join-card p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
 }
+
 
 /* ==========================================================
    JOB SECTION
 ========================================================== */
 
-.job-section{
-    padding:100px 0;
-    background:var(--surface-light);
+.job-section {
+
+    padding: 100px 0;
+
+    /* FIXED: --surface-light was undefined */
+
+    background: var(--bg);
+
 }
 
-.job-list{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
+
+.job-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
 }
 
-.job-card{
-    background:#fff;
-    padding:28px 35px;
-    border-radius:18px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:var(--shadow-md);
-    border-left:6px solid var(--primary);
-    transition:.3s;
+
+.job-card {
+
+    background: var(--surface);
+
+    padding: 28px 35px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: var(--shadow-md);
+
+    border-left: 6px solid var(--primary);
+
+    transition: .3s;
+
 }
 
-.job-card:hover{
-    transform:translateY(-6px);
-    box-shadow:var(--shadow-lg);
+
+.job-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-lg);
+
 }
 
-.job-info h3{
-    margin-bottom:8px;
-    font-size:24px;
-    color:var(--text);
+
+.job-info h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 24px;
+
+    color: var(--text);
+
 }
 
-.job-info p{
-    color:var(--text-light);
-    font-size:16px;
+
+.job-info p {
+
+    color: var(--text-light);
+
+    font-size: 16px;
+
 }
 
-.apply-btn{
-    background:var(--primary);
-    color:#fff;
-    padding:14px 32px;
-    border-radius:50px;
-    font-weight:700;
-    transition:.3s;
-    display:inline-block;
+
+.apply-btn {
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color: #FFFFFF;
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+    display: inline-block;
+
 }
 
-.apply-btn:hover{
-    background:var(--primary-dark);
-    color:#fff;
-    transform:translateY(-3px);
+
+.apply-btn:hover {
+
+    background: var(--primary-dark);
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,43,115,.20);
+
 }
+
 
 /* ==========================================================
    BENEFITS SECTION
 ========================================================== */
 
-.benefits-section{
-    padding:100px 0;
-    background:var(--bg);
+.benefits-section {
+
+    padding: 100px 0;
+
+    background: var(--bg);
+
 }
 
-.benefits-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+
+.benefits-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 30px;
+
 }
 
-.benefit-card{
-    background:#fff;
-    padding:35px 30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:var(--shadow-md);
-    border:1px solid var(--border);
-    transition:var(--transition);
+
+.benefit-card {
+
+    background: var(--surface);
+
+    padding: 35px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+
+    border: 1px solid var(--border);
+
+    transition: var(--transition);
+
 }
 
-.benefit-card:hover{
-    transform:translateY(-10px);
-    box-shadow:var(--shadow-lg);
+
+.benefit-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
 }
 
-.benefit-icon{
-    width:80px;
-    height:80px;
-    margin:0 auto 25px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:36px;
-    background:linear-gradient(
+
+.benefit-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 36px;
+
+    background:
+    linear-gradient(
         135deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-dark)
     );
-    color:#fff;
+
+    color: #FFFFFF;
+
 }
 
-.benefit-card h3{
-    margin-bottom:15px;
-    font-size:22px;
-    color:var(--text);
+
+.benefit-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    color: var(--text);
+
 }
 
-.benefit-card p{
-    color:var(--text-light);
-    line-height:1.8;
+
+.benefit-card p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
 }
+
 
 /* ==========================================================
    CTA
 ========================================================== */
 
-.career-cta{
-    padding:90px 20px;
-    text-align:center;
-    background:linear-gradient(
+.career-cta {
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background:
+    linear-gradient(
         135deg,
         var(--primary),
-        var(--secondary)
+        var(--primary-dark)
     );
+
 }
 
-.career-cta h2{
-    color:#fff;
-    font-size:clamp(2rem,4vw,3rem);
-    margin-bottom:20px;
+
+.career-cta h2 {
+
+    color: #FFFFFF;
+
+    font-size: clamp(2rem,4vw,3rem);
+
+    margin-bottom: 20px;
+
 }
 
-.career-cta p{
-    max-width:700px;
-    margin:0 auto 35px;
-    color:#eaf4ff;
-    font-size:18px;
-    line-height:1.8;
+
+.career-cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    color: #E3EEFB;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
 }
 
-.career-cta .btn-primary{
-    display:inline-block;
+
+.career-cta .btn-primary {
+
+    display: inline-block;
+
 }
+
 
 /* ==========================================================
    RESPONSIVE
@@ -1983,65 +1885,107 @@
 @media (max-width:992px){
 
     .join-grid,
-    .benefits-grid{
-        grid-template-columns:repeat(2,1fr);
+    .benefits-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
     }
 
-    .career-hero{
-        min-height:500px;
+
+    .career-hero {
+
+        min-height: 500px;
+
     }
 
-    .job-card{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:20px;
+
+    .job-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
     }
 
 }
 
+
 @media (max-width:768px){
 
-    .career-hero{
-        min-height:420px;
+    .career-hero {
+
+        min-height: 420px;
+
     }
 
-    .career-hero-content{
-        text-align:center;
-        margin:auto;
+
+    .career-hero-content {
+
+        text-align: center;
+
+        margin: auto;
+
     }
 
-    .career-hero-content h1{
-        font-size:42px;
+
+    .career-hero-content h1 {
+
+        font-size: 42px;
+
     }
 
-    .career-hero-content p{
-        font-size:16px;
+
+    .career-hero-content p {
+
+        font-size: 16px;
+
     }
+
 
     .join-grid,
-    .benefits-grid{
-        grid-template-columns:1fr;
+    .benefits-grid {
+
+        grid-template-columns: 1fr;
+
     }
 
-    .job-card{
-        padding:25px;
+
+    .job-card {
+
+        padding: 25px;
+
     }
 
-    .apply-btn{
-        width:100%;
-        text-align:center;
+
+    .apply-btn {
+
+        width: 100%;
+
+        text-align: center;
+
     }
 
-    .career-cta{
-        padding:70px 20px;
+
+    .career-cta {
+
+        padding: 70px 20px;
+
     }
 
-    .career-cta h2{
-        font-size:32px;
+
+    .career-cta h2 {
+
+        font-size: 32px;
+
     }
 
-    .career-cta p{
-        font-size:16px;
+
+    .career-cta p {
+
+        font-size: 16px;
+
     }
 
 }

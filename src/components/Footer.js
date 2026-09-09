@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -25,7 +26,6 @@ const Footer = () => {
 
     };
 
-
   }, []);
 
 
@@ -34,9 +34,9 @@ const Footer = () => {
 
     window.scrollTo({
 
-      top:0,
+      top: 0,
 
-      behavior:"smooth"
+      behavior: "smooth"
 
     });
 
@@ -56,36 +56,35 @@ const Footer = () => {
           <div className="footer-grid">
 
 
-            {/* COMPANY */}
+            {/* ================= COMPANY ================= */}
 
             <div className="footer-column company">
 
 
               <h3>
-                World Wide Courier Cargo
+                City Express Cargo
               </h3>
 
 
-            <p>
-  At World Wide Courier Cargo, we offer end-to-end courier,
-  cargo and freight solutions backed by a strong nationwide
-  and international network, ensuring every shipment is
-  delivered safely, efficiently and on time.
-</p>
+              <p>
+                At City Express Cargo, we provide reliable courier,
+                cargo and logistics solutions designed to move your
+                shipments safely, efficiently and on time.
+              </p>
 
 
-             <p>
-  Trusted courier and cargo solutions with nationwide and
-  worldwide delivery, designed to move your shipments
-  safely, quickly and efficiently.
-</p>
+              <p>
+                With domestic, air, surface, rail, e-commerce and
+                FTL cargo services, we help businesses and customers
+                transport their shipments with confidence.
+              </p>
 
 
             </div>
 
 
 
-            {/* SERVICES */}
+            {/* ================= SERVICES ================= */}
 
             <div className="footer-column">
 
@@ -95,7 +94,7 @@ const Footer = () => {
               </h3>
 
 
-              <ul>
+               <ul className="service-list">
 
 
                 <li>
@@ -126,6 +125,34 @@ const Footer = () => {
                 </li>
 
 
+                <li>
+                  <Link to="/services/surface">
+                    Surface Cargo
+                  </Link>
+                </li>
+
+
+                <li>
+                  <Link to="/services/FltService">
+                    FTL Service
+                  </Link>
+                </li>
+
+
+                <li>
+                  <Link to="/services/ecommerce">
+                    E-Commerce
+                  </Link>
+                </li>
+
+
+                <li>
+                  <Link to="/services/train">
+                    Cargo By Train
+                  </Link>
+                </li>
+
+
               </ul>
 
 
@@ -133,8 +160,7 @@ const Footer = () => {
 
 
 
-
-            {/* QUICK LINKS */}
+            {/* ================= QUICK LINKS ================= */}
 
             <div className="footer-column">
 
@@ -148,8 +174,22 @@ const Footer = () => {
 
 
                 <li>
+                  <Link to="/">
+                    Home
+                  </Link>
+                </li>
+
+
+                <li>
                   <Link to="/about-us">
                     About Us
+                  </Link>
+                </li>
+
+
+                <li>
+                  <Link to="/networks">
+                    Networks
                   </Link>
                 </li>
 
@@ -182,8 +222,7 @@ const Footer = () => {
 
 
 
-
-            {/* CONTACT */}
+            {/* ================= CONTACT ================= */}
 
             <div className="footer-column">
 
@@ -198,22 +237,23 @@ const Footer = () => {
 
                 <li>
                   Phone:
-                  <br/>
-                  +91 70426 99313
+                  <br />
+                  +91 92123 06365
                 </li>
 
 
                 <li>
                   Email:
-                  <br/>
-                  info@worldwidecouriercargo.com
+                  <br />
+                  info@cityexpcargo.com
                 </li>
 
 
                 <li>
                   Location:
-                  <br/>
-                   Gurugram, Haryana, India
+                  <br />
+                  City Express Courier, C-40, Sanjaygram,
+                  Rajeev Nagar, Sheetla Mata Mandir Road.
                 </li>
 
 
@@ -228,18 +268,24 @@ const Footer = () => {
 
 
 
-      <div className="footer-bottom">
+          {/* ================= FOOTER BOTTOM ================= */}
 
-  <p>
-    © 2018 - {new Date().getFullYear()} World Wide Courier Cargo. All Rights Reserved.
-  </p>
+          <div className="footer-bottom">
 
-  <p>
-    Website Designed & Developed By
-    <span> SIZIL SOFTEC PVT. LTD.</span>
-  </p>
 
-</div>
+            <p>
+              © 2018 - {new Date().getFullYear()} City Express Cargo.
+              All Rights Reserved.
+            </p>
+
+
+            <p>
+              Website Designed & Developed By
+              <span> SIZIL SOFTEC PVT. LTD.</span>
+            </p>
+
+
+          </div>
 
 
         </div>
@@ -249,6 +295,7 @@ const Footer = () => {
 
 
 
+      {/* ================= SCROLL TO TOP ================= */}
 
       {showScrollTop && (
 
@@ -267,7 +314,6 @@ const Footer = () => {
       )}
 
 
-
     </>
 
   );
@@ -276,3 +322,4 @@ const Footer = () => {
 
 
 export default Footer;
+

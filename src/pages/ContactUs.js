@@ -77,9 +77,16 @@ return (
         <div className="contact-icon">📞</div>
 
         <h3>Call Us</h3>
-
-        <p>+91 70426 99313</p>
-
+         
+         <span>Mobile.No
+        <p>+91 70426-99313</p>
+        </span>
+         <br/>
+        <span>Telephone.No
+        <p>+91 92123-06365</p>
+        </span>
+         <br/>
+      
       </div>
 
       {/* ================= EMAIL ================= */}
@@ -91,14 +98,14 @@ return (
   <h3>Email Us</h3>
 
   <p>
-    <a href="mailto:info@worldwidecouriercargo.com">
-      info@worldwidecouriercargo.com
+    <a href="mailto:info@cityexpcargo.com">
+      info@cityexpcargo.com
     </a>
   </p>
 
   <p>
-    <a href="mailto:shashi.ranjan@worldwidecouriercargo.com">
-      shashi.ranjan@worldwidecouriercargo.com
+    <a href="mailto:shashi.ranjan@cityexpcargo.com">
+      Jagjeet Singh Ahlawat.tocggn.7@gmail.com
     </a>
   </p>
 
@@ -113,10 +120,10 @@ return (
         <h3>Corporate Office</h3>
 
         <p>
-          1st Floor, H. No. 168,<br />
-          Pawan Kataria Road,<br />
-          Gali Number B,<br />
-          Gurugram, Haryana – 122001,<br />
+          City Express Courier, C-40,<br />
+          Sanjaygram.Rajeev Nagar,<br />
+          Sheetla Mata Mandir Road,<br />
+          {/* Gurugram, Haryana – 122001,<br /> */}
           India
         </p>
 
@@ -132,12 +139,12 @@ return (
 
         <p>
           <strong>Trade Name:</strong><br />
-          World Wide Courier Cargo
+            CITY EXPRESS COURIER
         </p>
 
         <p>
           <strong>Legal Name:</strong><br />
-          Shashi Ranjan Panday
+          Jagjeet Singh Ahlawat
         </p>
 
         <p>
