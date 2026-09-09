@@ -1,13 +1,17 @@
+
 import React from "react";
 import "./ContactUs.css";
 
 import contactBanner from "../assets/images/contact.jpg";
 
+
 const ContactUs = () => {
+
 
 return (
 
 <div className="contact-page">
+
 
     {/* ================= HERO ================= */}
 
@@ -32,11 +36,11 @@ return (
       </h1>
 
       <p>
-        Get in touch with World Wide Courier Cargo for
-        reliable courier, cargo and logistics solutions.
-        Our experienced team is ready to assist you with
-        shipment inquiries, transportation services and
-        customized logistics support across India.
+        Get in touch with City Express Cargo for reliable
+        courier, cargo and logistics solutions. Our team is
+        ready to assist you with shipment inquiries,
+        transportation services and customized logistics
+        requirements.
       </p>
 
     </div>
@@ -44,6 +48,7 @@ return (
   </div>
 
 </section>
+
 
     {/* ================= CONTACT INFO ================= */}
 
@@ -56,19 +61,20 @@ return (
       <span>GET IN TOUCH</span>
 
       <h2>
-        Contact World Wide Courier Cargo
+        Contact City Express Cargo
       </h2>
 
       <p>
-        Our team is always ready to assist you with courier,
-        cargo and logistics solutions. Feel free to contact us
-        for shipment inquiries, business partnerships or any
-        transportation requirements.
+        Our team is ready to assist you with courier, cargo
+        and logistics requirements. Contact us for shipment
+        inquiries, transportation services, business
+        partnerships or any other logistics requirements.
       </p>
 
     </div>
 
     <div className="contact-grid">
+
 
       {/* ================= PHONE ================= */}
 
@@ -77,21 +83,36 @@ return (
         <div className="contact-icon">📞</div>
 
         <h3>Call Us</h3>
-         
-         <span>Mobile.No
-        <p>+91 70426-99313</p>
+
+        <span>
+          Mobile No.
+          <p>
+            <a href="tel:+917042699313">
+              +91 70426-99313
+            </a>
+          </p>
         </span>
-         <br/>
-        <span>Telephone.No
-        <p>+91 92123-06365</p>
+
+        <br />
+
+        <span>
+          Telephone No.
+          <p>
+            <a href="tel:+919212306365">
+              +91 92123-06365
+            </a>
+          </p>
         </span>
-         <br/>
-      
+
+        <br />
+
       </div>
+
 
       {/* ================= EMAIL ================= */}
 
-      <div className="contact-card">
+
+<div className="contact-card">
 
   <div className="contact-icon">✉️</div>
 
@@ -104,12 +125,14 @@ return (
   </p>
 
   <p>
-    <a href="mailto:shashi.ranjan@cityexpcargo.com">
-      Jagjeet Singh Ahlawat.tocggn.7@gmail.com
+    <a href="mailto:tocggn.7@gmail.com">
+      tocggn.7@gmail.com
     </a>
   </p>
 
 </div>
+
+
 
       {/* ================= OFFICE ================= */}
 
@@ -121,13 +144,13 @@ return (
 
         <p>
           City Express Courier, C-40,<br />
-          Sanjaygram.Rajeev Nagar,<br />
+          Sanjaygram, Rajeev Nagar,<br />
           Sheetla Mata Mandir Road,<br />
-          {/* Gurugram, Haryana – 122001,<br /> */}
           India
         </p>
 
       </div>
+
 
       {/* ================= REGISTRATION ================= */}
 
@@ -139,7 +162,7 @@ return (
 
         <p>
           <strong>Trade Name:</strong><br />
-            CITY EXPRESS COURIER
+          CITY EXPRESS COURIER
         </p>
 
         <p>
@@ -154,11 +177,13 @@ return (
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
+
 
 {/* ================= CONTACT FORM ================= */}
 
@@ -167,6 +192,7 @@ return (
   <div className="container">
 
     <div className="contact-wrapper">
+
 
       {/* ================= LEFT SIDE ================= */}
 
@@ -180,45 +206,60 @@ return (
           Have a question about our courier, cargo or
           logistics services? Fill out the form below
           and our team will get back to you with the
-          right solution as quickly as possible.
+          right solution for your requirements.
         </p>
 
         <form className="contact-form">
 
           <div className="form-group">
+
             <input
               type="text"
               placeholder="Full Name"
             />
+
           </div>
 
+
           <div className="form-group">
+
             <input
               type="email"
               placeholder="Email Address"
             />
+
           </div>
 
+
           <div className="form-group">
+
             <input
               type="tel"
               placeholder="Phone Number"
             />
+
           </div>
 
+
           <div className="form-group">
+
             <input
               type="text"
               placeholder="Company Name (Optional)"
             />
+
           </div>
 
+
           <div className="form-group">
+
             <textarea
               rows="6"
               placeholder="Tell us about your shipment or logistics requirements..."
             ></textarea>
+
           </div>
+
 
           <button
             type="submit"
@@ -227,61 +268,74 @@ return (
             Send Message
           </button>
 
+
         </form>
 
       </div>
+
 
       {/* ================= RIGHT SIDE ================= */}
 
       <div className="company-info">
 
         <h2>
-          Why Choose World Wide Courier Cargo?
+          Why Choose City Express Cargo?
         </h2>
 
         <p>
-          World Wide Courier Cargo is committed to providing
-          reliable, secure and cost-effective courier, cargo
-          and logistics solutions. Our experienced team and
-          strong transportation network ensure every shipment
-          is delivered safely and on time.
+          City Express Cargo is committed to providing
+          reliable, secure and efficient courier, cargo
+          and logistics solutions. We offer multiple
+          transportation options to support domestic,
+          international and specialized shipment
+          requirements.
         </p>
+
 
         <div className="info-list">
 
-          <div className="info-item">
-            ✅ Domestic Courier Services
-          </div>
 
           <div className="info-item">
-            ✅ Cargo Transportation Solutions
+            ✅ Domestic Cargo Services
           </div>
 
-          <div className="info-item">
-            ✅ Road Freight Services
-          </div>
 
           <div className="info-item">
-            ✅ Express & Time-Critical Deliveries
+            ✅ International Cargo Services
           </div>
 
-          <div className="info-item">
-            ✅ PAN India Service Network
-          </div>
 
           <div className="info-item">
-            ✅ Safe, Secure & On-Time Delivery
+            ✅ Air Cargo Transportation
           </div>
+
+
+          <div className="info-item">
+            ✅ Surface Cargo Services
+          </div>
+
+
+          <div className="info-item">
+            ✅ Cargo By Train & Sea
+          </div>
+
+
+          <div className="info-item">
+            ✅ E-Commerce & FTL Services
+          </div>
+
 
         </div>
 
       </div>
+
 
     </div>
 
   </div>
 
 </section>
+
 
 {/* ================= GOOGLE MAP ================= */}
 
@@ -292,12 +346,12 @@ return (
         <div className="map-wrapper">
 
           <iframe
-  title="World Wide Courier Cargo - Gurugram Office"
-  src="https://www.google.com/maps?q=H+No+168,+Pawan+Kataria+Road,+Gali+Number+B,+Gurugram,+Haryana+122001,+India&output=embed"
-  loading="lazy"
-  allowFullScreen
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe>
+            title="City Express Courier - Corporate Office"
+            src="https://www.google.com/maps?q=City+Express+Courier,+C-40,+Sanjaygram,+Rajeev+Nagar,+Sheetla+Mata+Mandir+Road&output=embed"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
 
         </div>
 
@@ -305,11 +359,13 @@ return (
 
 </section>
 
+
 </div>
 
 );
 
 };
+
 
 export default ContactUs;
 

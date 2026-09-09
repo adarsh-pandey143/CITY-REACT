@@ -1,8 +1,11 @@
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "../pages/Page.css";
 // import "./Network.css";
- import networkImage from "../assets/images/ground.jpg";
+
+import networkImage from "../assets/images/ground.jpg";
 
 
 const Networks = () => {
@@ -29,6 +32,7 @@ style={{
 
 <div className="container">
 
+
 <div className="network-hero-content">
 
   <span>
@@ -36,19 +40,20 @@ style={{
   </span>
 
   <h1>
-    A Strong Nationwide Logistics Network
+    A Reliable Logistics Network
   </h1>
 
   <p>
-    With an extensive network of branches, transportation
-    partners and delivery hubs, World Wide Courier Cargo
-    ensures safe, timely and efficient movement of
-    shipments across India, backed by advanced tracking
-    technology and dedicated customer support.
+    City Express Cargo provides reliable cargo and
+    logistics solutions through an efficient transportation
+    network, professional operations and dedicated customer
+    support. We help businesses and individuals move their
+    shipments safely and efficiently across different
+    destinations.
   </p>
 
   <Link
-    to="/NotFound"
+    to="/contact-us"
     className="btn-primary"
   >
     Get Free Quote
@@ -61,8 +66,6 @@ style={{
 
 
 </section>
-
-
 
 
 
@@ -82,17 +85,17 @@ style={{
 <div className="network-intro">
 
   <h2>
-    Nationwide & Worldwide Logistics Network
+    Connected Transportation & Logistics Network
   </h2>
 
   <p>
-    World Wide Courier Cargo has built a strong and
-    reliable logistics network to provide seamless
-    courier, cargo and transportation services across
-    India and international destinations. Our extensive
-    branch network, experienced professionals and modern
-    logistics infrastructure ensure every shipment is
-    delivered safely, efficiently and on time.
+    City Express Cargo offers a comprehensive range of
+    transportation and logistics services designed to
+    support businesses and customers with dependable
+    shipment movement. Our operations cover domestic,
+    international and specialized cargo requirements
+    through road, air, rail and sea transportation
+    solutions.
   </p>
 
 </div>
@@ -113,12 +116,14 @@ style={{
     </h3>
 
     <p>
-      Our extensive road transportation network ensures
-      fast, secure and on-time movement of parcels,
-      cargo and commercial shipments across India.
+      Our road transportation services support reliable
+      movement of parcels, cargo and commercial shipments
+      across different destinations with safe handling and
+      efficient delivery operations.
     </p>
 
   </div>
+
 
   <div className="network-card">
 
@@ -130,14 +135,15 @@ style={{
       Branch Network
     </h3>
 
-   <p>
-  <strong>Hyderabad Branch:</strong><br />
-  Plot No. 640-B, Sreeram Nagar Colony,<br />
-  Kondapur Village,<br />
-  Hyderabad – 500084.
-</p>
+    <p>
+      <strong>City Express Courier:</strong><br />
+      C-40, Sanjaygram,<br />
+      Rajeev Nagar,<br />
+      Sheetla Mata Mandir Road.
+    </p>
 
   </div>
+
 
   <div className="network-card">
 
@@ -150,12 +156,13 @@ style={{
     </h3>
 
     <p>
-      Our organized distribution system ensures smooth
-      handling, secure storage and reliable last-mile
-      delivery for every shipment.
+      Our organized logistics operations support smooth
+      shipment handling, transportation coordination and
+      reliable delivery for domestic and commercial cargo.
     </p>
 
   </div>
+
 
   <div className="network-card">
 
@@ -164,13 +171,14 @@ style={{
     </div>
 
     <h3>
-      Nationwide Coverage
+      Domestic & International
     </h3>
 
     <p>
-      Serving businesses and individuals through a
-      comprehensive logistics network connecting major
-      cities and commercial hubs across India.
+      City Express Cargo supports domestic and international
+      cargo requirements with multiple transportation
+      options including air, surface, rail and sea cargo
+      services.
     </p>
 
   </div>
@@ -189,54 +197,57 @@ style={{
 <div className="coverage-box">
 
   <h2>
-    Our Network Strength
+    Our Logistics Strength
   </h2>
 
   <p>
-    World Wide Courier Cargo is committed to delivering
-    reliable courier, cargo and logistics services through
-    an extensive transportation network, experienced
-    professionals and customer-focused operations.
+    City Express Cargo is focused on providing dependable
+    cargo and logistics services through efficient
+    transportation solutions, professional shipment
+    handling and customer-focused operations.
   </p>
 
   <div className="coverage-grid">
 
     <div>
 
-      <h3>100+</h3>
+      <h3>8+</h3>
 
       <p>
-        Service Locations
+        Cargo & Logistics Services
       </p>
 
     </div>
+
 
     <div>
 
       <h3>24×7</h3>
 
       <p>
-        Customer Support
+        Shipment Support
       </p>
 
     </div>
 
+
     <div>
 
-      <h3>10+</h3>
+      <h3>4+</h3>
 
       <p>
-        Years of Experience
+        Transportation Modes
       </p>
 
     </div>
 
+
     <div>
 
-      <h3>1000+</h3>
+      <h3>100%</h3>
 
       <p>
-        Successful Deliveries
+        Customer-Focused Service
       </p>
 
     </div>
@@ -250,7 +261,6 @@ style={{
 
 
 
-
 {/* ================= CTA ================= */}
 
 
@@ -258,16 +268,16 @@ style={{
 <div className="network-cta">
 
   <h2>
-    Let's Build A Stronger Supply Chain Together
+    Let's Move Your Business Forward
   </h2>
 
   <p>
-    Partner with World Wide Courier Cargo for
-    fast, secure and technology-driven courier,
-    cargo and logistics services across India.
-    We are committed to delivering reliable
-    transportation solutions for businesses
-    of every size.
+    Partner with City Express Cargo for reliable
+    domestic, international and specialized cargo
+    transportation. From road and air cargo to rail,
+    sea, e-commerce and FTL services, we provide
+    practical logistics solutions for businesses and
+    customers.
   </p>
 
   <Link
@@ -293,9 +303,7 @@ style={{
 
 );
 
-
 };
 
 
 export default Networks;
-

@@ -1,14 +1,19 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "../pages/Page.css";
 
 import careerBanner from "../assets/images/careers.jpg";
 
+
 const Careers = () => {
+
 
 return (
 
 <div className="career-page">
+
 
     {/* ================= HERO ================= */}
 
@@ -29,15 +34,16 @@ return (
 
       <h1>
         Build Your Future With
-        World Wide Courier Cargo
+        City Express Cargo
       </h1>
 
       <p>
-        Join World Wide Courier Cargo and become part of a
-        dynamic team delivering trusted courier, cargo and
-        logistics solutions. We believe in innovation,
-        teamwork and creating opportunities for talented
-        professionals to grow and succeed.
+        Join City Express Cargo and become part of a
+        professional team delivering reliable cargo and
+        logistics solutions. We value teamwork, dedication,
+        customer service and continuous improvement while
+        creating opportunities for talented professionals
+        to grow with us.
       </p>
 
       <Link
@@ -53,6 +59,7 @@ return (
 
 </section>
 
+
     {/* ================= WHY JOIN ================= */}
 
 <section className="why-join">
@@ -64,20 +71,21 @@ return (
       <span>WHY JOIN US</span>
 
       <h2>
-        Build A Rewarding Career With World Wide Courier Cargo
+        Build A Rewarding Career With City Express Cargo
       </h2>
 
       <p>
-        At World Wide Courier Cargo, we believe our people are
-        our greatest strength. We provide a professional work
-        environment where talent is recognized, innovation is
-        encouraged and every employee has the opportunity to
-        learn, grow and succeed.
+        At City Express Cargo, our people play an important
+        role in delivering dependable cargo and logistics
+        services. We believe in a professional work
+        environment where employees can learn, contribute,
+        develop their skills and grow with the organization.
       </p>
 
     </div>
 
     <div className="join-grid">
+
 
       {/* ================= CARD 1 ================= */}
 
@@ -88,12 +96,13 @@ return (
         <h3>Career Growth</h3>
 
         <p>
-          Build a successful career through continuous learning,
-          professional development and long-term growth
-          opportunities within our organization.
+          Develop your career through practical experience,
+          continuous learning and opportunities to take on
+          greater responsibilities within the organization.
         </p>
 
       </div>
+
 
       {/* ================= CARD 2 ================= */}
 
@@ -104,12 +113,13 @@ return (
         <h3>Collaborative Workplace</h3>
 
         <p>
-          Work alongside experienced professionals in a positive,
-          respectful and team-oriented environment that values
-          every individual's contribution.
+          Work with a professional and supportive team where
+          collaboration, communication and mutual respect are
+          valued across different departments.
         </p>
 
       </div>
+
 
       {/* ================= CARD 3 ================= */}
 
@@ -120,12 +130,13 @@ return (
         <h3>Learning & Development</h3>
 
         <p>
-          Gain hands-on experience in courier, cargo,
-          transportation and logistics while enhancing your
-          technical and leadership skills.
+          Gain practical experience in cargo transportation,
+          logistics operations, customer service, shipment
+          handling and other areas of the logistics industry.
         </p>
 
       </div>
+
 
       {/* ================= CARD 4 ================= */}
 
@@ -133,21 +144,23 @@ return (
 
         <div className="join-icon">🏆</div>
 
-        <h3>Recognition & Rewards</h3>
+        <h3>Recognition & Growth</h3>
 
         <p>
-          We appreciate dedication and outstanding performance
-          through career advancement, recognition programs and
-          rewarding opportunities.
+          We value dedication, responsibility and good
+          performance while providing employees with
+          opportunities to develop professionally.
         </p>
 
       </div>
+
 
     </div>
 
   </div>
 
 </section>
+
 
 {/* ================= CURRENT OPENINGS ================= */}
 
@@ -157,22 +170,25 @@ return (
 
     <div className="career-section-heading">
 
-      <span>CURRENT OPPORTUNITIES</span>
+      <span>CAREER OPPORTUNITIES</span>
 
       <h2>
         Join Our Growing Team
       </h2>
 
       <p>
-        World Wide Courier Cargo is looking for passionate,
-        dedicated and talented professionals who are ready
-        to build a successful career in the courier, cargo
-        and logistics industry.
+        City Express Cargo welcomes motivated and
+        responsible professionals who are interested in
+        building a career in cargo, courier, transportation
+        and logistics. If you are passionate about your work
+        and ready to grow, we would like to hear from you.
       </p>
 
     </div>
 
+
     <div className="job-list">
+
 
       {/* ================= JOB 1 ================= */}
 
@@ -180,10 +196,10 @@ return (
 
         <div className="job-info">
 
-          <h3>Delivery Executive</h3>
+          <h3>Delivery & Field Operations</h3>
 
           <p>
-            📍 Delhi NCR • Full Time
+            📍 Location Based • Full Time
           </p>
 
         </div>
@@ -196,6 +212,7 @@ return (
         </Link>
 
       </div>
+
 
       {/* ================= JOB 2 ================= */}
 
@@ -203,10 +220,10 @@ return (
 
         <div className="job-info">
 
-          <h3>Operations Executive</h3>
+          <h3>Logistics Operations</h3>
 
           <p>
-            📍 Noida • Full Time
+            📍 Location Based • Full Time
           </p>
 
         </div>
@@ -219,6 +236,7 @@ return (
         </Link>
 
       </div>
+
 
       {/* ================= JOB 3 ================= */}
 
@@ -226,10 +244,10 @@ return (
 
         <div className="job-info">
 
-          <h3>Warehouse Supervisor</h3>
+          <h3>Warehouse & Cargo Operations</h3>
 
           <p>
-            📍 Ghaziabad • Full Time
+            📍 Location Based • Full Time
           </p>
 
         </div>
@@ -242,6 +260,7 @@ return (
         </Link>
 
       </div>
+
 
       {/* ================= JOB 4 ================= */}
 
@@ -249,10 +268,10 @@ return (
 
         <div className="job-info">
 
-          <h3>Customer Support Executive</h3>
+          <h3>Customer Support</h3>
 
           <p>
-            📍 New Delhi • Full Time
+            📍 Location Based • Full Time
           </p>
 
         </div>
@@ -266,11 +285,13 @@ return (
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
+
 
 
    {/* ================= BENEFITS ================= */}
@@ -288,15 +309,18 @@ return (
       </h2>
 
       <p>
-        At World Wide Courier Cargo, we are committed to
-        creating a workplace where employees feel valued,
-        supported and inspired to achieve their full
-        potential while building a successful career.
+        At City Express Cargo, we aim to create a professional
+        workplace where employees are respected, supported
+        and encouraged to improve their skills while
+        contributing to reliable cargo and logistics
+        operations.
       </p>
 
     </div>
 
+
     <div className="benefits-grid">
+
 
       {/* ================= BENEFIT 1 ================= */}
 
@@ -307,12 +331,13 @@ return (
         <h3>Career Development</h3>
 
         <p>
-          Build your future through continuous learning,
-          professional development and opportunities for
-          long-term career growth.
+          Build your future through practical experience,
+          continuous learning and opportunities for
+          professional growth.
         </p>
 
       </div>
+
 
       {/* ================= BENEFIT 2 ================= */}
 
@@ -323,12 +348,13 @@ return (
         <h3>Training & Skill Enhancement</h3>
 
         <p>
-          Receive practical training, operational guidance
-          and industry exposure to strengthen your technical
-          and professional skills.
+          Develop your operational, communication and
+          professional skills through hands-on experience
+          in the logistics industry.
         </p>
 
       </div>
+
 
       {/* ================= BENEFIT 3 ================= */}
 
@@ -339,12 +365,13 @@ return (
         <h3>Positive Work Environment</h3>
 
         <p>
-          Work with a supportive team that values
-          collaboration, mutual respect and shared
-          success across every department.
+          Work in a professional environment that encourages
+          teamwork, responsibility, communication and
+          mutual respect.
         </p>
 
       </div>
+
 
       {/* ================= BENEFIT 4 ================= */}
 
@@ -352,21 +379,23 @@ return (
 
         <div className="benefit-icon">🏆</div>
 
-        <h3>Recognition & Rewards</h3>
+        <h3>Recognition & Opportunities</h3>
 
         <p>
-          We appreciate dedication through competitive
-          compensation, performance recognition and
-          rewarding career opportunities.
+          We value commitment and good performance while
+          providing opportunities to take on new
+          responsibilities and grow professionally.
         </p>
 
       </div>
+
 
     </div>
 
   </div>
 
 </section>
+
 
 {/* ================= CTA ================= */}
 
@@ -375,15 +404,15 @@ return (
   <div className="container">
 
     <h2>
-      Ready To Build Your Career With World Wide Courier Cargo?
+      Ready To Build Your Career With City Express Cargo?
     </h2>
 
     <p>
-      We are always looking for dedicated, talented and
-      passionate professionals who want to grow with a
-      trusted courier, cargo and logistics company.
-      Join our team and be a part of delivering excellence
-      across India.
+      If you are a dedicated and motivated professional
+      looking for an opportunity in the cargo, courier and
+      logistics industry, connect with City Express Cargo.
+      Share your details with our team and explore suitable
+      career opportunities.
     </p>
 
     <Link
@@ -397,10 +426,13 @@ return (
 
 </section>
 
+
 </div>
 
 );
 
 };
 
+
 export default Careers;
+
