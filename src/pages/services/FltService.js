@@ -1,164 +1,589 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./FTLService.css";
+
 import ftlImage from "../../assets/images/flt.jpg";
 
 const FTLService = () => {
   return (
-    <div className="service-page">
+    <div className="ftl-service-page">
 
-      {/* ================= HERO ================= */}
+      {/* ==================================================
+          HERO
+      ================================================== */}
+
       <section
-        className="service-hero"
+        className="ftl-hero"
         style={{ backgroundImage: `url(${ftlImage})` }}
       >
-        <div className="service-overlay"></div>
+        <div className="ftl-hero-overlay"></div>
 
-        <div className="container">
-          <div className="service-hero-content">
+        <div className="ftl-container">
 
-            <span className="section-tag">
-              FTL CARGO SERVICES
-            </span>
+          <div className="ftl-hero-content">
+
+            <div className="ftl-label">
+              <span className="ftl-label-dot"></span>
+              FULL TRUCK LOAD SERVICES
+            </div>
 
             <h1>
-              Reliable Full Truck Load Transportation
+              One Truck.
+              <br />
+              <span>One Dedicated Journey.</span>
             </h1>
 
             <p>
-              Dedicated truck transportation solutions for large-volume
-              shipments with safe, reliable and timely delivery.
+              Dedicated truck transportation for large-volume shipments,
+              designed for direct movement, secure handling and dependable
+              delivery from origin to destination.
             </p>
 
+            <div className="ftl-hero-actions">
+
+              <Link
+                to="/contact-us"
+                className="ftl-primary-btn"
+              >
+                Get FTL Quote
+                <span>→</span>
+              </Link>
+
+              <a
+                href="#ftl-solutions"
+                className="ftl-outline-btn"
+              >
+                Explore FTL Solutions
+              </a>
+
+            </div>
+
           </div>
+
         </div>
+
+        <div className="ftl-hero-bottom">
+          <div>DIRECT TRANSPORT</div>
+          <div>DEDICATED VEHICLE</div>
+          <div>SECURE CARGO</div>
+        </div>
+
       </section>
 
 
-      {/* ================= CONTENT ================= */}
-      <section className="service-content-section">
+      {/* ==================================================
+          INTRO / OVERVIEW
+      ================================================== */}
 
-        <div className="container">
+      <section
+        className="ftl-overview"
+        id="ftl-solutions"
+      >
 
-          {/* INTRO */}
-          <div className="service-intro">
+        <div className="ftl-container">
 
-            <span className="section-tag">
-              FTL LOGISTICS SOLUTIONS
-            </span>
+          <div className="ftl-overview-grid">
 
-            <h2>
-              Safe, Dedicated & Efficient Full Truck Load Services
-            </h2>
+            <div className="ftl-overview-heading">
+
+              <span className="ftl-section-number">
+                01 / FTL LOGISTICS
+              </span>
+
+              <h2>
+                Dedicated capacity
+                <br />
+                for <span>larger shipments.</span>
+              </h2>
+
+            </div>
+
+
+            <div className="ftl-overview-text">
+
+              <p className="ftl-lead">
+                City Express Courier provides Full Truck Load (FTL)
+                transportation for businesses that need an entire vehicle
+                dedicated to their shipment.
+              </p>
+
+              <p>
+                FTL service is ideal for large-volume, bulk and commercial
+                cargo where direct transportation and efficient movement
+                are important. By dedicating the vehicle to one shipment,
+                unnecessary cargo handling and intermediate movement can
+                be reduced.
+              </p>
+
+              <p>
+                From pickup to final delivery, our logistics team focuses
+                on coordinated transportation, secure cargo handling and
+                dependable shipment movement.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          {/* ==================================================
+              FTL STATS
+          ================================================== */}
+
+          <div className="ftl-stat-bar">
+
+            <div className="ftl-stat">
+              <strong>01</strong>
+              <span>Dedicated Vehicle</span>
+            </div>
+
+            <div className="ftl-stat">
+              <strong>02</strong>
+              <span>Direct Movement</span>
+            </div>
+
+            <div className="ftl-stat">
+              <strong>03</strong>
+              <span>Secure Handling</span>
+            </div>
+
+            <div className="ftl-stat">
+              <strong>04</strong>
+              <span>Door-to-Door</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ==================================================
+          SOLUTIONS
+      ================================================== */}
+
+      <section className="ftl-solutions">
+
+        <div className="ftl-container">
+
+          <div className="ftl-section-header">
+
+            <div>
+
+              <span className="ftl-section-number">
+                02 / OUR CAPABILITIES
+              </span>
+
+              <h2>
+                Built for the
+                <br />
+                <span>full load.</span>
+              </h2>
+
+            </div>
 
             <p>
-              City Express Cargo provides Full Truck Load (FTL) services
-              for businesses that require a dedicated vehicle for their
-              complete shipment. Our FTL solutions are suitable for
-              large-volume and bulk cargo requiring direct transportation.
-            </p>
-
-            <p>
-              With dedicated truck movement, secure cargo handling and
-              efficient transportation planning, we help businesses
-              move their shipments safely and on time.
+              Flexible FTL transportation solutions designed around
+              shipment size, route requirements and delivery needs.
             </p>
 
           </div>
 
 
-          {/* FEATURES */}
-          <div className="feature-grid">
+          <div className="ftl-card-grid">
 
-            <div className="feature-card">
+            <div className="ftl-card ftl-card-featured">
+
+              <div className="ftl-card-top">
+                <span>01</span>
+                <div className="ftl-card-icon">↗</div>
+              </div>
+
               <h3>Dedicated Truck</h3>
+
               <p>
-                Dedicated vehicles are provided for your complete shipment,
-                ensuring direct transportation.
+                A dedicated vehicle is assigned to your complete shipment,
+                providing direct transportation without sharing truck
+                capacity with other cargo.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Dedicated Capacity
+              </small>
+
             </div>
 
-            <div className="feature-card">
+
+            <div className="ftl-card">
+
+              <div className="ftl-card-top">
+                <span>02</span>
+                <div className="ftl-card-icon">▦</div>
+              </div>
+
               <h3>Large Volume Cargo</h3>
+
               <p>
-                Suitable for large-volume, bulk and commercial shipments
-                requiring full truck capacity.
+                Suitable for bulk, commercial and large-volume shipments
+                requiring the capacity of an entire truck.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Large Shipments
+              </small>
+
             </div>
 
-            <div className="feature-card">
+
+            <div className="ftl-card">
+
+              <div className="ftl-card-top">
+                <span>03</span>
+                <div className="ftl-card-icon">→</div>
+              </div>
+
               <h3>Direct Transportation</h3>
+
               <p>
-                Direct movement of cargo helps reduce unnecessary handling
-                and transit delays.
+                Direct point-to-point movement helps simplify the
+                transportation journey and reduce unnecessary handling.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Point To Point
+              </small>
+
             </div>
 
-            <div className="feature-card">
+
+            <div className="ftl-card">
+
+              <div className="ftl-card-top">
+                <span>04</span>
+                <div className="ftl-card-icon">⌂</div>
+              </div>
+
               <h3>Door-to-Door Delivery</h3>
+
               <p>
-                Convenient pickup and delivery solutions from the
-                shipment origin to the final destination.
+                Coordinated pickup and delivery from the shipment origin
+                to the final destination.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Complete Movement
+              </small>
+
             </div>
 
-            <div className="feature-card">
+
+            <div className="ftl-card">
+
+              <div className="ftl-card-top">
+                <span>05</span>
+                <div className="ftl-card-icon">✓</div>
+              </div>
+
               <h3>Safe Cargo Handling</h3>
+
               <p>
-                Professional handling and transportation practices help
-                keep your cargo secure throughout the journey.
+                Professional transportation practices help protect cargo
+                throughout the movement from pickup to delivery.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Cargo Protection
+              </small>
+
             </div>
 
-            <div className="feature-card">
+
+            <div className="ftl-card">
+
+              <div className="ftl-card-top">
+                <span>06</span>
+                <div className="ftl-card-icon">⌁</div>
+              </div>
+
               <h3>Shipment Tracking</h3>
+
               <p>
-                Track your shipment movement and stay updated throughout
-                the transportation process.
+                Stay informed about shipment movement with tracking and
+                status updates throughout transportation.
               </p>
+
+              <div className="ftl-card-line"></div>
+
+              <small>
+                Shipment Visibility
+              </small>
+
             </div>
 
           </div>
 
+        </div>
 
-          {/* BENEFITS */}
-          <div className="service-benefits">
+      </section>
 
-            <span className="section-tag">
-              WHY CHOOSE FTL SERVICE
+
+      {/* ==================================================
+          TRANSPORT PROCESS
+      ================================================== */}
+
+      <section className="ftl-process">
+
+        <div className="ftl-container">
+
+          <div className="ftl-process-header">
+
+            <span className="ftl-section-number">
+              03 / TRANSPORT PROCESS
             </span>
 
             <h2>
-              Efficient Transportation For Large Shipments
+              From pickup
+              <br />
+              to <span>destination.</span>
             </h2>
-
-            <ul>
-              <li>Dedicated trucks for complete shipments</li>
-              <li>Ideal for large-volume and commercial cargo</li>
-              <li>Direct point-to-point transportation</li>
-              <li>Reduced cargo handling during transit</li>
-              <li>Safe and secure cargo transportation</li>
-              <li>Door-to-door pickup and delivery</li>
-              <li>Reliable and timely shipment movement</li>
-              <li>Professional logistics support</li>
-            </ul>
 
           </div>
 
 
-          {/* CTA */}
-          <div className="service-cta">
+          <div className="ftl-route">
 
-            <h2>
-              Looking For Reliable FTL Cargo Services?
-            </h2>
+            <div className="ftl-route-line"></div>
 
-            <p>
-              Choose City Express Cargo for dedicated truck
-              transportation and efficient Full Truck Load solutions
-              for your business shipments.
-            </p>
 
-            <a href="/NotFound" className="btn-primary">
-              Get A Quote
-            </a>
+            <div className="ftl-route-step">
+
+              <div className="ftl-route-marker">
+                01
+              </div>
+
+              <div>
+                <h3>Shipment Planning</h3>
+                <p>
+                  Understand cargo requirements, route and vehicle
+                  requirements before transportation.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="ftl-route-step">
+
+              <div className="ftl-route-marker">
+                02
+              </div>
+
+              <div>
+                <h3>Truck Allocation</h3>
+                <p>
+                  Coordinate the appropriate dedicated vehicle for
+                  the shipment.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="ftl-route-step">
+
+              <div className="ftl-route-marker">
+                03
+              </div>
+
+              <div>
+                <h3>Cargo Pickup</h3>
+                <p>
+                  Cargo is collected from the origin and prepared
+                  for direct transportation.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="ftl-route-step">
+
+              <div className="ftl-route-marker">
+                04
+              </div>
+
+              <div>
+                <h3>Direct Movement</h3>
+                <p>
+                  Dedicated truck movement keeps the shipment focused
+                  on its planned destination.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="ftl-route-step">
+
+              <div className="ftl-route-marker">
+                05
+              </div>
+
+              <div>
+                <h3>Final Delivery</h3>
+                <p>
+                  Shipment reaches the destination through coordinated
+                  final-mile delivery.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ==================================================
+          WHY FTL
+      ================================================== */}
+
+      <section className="ftl-why">
+
+        <div className="ftl-container">
+
+          <div className="ftl-why-box">
+
+            <div className="ftl-why-heading">
+
+              <span className="ftl-section-number">
+                04 / WHY FTL
+              </span>
+
+              <h2>
+                More control.
+                <br />
+                <span>Less handling.</span>
+              </h2>
+
+              <p>
+                Full Truck Load transportation gives businesses a
+                dedicated movement solution for larger shipments.
+              </p>
+
+            </div>
+
+
+            <div className="ftl-benefit-list">
+
+              <div className="ftl-benefit">
+                <span>01</span>
+
+                <div>
+                  <h3>Dedicated Capacity</h3>
+                  <p>
+                    Complete truck capacity dedicated to your shipment.
+                  </p>
+                </div>
+              </div>
+
+
+              <div className="ftl-benefit">
+                <span>02</span>
+
+                <div>
+                  <h3>Reduced Handling</h3>
+                  <p>
+                    Fewer intermediate handling points during transit.
+                  </p>
+                </div>
+              </div>
+
+
+              <div className="ftl-benefit">
+                <span>03</span>
+
+                <div>
+                  <h3>Direct Movement</h3>
+                  <p>
+                    Point-to-point transportation for efficient cargo
+                    movement.
+                  </p>
+                </div>
+              </div>
+
+
+              <div className="ftl-benefit">
+                <span>04</span>
+
+                <div>
+                  <h3>Business Support</h3>
+                  <p>
+                    Professional logistics coordination throughout
+                    the shipment journey.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ==================================================
+          CTA
+      ================================================== */}
+
+      <section className="ftl-cta">
+
+        <div className="ftl-container">
+
+          <div className="ftl-cta-inner">
+
+            <div>
+
+              <span className="ftl-cta-label">
+                CITY EXPRESS COURIER
+              </span>
+
+              <h2>
+                Have a full truck
+                <br />
+                <span>to move?</span>
+              </h2>
+
+              <p>
+                Tell us your shipment requirements and let our logistics
+                team help coordinate the right FTL transportation solution.
+              </p>
+
+            </div>
+
+
+            <Link
+              to="/contact-us"
+              className="ftl-cta-button"
+            >
+              Request FTL Quote
+              <span>→</span>
+            </Link>
 
           </div>
 

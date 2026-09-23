@@ -1,462 +1,955 @@
-/* ==========================================================
-   NOT FOUND PAGE
-========================================================== */
+/* =========================================================
+   CITY EXPRESS COURIER
+   GET QUOTE PAGE
+   Fully isolated page CSS
+========================================================= */
 
-.notfound-page{
+.quote-page {
+  --quote-primary: #003B95;
+  --quote-primary-dark: #002B73;
+  --quote-primary-light: #3B6FC4;
+  --quote-secondary: #0B5CC7;
 
-    min-height:100vh;
+  --quote-bg: #F5F8FC;
+  --quote-surface: #FFFFFF;
 
-    display:flex;
+  --quote-text: #102A43;
+  --quote-text-light: #64748B;
+  --quote-white: #FFFFFF;
 
-    align-items:center;
+  --quote-border: #D9E2F0;
 
-    background:
+  background: var(--quote-bg);
+  color: var(--quote-text);
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.quote-page .quote-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.quote-page .quote-hero {
+  position: relative;
+  min-height: 460px;
+
+  display: flex;
+  align-items: center;
+
+  background:
     linear-gradient(
-        135deg,
-        #f8fafc,
-        #eef5ff
+      120deg,
+      var(--quote-primary-dark) 0%,
+      var(--quote-primary) 55%,
+      var(--quote-secondary) 100%
     );
 
-    overflow:hidden;
-
-    position:relative;
-
-    padding:100px 0;
-
+  overflow: hidden;
 }
 
 
-/* ==========================================================
-   BACKGROUND SHAPES
-========================================================== */
+/* Decorative background shapes */
 
-.notfound-page::before{
+.quote-page .quote-hero::before {
+  content: "";
+  position: absolute;
 
-    content:"";
+  width: 520px;
+  height: 520px;
 
-    position:absolute;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
 
-    width:420px;
-    height:420px;
+  right: -180px;
+  top: -180px;
+}
 
-    border-radius:50%;
+.quote-page .quote-hero::after {
+  content: "";
 
-    background:
-    radial-gradient(
-        rgba(37,99,235,.12),
-        transparent 70%
+  position: absolute;
+
+  width: 360px;
+  height: 360px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+
+  right: 80px;
+  bottom: -260px;
+}
+
+
+/* Overlay */
+
+.quote-page .quote-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 43, 115, 0.35),
+      transparent 70%
     );
 
-    top:-120px;
-    left:-120px;
-
+  pointer-events: none;
 }
 
-.notfound-page::after{
 
-    content:"";
+/* Hero content */
 
-    position:absolute;
+.quote-page .quote-hero-content {
+  position: relative;
+  z-index: 2;
 
-    width:350px;
-    height:350px;
+  max-width: 760px;
 
-    border-radius:50%;
+  padding: 100px 0 90px;
+}
 
-    background:
-    radial-gradient(
-        rgba(34,197,94,.10),
-        transparent 70%
+.quote-page .quote-hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+
+  color: var(--quote-white);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.quote-page .quote-hero-content h1 {
+  margin: 24px 0 18px;
+
+  color: var(--quote-white);
+
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 0.98;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.quote-page .quote-hero-content h1 span {
+  display: block;
+  color: #DCE9FF;
+}
+
+.quote-page .quote-hero-content > p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* Hero points */
+
+.quote-page .quote-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+
+  margin-top: 32px;
+}
+
+.quote-page .quote-hero-point {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--quote-white);
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.quote-page .quote-hero-point span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  color: #FFFFFF;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   MAIN QUOTE SECTION
+========================================================= */
+
+.quote-page .quote-main-section {
+  padding: 90px 0 100px;
+}
+
+.quote-page .quote-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT INFORMATION
+========================================================= */
+
+.quote-page .quote-info {
+  padding-top: 15px;
+}
+
+.quote-page .quote-section-tag {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: var(--quote-secondary);
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.quote-page .quote-info h2 {
+  margin: 0 0 22px;
+
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+
+  color: var(--quote-text);
+}
+
+.quote-page .quote-info h2 strong {
+  display: block;
+  color: var(--quote-primary);
+}
+
+.quote-page .quote-info-intro {
+  margin: 0;
+
+  color: var(--quote-text-light);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROCESS CARDS
+========================================================= */
+
+.quote-page .quote-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-top: 38px;
+}
+
+.quote-page .quote-info-card {
+  display: flex;
+  gap: 18px;
+
+  padding: 20px;
+
+  background: var(--quote-surface);
+
+  border: 1px solid var(--quote-border);
+  border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.quote-page .quote-info-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(0, 59, 149, 0.25);
+
+  box-shadow: 0 14px 35px rgba(0, 43, 115, 0.08);
+}
+
+.quote-page .quote-info-icon {
+  flex: 0 0 44px;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: var(--quote-primary);
+
+  color: var(--quote-white);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.quote-page .quote-info-card h3 {
+  margin: 1px 0 6px;
+
+  font-size: 15px;
+  color: var(--quote-text);
+}
+
+.quote-page .quote-info-card p {
+  margin: 0;
+
+  color: var(--quote-text-light);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+========================================================= */
+
+.quote-page .quote-contact-box {
+  margin-top: 35px;
+
+  padding: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--quote-primary-dark),
+      var(--quote-primary)
     );
 
-    right:-80px;
-    bottom:-80px;
+  border-radius: 14px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-page .quote-contact-box::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+
+  right: -80px;
+  bottom: -100px;
+}
+
+.quote-page .quote-contact-box > span {
+  position: relative;
+  z-index: 1;
+
+  color: #BFD4F5;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.quote-page .quote-contact-box h3 {
+  position: relative;
+  z-index: 1;
+
+  margin: 10px 0 22px;
+
+  color: var(--quote-white);
+
+  font-size: 23px;
+  line-height: 1.2;
+}
+
+.quote-page .quote-contact-box h3 strong {
+  display: block;
+  color: #DCE9FF;
+}
+
+.quote-page .quote-contact-details {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote-page .quote-contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--quote-white);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.quote-page .quote-contact-details a span {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   FORM WRAPPER
+========================================================= */
+
+.quote-page .quote-form-wrapper {
+  background: var(--quote-surface);
+
+  border: 1px solid var(--quote-border);
+  border-radius: 18px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 43, 115, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   FORM HEADER
+========================================================= */
+
+.quote-page .quote-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 28px 32px;
+
+  background: var(--quote-primary);
+}
+
+.quote-page .quote-form-header span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #BFD4F5;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.quote-page .quote-form-header h2 {
+  margin: 0;
+
+  color: var(--quote-white);
+
+  font-size: 27px;
+}
+
+.quote-page .quote-form-number {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  color: var(--quote-white);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.quote-page .quote-form {
+  padding: 34px;
+}
+
+.quote-page .quote-form-section {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid var(--quote-border);
+}
+
+.quote-page .quote-form-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.quote-page .quote-form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: var(--quote-text);
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.quote-page .quote-form-section-title span {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #EAF1FB;
+
+  color: var(--quote-primary);
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.quote-page .quote-form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.quote-page .quote-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-page .quote-field-full {
+  grid-column: 1 / -1;
+}
+
+.quote-page .quote-field label {
+  margin-bottom: 8px;
+
+  color: var(--quote-text);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.quote-page .quote-field input,
+.quote-page .quote-field select,
+.quote-page .quote-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid var(--quote-border);
+  border-radius: 8px;
+
+  background: #FBFCFE;
+
+  color: var(--quote-text);
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.quote-page .quote-field input,
+.quote-page .quote-field select {
+  height: 48px;
+  padding: 0 14px;
+}
+
+.quote-page .quote-field textarea {
+  min-height: 120px;
+  padding: 14px;
+  resize: vertical;
+}
+
+.quote-page .quote-field input::placeholder,
+.quote-page .quote-field textarea::placeholder {
+  color: #94A3B8;
+}
+
+.quote-page .quote-field input:focus,
+.quote-page .quote-field select:focus,
+.quote-page .quote-field textarea:focus {
+  border-color: var(--quote-primary-light);
+
+  background: var(--quote-white);
+
+  box-shadow:
+    0 0 0 3px rgba(59, 111, 196, 0.12);
+}
+
+
+/* =========================================================
+   SUBMIT AREA
+========================================================= */
+
+.quote-page .quote-submit-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding-top: 4px;
+}
+
+.quote-page .quote-submit-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  max-width: 250px;
+}
+
+.quote-page .quote-submit-note span {
+  font-size: 14px;
+}
+
+.quote-page .quote-submit-note p {
+  margin: 0;
+
+  color: var(--quote-text-light);
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+/* Submit button */
+
+.quote-page .quote-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  min-height: 52px;
+
+  padding: 0 24px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: var(--quote-primary);
+
+  color: var(--quote-white);
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.quote-page .quote-submit-btn span {
+  font-size: 18px;
+}
+
+.quote-page .quote-submit-btn:hover {
+  background: var(--quote-primary-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 59, 149, 0.22);
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.quote-page .quote-bottom-cta {
+  padding: 35px 0;
+
+  background: var(--quote-primary-dark);
+}
+
+.quote-page .quote-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.quote-page .quote-bottom-inner > div > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #AFC8EC;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.quote-page .quote-bottom-inner h2 {
+  margin: 0;
+
+  color: var(--quote-white);
+
+  font-size: 28px;
+}
+
+.quote-page .quote-bottom-inner h2 strong {
+  margin-left: 7px;
+
+  color: #BFD7F8;
+}
+
+.quote-page .quote-track-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+
+  color: var(--quote-white);
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.quote-page .quote-track-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.quote-page .quote-track-btn span {
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .quote-page .quote-layout {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .quote-page .quote-info {
+    max-width: 760px;
+  }
+
+  .quote-page .quote-info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quote-page .quote-contact-box {
+    max-width: 500px;
+  }
 
 }
 
 
-/* ==========================================================
-   GRID
-========================================================== */
+/* =========================================================
+   MOBILE
+========================================================= */
 
-.notfound-grid{
+@media (max-width: 700px) {
 
-    display:grid;
+  .quote-page .quote-container {
+    width: min(100% - 28px, 1180px);
+  }
 
-    grid-template-columns:1fr 1fr;
+  .quote-page .quote-hero {
+    min-height: 420px;
+  }
 
-    gap:70px;
+  .quote-page .quote-hero-content {
+    padding: 75px 0 70px;
+  }
 
-    align-items:center;
+  .quote-page .quote-hero-content h1 {
+    font-size: 46px;
+    letter-spacing: -1.5px;
+  }
 
-    position:relative;
+  .quote-page .quote-hero-content > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
 
-    z-index:2;
+  .quote-page .quote-hero-points {
+    gap: 10px 18px;
+  }
 
-}
+  .quote-page .quote-hero-point {
+    font-size: 12px;
+  }
 
 
-/* ==========================================================
-   LEFT CONTENT
-========================================================== */
+  .quote-page .quote-main-section {
+    padding: 60px 0 70px;
+  }
 
-.notfound-content{
+  .quote-page .quote-info h2 {
+    font-size: 38px;
+  }
 
-    max-width:600px;
+  .quote-page .quote-info-cards {
+    grid-template-columns: 1fr;
+  }
 
-}
 
-.error-tag{
+  .quote-page .quote-form-header {
+    padding: 24px 20px;
+  }
 
-    display:inline-block;
+  .quote-page .quote-form {
+    padding: 25px 20px;
+  }
 
-    padding:8px 20px;
+  .quote-page .quote-form-grid {
+    grid-template-columns: 1fr;
+  }
 
-    border-radius:30px;
+  .quote-page .quote-field-full {
+    grid-column: auto;
+  }
 
-    background:#dbeafe;
+  .quote-page .quote-submit-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    color:var(--primary);
+  .quote-page .quote-submit-note {
+    max-width: none;
+  }
 
-    font-size:14px;
+  .quote-page .quote-submit-btn {
+    width: 100%;
+  }
 
-    font-weight:700;
 
-    letter-spacing:2px;
-
-    margin-bottom:22px;
-
-}
-
-.notfound-content h1{
-
-    font-size:clamp(3rem,5vw,5rem);
-
-    line-height:1.1;
-
-    color:var(--text);
-
-    margin-bottom:25px;
-
-    font-weight:900;
-
-}
-
-.notfound-content p{
-
-    font-size:18px;
-
-    line-height:1.9;
-
-    color:var(--text-light);
-
-    margin-bottom:40px;
-
-}
-/* ==========================================================
-   BUTTONS
-========================================================== */
-
-.notfound-buttons{
-
-    display:flex;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-.btn-outline-dark{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:14px 34px;
-
-    border:2px solid var(--primary);
-
-    color:var(--primary);
-
-    background:#fff;
-
-    border-radius:12px;
-
-    font-weight:600;
-
-    transition:.35s;
-
-}
-
-.btn-outline-dark:hover{
-
-    background:var(--primary);
-
-    color:#fff;
-
-    transform:translateY(-3px);
+  .quote-page .quote-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
 }
 
 
-/* ==========================================================
-   RIGHT IMAGE
-========================================================== */
-
-.notfound-image{
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.notfound-image img{
-
-    width:100%;
-
-    max-width:520px;
-
-    animation:floatImage 4s ease-in-out infinite;
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-
-/* ==========================================================
-   BIG 404
-========================================================== */
-
-.error-number{
-
-    position:absolute;
-
-    top:50%;
-
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    font-size:180px;
-
-    font-weight:900;
-
-    color:rgba(37,99,235,.08);
-
-    z-index:1;
-
-    user-select:none;
-
-    letter-spacing:10px;
-
-}
-
-
-/* ==========================================================
-   FLOAT ANIMATION
-========================================================== */
-
-@keyframes floatImage{
-
-    0%{
-
-        transform:translateY(0px);
-
-    }
-
-    50%{
-
-        transform:translateY(-18px);
-
-    }
-
-    100%{
-
-        transform:translateY(0px);
-
-    }
-
-}
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
-
-@media (max-width:992px){
-
-    .notfound-page{
-
-        padding:80px 0;
-
-    }
-
-    .notfound-grid{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
-
-        gap:50px;
-
-    }
-
-    .notfound-content{
-
-        max-width:100%;
-
-    }
-
-    .notfound-buttons{
-
-        justify-content:center;
-
-    }
-
-    .notfound-image{
-
-        order:-1;
-
-    }
-
-    .notfound-image img{
-
-        max-width:420px;
-
-    }
-
-    .error-number{
-
-        font-size:140px;
-
-    }
-
-}
-
-@media (max-width:768px){
-
-    .notfound-page{
-
-        padding:70px 0;
-
-    }
-
-    .notfound-content h1{
-
-        font-size:42px;
-
-    }
-
-    .notfound-content p{
-
-        font-size:16px;
-
-    }
-
-    .error-number{
-
-        font-size:110px;
-
-    }
-
-    .notfound-image img{
-
-        max-width:320px;
-
-    }
-
-}
-
-@media (max-width:576px){
-
-    .notfound-page{
-
-        padding:50px 0;
-
-    }
-
-    .error-tag{
-
-        font-size:12px;
-
-        letter-spacing:1px;
-
-    }
-
-    .notfound-content h1{
-
-        font-size:34px;
-
-    }
-
-    .notfound-content p{
-
-        font-size:15px;
-
-        line-height:1.8;
-
-    }
-
-    .notfound-buttons{
-
-        flex-direction:column;
-
-    }
-
-    .notfound-buttons .btn-primary,
-    .notfound-buttons .btn-outline-dark{
-
-        width:100%;
-
-    }
-
-    .notfound-image img{
-
-        max-width:260px;
-
-    }
-
-    .error-number{
-
-        font-size:90px;
-
-    }
-
-}
-
-
-/* ==========================================================
-   EXTRA HOVER EFFECTS
-========================================================== */
-
-.notfound-image{
-
-    transition:.4s;
-
-}
-
-.notfound-image:hover{
-
-    transform:scale(1.03);
-
-}
-
-.notfound-content h1{
-
-    transition:.3s;
-
-}
-
-.notfound-content h1:hover{
-
-    color:var(--primary);
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .quote-page .quote-hero-content h1 {
+    font-size: 39px;
+  }
+
+  .quote-page .quote-hero-tag {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .quote-page .quote-info h2 {
+    font-size: 33px;
+  }
+
+  .quote-page .quote-form-header h2 {
+    font-size: 23px;
+  }
+
+  .quote-page .quote-bottom-inner h2 {
+    font-size: 24px;
+  }
+
+  .quote-page .quote-bottom-inner h2 strong {
+    display: block;
+    margin-left: 0;
+    margin-top: 3px;
+  }
 
 }

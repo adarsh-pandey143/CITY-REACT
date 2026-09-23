@@ -62,21 +62,23 @@ const Footer = () => {
 
 
               <h3>
-                City Express Cargo
+                City Express Courier
               </h3>
 
 
               <p>
-                At City Express Cargo, we provide reliable courier,
-                cargo and logistics solutions designed to move your
-                shipments safely, efficiently and on time.
+                At City Express Courier, we provide fast, safe and
+                reliable courier and delivery solutions designed to
+                ensure your shipments reach their destination securely
+                and on time.
               </p>
 
 
               <p>
-                With domestic, air, surface, rail, e-commerce and
-                FTL cargo services, we help businesses and customers
-                transport their shipments with confidence.
+                From domestic and express deliveries to air, surface,
+                e-commerce and specialized courier services, we help
+                individuals and businesses deliver their shipments
+                with confidence.
               </p>
 
 
@@ -94,12 +96,12 @@ const Footer = () => {
               </h3>
 
 
-               <ul className="service-list">
+              <ul className="service-list">
 
 
                 <li>
                   <Link to="/services/roadways">
-                    Road Transport
+                    Domestic Courier
                   </Link>
                 </li>
 
@@ -113,21 +115,21 @@ const Footer = () => {
 
                 <li>
                   <Link to="/services/airfreight">
-                    Air Freight
+                    International Delivery
                   </Link>
                 </li>
 
 
                 <li>
                   <Link to="/services/warehouse">
-                    Warehousing
+                    Sea Delivery
                   </Link>
                 </li>
 
 
                 <li>
                   <Link to="/services/surface">
-                    Surface Cargo
+                    Surface Delivery
                   </Link>
                 </li>
 
@@ -141,14 +143,14 @@ const Footer = () => {
 
                 <li>
                   <Link to="/services/ecommerce">
-                    E-Commerce
+                    E-Commerce Delivery
                   </Link>
                 </li>
 
 
                 <li>
                   <Link to="/services/train">
-                    Cargo By Train
+                    Train Delivery
                   </Link>
                 </li>
 
@@ -252,8 +254,8 @@ const Footer = () => {
                 <li>
                   Location:
                   <br />
-                  City Express Courier, C-40, Sanjaygram,
-                  Rajeev Nagar, Sheetla Mata Mandir Road.
+                  City Express Courier, mata Ekvira building ,
+                  radha nagar Tulij road, Nalasopara, East vasai, Maharashtra 401209, India
                 </li>
 
 
@@ -274,7 +276,7 @@ const Footer = () => {
 
 
             <p>
-              © 2018 - {new Date().getFullYear()} City Express Cargo.
+              © 2018 - {new Date().getFullYear()} City Express Courier.
               All Rights Reserved.
             </p>
 

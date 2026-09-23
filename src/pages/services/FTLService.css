@@ -1,0 +1,1290 @@
+/* ==========================================================
+   CITY EXPRESS COURIER
+   FTL SERVICE PAGE
+   Completely isolated page CSS
+========================================================== */
+
+
+/* ==========================================================
+   PAGE ROOT
+========================================================== */
+
+.ftl-service-page {
+  --ftl-primary: #003B95;
+  --ftl-primary-dark: #002B73;
+  --ftl-primary-light: #3B6FC4;
+  --ftl-secondary: #0B5CC7;
+
+  --ftl-bg: #F5F8FC;
+  --ftl-white: #FFFFFF;
+
+  --ftl-text: #102A43;
+  --ftl-text-light: #64748B;
+  --ftl-border: #D9E2F0;
+
+  width: 100%;
+  overflow: hidden;
+
+  background: var(--ftl-bg);
+  color: var(--ftl-text);
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.ftl-service-page .ftl-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.ftl-service-page .ftl-hero {
+  min-height: 690px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+
+/* Overlay */
+
+.ftl-service-page .ftl-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 43, 115, 0.97) 0%,
+      rgba(0, 59, 149, 0.90) 43%,
+      rgba(0, 43, 115, 0.52) 70%,
+      rgba(0, 0, 0, 0.20) 100%
+    );
+
+  z-index: 1;
+}
+
+
+/* Hero Content */
+
+.ftl-service-page .ftl-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 780px;
+
+  padding: 110px 0 150px;
+}
+
+
+/* Label */
+
+.ftl-service-page .ftl-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+
+.ftl-service-page .ftl-label-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: var(--ftl-white);
+
+  box-shadow:
+    0 0 0 5px rgba(255, 255, 255, 0.13);
+}
+
+
+/* Hero Heading */
+
+.ftl-service-page .ftl-hero-content h1 {
+  margin: 0 0 25px;
+
+  color: var(--ftl-white);
+
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+
+.ftl-service-page .ftl-hero-content h1 span {
+  color: #DCEAFF;
+}
+
+
+/* Hero Paragraph */
+
+.ftl-service-page .ftl-hero-content > p {
+  max-width: 680px;
+
+  margin: 0 0 35px;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* Hero Actions */
+
+.ftl-service-page .ftl-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+
+/* Primary Button */
+
+.ftl-service-page .ftl-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  min-height: 54px;
+
+  padding: 0 24px;
+
+  border-radius: 8px;
+
+  background: var(--ftl-white);
+  color: var(--ftl-primary);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.ftl-service-page .ftl-primary-btn span {
+  font-size: 20px;
+
+  transition: transform 0.25s ease;
+}
+
+
+.ftl-service-page .ftl-primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: var(--ftl-primary-light);
+  color: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-primary-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* Outline Button */
+
+.ftl-service-page .ftl-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 54px;
+
+  padding: 0 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: var(--ftl-white);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.ftl-service-page .ftl-outline-btn:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ==========================================================
+   HERO BOTTOM BAR
+========================================================== */
+
+.ftl-service-page .ftl-hero-bottom {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  z-index: 3;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  background: rgba(0, 43, 115, 0.52);
+
+  backdrop-filter: blur(12px);
+}
+
+
+.ftl-service-page .ftl-hero-bottom div {
+  min-height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.ftl-service-page .ftl-hero-bottom div:last-child {
+  border-right: 0;
+}
+
+
+/* ==========================================================
+   OVERVIEW
+========================================================== */
+
+.ftl-service-page .ftl-overview {
+  padding: 105px 0;
+
+  background: var(--ftl-white);
+}
+
+
+/* Overview Grid */
+
+.ftl-service-page .ftl-overview-grid {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 90px;
+
+  align-items: start;
+}
+
+
+/* Section Number */
+
+.ftl-service-page .ftl-section-number {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: var(--ftl-secondary);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+
+/* Overview Heading */
+
+.ftl-service-page .ftl-overview-heading h2 {
+  margin: 0;
+
+  color: var(--ftl-text);
+
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ftl-service-page .ftl-overview-heading h2 span {
+  color: var(--ftl-primary);
+}
+
+
+/* Overview Text */
+
+.ftl-service-page .ftl-overview-text {
+  padding-top: 8px;
+}
+
+
+.ftl-service-page .ftl-overview-text p {
+  margin: 0 0 22px;
+
+  color: var(--ftl-text-light);
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+
+.ftl-service-page .ftl-overview-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+.ftl-service-page .ftl-overview-text .ftl-lead {
+  color: var(--ftl-text);
+
+  font-size: 18px;
+  line-height: 1.75;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.ftl-service-page .ftl-stat-bar {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 75px;
+
+  border-top: 1px solid var(--ftl-border);
+  border-bottom: 1px solid var(--ftl-border);
+}
+
+
+.ftl-service-page .ftl-stat {
+  min-height: 130px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 20px 25px;
+
+  border-right: 1px solid var(--ftl-border);
+}
+
+
+.ftl-service-page .ftl-stat:last-child {
+  border-right: 0;
+}
+
+
+.ftl-service-page .ftl-stat strong {
+  margin-bottom: 8px;
+
+  color: var(--ftl-primary);
+
+  font-size: 13px;
+}
+
+
+.ftl-service-page .ftl-stat span {
+  color: var(--ftl-text);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   SOLUTIONS
+========================================================== */
+
+.ftl-service-page .ftl-solutions {
+  padding: 110px 0;
+
+  background: var(--ftl-bg);
+}
+
+
+/* Section Header */
+
+.ftl-service-page .ftl-section-header {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 55px;
+}
+
+
+.ftl-service-page .ftl-section-header h2 {
+  margin: 0;
+
+  color: var(--ftl-text);
+
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ftl-service-page .ftl-section-header h2 span {
+  color: var(--ftl-primary);
+}
+
+
+.ftl-service-page .ftl-section-header > p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: var(--ftl-text-light);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   CARD GRID
+========================================================== */
+
+.ftl-service-page .ftl-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* Card */
+
+.ftl-service-page .ftl-card {
+  min-height: 350px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  background: var(--ftl-white);
+
+  border: 1px solid var(--ftl-border);
+  border-radius: 15px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.ftl-service-page .ftl-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(0, 59, 149, 0.28);
+
+  box-shadow: 0 20px 40px rgba(0, 59, 149, 0.10);
+}
+
+
+/* Featured Card */
+
+.ftl-service-page .ftl-card-featured {
+  background: var(--ftl-primary);
+
+  border-color: var(--ftl-primary);
+
+  box-shadow: 0 20px 40px rgba(0, 59, 149, 0.18);
+}
+
+
+.ftl-service-page .ftl-card-featured h3,
+.ftl-service-page .ftl-card-featured p,
+.ftl-service-page .ftl-card-featured small {
+  color: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-card-featured .ftl-card-top > span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.ftl-service-page .ftl-card-featured .ftl-card-icon {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-card-featured .ftl-card-line {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+/* Card Top */
+
+.ftl-service-page .ftl-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+
+.ftl-service-page .ftl-card-top > span {
+  color: var(--ftl-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* Card Icon */
+
+.ftl-service-page .ftl-card-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #EAF2FF;
+
+  color: var(--ftl-primary);
+
+  font-size: 18px;
+}
+
+
+/* Card Heading */
+
+.ftl-service-page .ftl-card h3 {
+  margin: 0 0 14px;
+
+  color: var(--ftl-text);
+
+  font-size: 20px;
+}
+
+
+/* Card Paragraph */
+
+.ftl-service-page .ftl-card p {
+  margin: 0;
+
+  color: var(--ftl-text-light);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* Card Bottom */
+
+.ftl-service-page .ftl-card-line {
+  width: 100%;
+  height: 1px;
+
+  margin-top: auto;
+  margin-bottom: 14px;
+
+  background: var(--ftl-border);
+}
+
+
+.ftl-service-page .ftl-card small {
+  color: var(--ftl-primary);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   PROCESS
+========================================================== */
+
+.ftl-service-page .ftl-process {
+  padding: 110px 0;
+
+  background: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-process-header {
+  margin-bottom: 60px;
+}
+
+
+.ftl-service-page .ftl-process-header h2 {
+  margin: 0;
+
+  color: var(--ftl-text);
+
+  font-size: clamp(40px, 4vw, 58px);
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ftl-service-page .ftl-process-header h2 span {
+  color: var(--ftl-primary);
+}
+
+
+/* Route */
+
+.ftl-service-page .ftl-route {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+
+/* Route Line */
+
+.ftl-service-page .ftl-route-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 29px;
+
+  width: 1px;
+
+  background: var(--ftl-border);
+}
+
+
+/* Route Step */
+
+.ftl-service-page .ftl-route-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 60px 1fr;
+
+  gap: 28px;
+
+  padding-bottom: 45px;
+}
+
+
+.ftl-service-page .ftl-route-step:last-child {
+  padding-bottom: 0;
+}
+
+
+/* Marker */
+
+.ftl-service-page .ftl-route-marker {
+  position: relative;
+  z-index: 2;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--ftl-border);
+  border-radius: 50%;
+
+  background: var(--ftl-white);
+
+  color: var(--ftl-primary);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  box-shadow: 0 5px 15px rgba(0, 59, 149, 0.06);
+}
+
+
+/* Route Content */
+
+.ftl-service-page .ftl-route-step h3 {
+  margin: 5px 0 8px;
+
+  color: var(--ftl-text);
+
+  font-size: 19px;
+}
+
+
+.ftl-service-page .ftl-route-step p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--ftl-text-light);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   WHY FTL
+========================================================== */
+
+.ftl-service-page .ftl-why {
+  padding: 110px 0;
+
+  background: var(--ftl-bg);
+}
+
+
+.ftl-service-page .ftl-why-box {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 80px;
+
+  padding: 70px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--ftl-primary-dark),
+      var(--ftl-primary)
+    );
+
+  box-shadow: 0 25px 55px rgba(0, 43, 115, 0.18);
+}
+
+
+/* Why Heading */
+
+.ftl-service-page .ftl-why-heading .ftl-section-number {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+.ftl-service-page .ftl-why-heading h2 {
+  margin: 0 0 20px;
+
+  color: var(--ftl-white);
+
+  font-size: clamp(38px, 4vw, 55px);
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ftl-service-page .ftl-why-heading h2 span {
+  color: #CFE0FF;
+}
+
+
+.ftl-service-page .ftl-why-heading p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* Benefits */
+
+.ftl-service-page .ftl-benefit-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+.ftl-service-page .ftl-benefit {
+  display: flex;
+
+  gap: 18px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+.ftl-service-page .ftl-benefit > span {
+  flex-shrink: 0;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+
+.ftl-service-page .ftl-benefit h3 {
+  margin: 0 0 7px;
+
+  color: var(--ftl-white);
+
+  font-size: 16px;
+}
+
+
+.ftl-service-page .ftl-benefit p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.ftl-service-page .ftl-cta {
+  padding: 90px 0;
+
+  background: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-cta-inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding: 60px;
+
+  border-radius: 20px;
+
+  background: var(--ftl-primary);
+
+  box-shadow: 0 20px 45px rgba(0, 59, 149, 0.17);
+}
+
+
+.ftl-service-page .ftl-cta-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+.ftl-service-page .ftl-cta h2 {
+  margin: 0 0 18px;
+
+  color: var(--ftl-white);
+
+  font-size: clamp(38px, 4vw, 55px);
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+}
+
+
+.ftl-service-page .ftl-cta h2 span {
+  color: #CFE0FF;
+}
+
+
+.ftl-service-page .ftl-cta p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* CTA Button */
+
+.ftl-service-page .ftl-cta-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  min-height: 55px;
+
+  padding: 0 25px;
+
+  border-radius: 8px;
+
+  background: var(--ftl-white);
+  color: var(--ftl-primary);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+.ftl-service-page .ftl-cta-button span {
+  font-size: 20px;
+
+  transition: transform 0.25s ease;
+}
+
+
+.ftl-service-page .ftl-cta-button:hover {
+  transform: translateY(-3px);
+
+  background: var(--ftl-primary-light);
+  color: var(--ftl-white);
+}
+
+
+.ftl-service-page .ftl-cta-button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+  .ftl-service-page .ftl-overview-grid,
+  .ftl-service-page .ftl-section-header {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .ftl-service-page .ftl-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .ftl-service-page .ftl-why-box {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 55px;
+  }
+
+
+  .ftl-service-page .ftl-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .ftl-service-page .ftl-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+
+  .ftl-service-page .ftl-hero {
+    min-height: 650px;
+  }
+
+
+  .ftl-service-page .ftl-hero-content {
+    padding: 85px 0 140px;
+  }
+
+
+  .ftl-service-page .ftl-hero-content h1 {
+    font-size: 45px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .ftl-service-page .ftl-hero-content > p {
+    font-size: 15px;
+  }
+
+
+  .ftl-service-page .ftl-hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .ftl-service-page .ftl-primary-btn,
+  .ftl-service-page .ftl-outline-btn {
+    width: 100%;
+  }
+
+
+  .ftl-service-page .ftl-hero-bottom {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ftl-service-page .ftl-hero-bottom div {
+    min-height: 45px;
+
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+
+  .ftl-service-page .ftl-hero-bottom div:last-child {
+    border-bottom: 0;
+  }
+
+
+  .ftl-service-page .ftl-overview,
+  .ftl-service-page .ftl-solutions,
+  .ftl-service-page .ftl-process,
+  .ftl-service-page .ftl-why {
+    padding: 75px 0;
+  }
+
+
+  .ftl-service-page .ftl-overview-grid {
+    gap: 30px;
+  }
+
+
+  .ftl-service-page .ftl-overview-heading h2,
+  .ftl-service-page .ftl-section-header h2,
+  .ftl-service-page .ftl-process-header h2 {
+    font-size: 40px;
+  }
+
+
+  .ftl-service-page .ftl-stat-bar {
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 55px;
+  }
+
+
+  .ftl-service-page .ftl-stat {
+    min-height: 105px;
+
+    border-bottom: 1px solid var(--ftl-border);
+  }
+
+
+  .ftl-service-page .ftl-stat:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .ftl-service-page .ftl-stat:nth-child(3),
+  .ftl-service-page .ftl-stat:nth-child(4) {
+    border-bottom: 0;
+  }
+
+
+  .ftl-service-page .ftl-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ftl-service-page .ftl-card {
+    min-height: 320px;
+  }
+
+
+  .ftl-service-page .ftl-route-line {
+    left: 24px;
+  }
+
+
+  .ftl-service-page .ftl-route-step {
+    grid-template-columns: 50px 1fr;
+
+    gap: 20px;
+
+    padding-bottom: 35px;
+  }
+
+
+  .ftl-service-page .ftl-route-marker {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .ftl-service-page .ftl-why-box {
+    padding: 38px 25px;
+
+    border-radius: 18px;
+  }
+
+
+  .ftl-service-page .ftl-benefit-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ftl-service-page .ftl-cta {
+    padding: 70px 0;
+  }
+
+
+  .ftl-service-page .ftl-cta-inner {
+    padding: 40px 25px;
+
+    border-radius: 18px;
+  }
+
+
+  .ftl-service-page .ftl-cta h2 {
+    font-size: 40px;
+  }
+
+
+  .ftl-service-page .ftl-cta-button {
+    width: 100%;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 450px) {
+
+  .ftl-service-page .ftl-hero-content h1 {
+    font-size: 39px;
+  }
+
+
+  .ftl-service-page .ftl-overview-heading h2,
+  .ftl-service-page .ftl-section-header h2,
+  .ftl-service-page .ftl-process-header h2,
+  .ftl-service-page .ftl-cta h2 {
+    font-size: 34px;
+  }
+
+
+  .ftl-service-page .ftl-stat {
+    padding: 18px 15px;
+  }
+
+
+  .ftl-service-page .ftl-stat span {
+    font-size: 12px;
+  }
+
+}

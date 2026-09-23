@@ -1,0 +1,728 @@
+/* ==========================================================
+   CITY EXPRESS COURIER
+   AIR FREIGHT PAGE
+   Page-specific CSS
+========================================================== */
+
+
+/* ================= ROOT ================= */
+
+.airfreight-page {
+  --air-primary: #003B95;
+  --air-primary-dark: #002B73;
+  --air-primary-light: #3B6FC4;
+  --air-secondary: #0B5CC7;
+
+  --air-bg: #F5F8FC;
+  --air-surface: #FFFFFF;
+
+  --air-text: #102A43;
+  --air-text-light: #64748B;
+  --air-white: #FFFFFF;
+
+  --air-border: #D9E2F0;
+
+  width: 100%;
+  overflow: hidden;
+  background: var(--air-bg);
+}
+
+
+/* ================= CONTAINER ================= */
+
+.airfreight-page .airfreight-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* ================= HERO ================= */
+
+.airfreight-page .airfreight-hero {
+  min-height: 620px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+
+/* Hero Overlay */
+
+.airfreight-page .airfreight-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 43, 115, 0.96) 0%,
+      rgba(0, 59, 149, 0.88) 42%,
+      rgba(0, 43, 115, 0.45) 72%,
+      rgba(0, 0, 0, 0.18) 100%
+    );
+
+  z-index: 1;
+}
+
+
+/* Hero Content */
+
+.airfreight-page .airfreight-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 720px;
+
+  padding: 100px 0;
+}
+
+
+/* Hero Tag */
+
+.airfreight-page .airfreight-hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 9px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: var(--air-white);
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  margin-bottom: 22px;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* Hero Heading */
+
+.airfreight-page .airfreight-hero-content h1 {
+  margin: 0 0 22px;
+
+  color: var(--air-white);
+
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.05;
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* Hero Paragraph */
+
+.airfreight-page .airfreight-hero-content p {
+  max-width: 650px;
+
+  margin: 0 0 32px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* ================= BUTTON ================= */
+
+.airfreight-page .airfreight-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+  padding: 0 28px;
+
+  border-radius: 8px;
+
+  background: var(--air-white);
+  color: var(--air-primary);
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.airfreight-page .airfreight-btn-primary:hover {
+  transform: translateY(-3px);
+
+  background: var(--air-primary-light);
+  color: var(--air-white);
+
+  box-shadow: 0 14px 30px rgba(0, 43, 115, 0.25);
+}
+
+
+/* ================= CONTENT SECTION ================= */
+
+.airfreight-page .airfreight-content-section {
+  padding: 100px 0;
+
+  background: var(--air-bg);
+}
+
+
+/* ================= INTRO ================= */
+
+.airfreight-page .airfreight-intro {
+  max-width: 850px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+
+/* Section Tag */
+
+.airfreight-page .airfreight-section-tag {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--air-secondary);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* Intro Heading */
+
+.airfreight-page .airfreight-intro h2 {
+  margin: 0 0 20px;
+
+  color: var(--air-text);
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+
+/* Intro Paragraph */
+
+.airfreight-page .airfreight-intro p {
+  margin: 0;
+
+  color: var(--air-text-light);
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+
+/* ================= FEATURE GRID ================= */
+
+.airfreight-page .airfreight-feature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 90px;
+}
+
+
+/* Feature Card */
+
+.airfreight-page .airfreight-feature-card {
+  position: relative;
+
+  padding: 30px;
+
+  background: var(--air-surface);
+
+  border: 1px solid var(--air-border);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(0, 59, 149, 0.06);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Top Blue Line */
+
+.airfreight-page .airfreight-feature-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: var(--air-primary);
+}
+
+
+/* Hover */
+
+.airfreight-page .airfreight-feature-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(0, 59, 149, 0.3);
+
+  box-shadow: 0 18px 38px rgba(0, 59, 149, 0.12);
+}
+
+
+/* Feature Icon */
+
+.airfreight-page .airfreight-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 12px;
+
+  background: #EAF2FF;
+
+  color: var(--air-primary);
+
+  font-size: 24px;
+}
+
+
+/* Feature Heading */
+
+.airfreight-page .airfreight-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--air-text);
+
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+
+/* Feature Paragraph */
+
+.airfreight-page .airfreight-feature-card p {
+  margin: 0;
+
+  color: var(--air-text-light);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.airfreight-page .airfreight-benefits {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 60px;
+
+  align-items: center;
+
+  margin-bottom: 90px;
+}
+
+
+/* Benefits Content */
+
+.airfreight-page .airfreight-benefits-content {
+  padding: 10px 0;
+}
+
+
+.airfreight-page .airfreight-benefits-content h2 {
+  margin: 0 0 18px;
+
+  color: var(--air-text);
+
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.2;
+}
+
+
+.airfreight-page .airfreight-benefits-content > p {
+  max-width: 650px;
+
+  margin: 0 0 28px;
+
+  color: var(--air-text-light);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* Benefits List */
+
+.airfreight-page .airfreight-benefits-content ul {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px 25px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+
+.airfreight-page .airfreight-benefits-content li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  color: var(--air-text);
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.airfreight-page .airfreight-benefits-content li span {
+  flex-shrink: 0;
+
+  color: var(--air-secondary);
+
+  font-weight: 900;
+}
+
+
+/* Benefits Box */
+
+.airfreight-page .airfreight-benefits-box {
+  position: relative;
+
+  padding: 45px 38px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--air-primary-dark),
+      var(--air-primary)
+    );
+
+  color: var(--air-white);
+
+  box-shadow: 0 20px 45px rgba(0, 43, 115, 0.22);
+
+  overflow: hidden;
+}
+
+
+/* Decorative Circle */
+
+.airfreight-page .airfreight-benefits-box::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -65px;
+  bottom: -70px;
+
+  border-radius: 50%;
+
+  border: 30px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.airfreight-page .airfreight-benefits-box-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  font-size: 27px;
+}
+
+
+.airfreight-page .airfreight-benefits-box h3 {
+  margin: 0 0 15px;
+
+  color: var(--air-white);
+
+  font-size: 25px;
+}
+
+
+.airfreight-page .airfreight-benefits-box p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* ================= CTA ================= */
+
+.airfreight-page .airfreight-cta {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 55px 60px;
+
+  border-radius: 22px;
+
+  background: var(--air-primary);
+
+  box-shadow: 0 20px 45px rgba(0, 59, 149, 0.18);
+}
+
+
+.airfreight-page .airfreight-cta-content {
+  max-width: 720px;
+}
+
+
+.airfreight-page .airfreight-cta-tag {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+.airfreight-page .airfreight-cta h2 {
+  margin: 0 0 14px;
+
+  color: var(--air-white);
+
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+}
+
+
+.airfreight-page .airfreight-cta p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* CTA Button */
+
+.airfreight-page .airfreight-cta-btn {
+  flex-shrink: 0;
+
+  background: var(--air-white);
+  color: var(--air-primary);
+}
+
+
+.airfreight-page .airfreight-cta-btn:hover {
+  background: var(--air-primary-light);
+  color: var(--air-white);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+  .airfreight-page .airfreight-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .airfreight-page .airfreight-benefits {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .airfreight-page .airfreight-benefits-box {
+    max-width: 650px;
+  }
+
+  .airfreight-page .airfreight-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .airfreight-page .airfreight-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+
+  .airfreight-page .airfreight-hero {
+    min-height: 570px;
+  }
+
+
+  .airfreight-page .airfreight-hero-content {
+    padding: 80px 0;
+  }
+
+
+  .airfreight-page .airfreight-hero-content h1 {
+    font-size: 42px;
+  }
+
+
+  .airfreight-page .airfreight-hero-content p {
+    font-size: 15px;
+  }
+
+
+  .airfreight-page .airfreight-content-section {
+    padding: 70px 0;
+  }
+
+
+  .airfreight-page .airfreight-feature-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-bottom: 70px;
+  }
+
+
+  .airfreight-page .airfreight-feature-card {
+    padding: 25px;
+  }
+
+
+  .airfreight-page .airfreight-intro {
+    margin-bottom: 45px;
+  }
+
+
+  .airfreight-page .airfreight-benefits {
+    margin-bottom: 70px;
+  }
+
+
+  .airfreight-page .airfreight-benefits-content ul {
+    grid-template-columns: 1fr;
+  }
+
+
+  .airfreight-page .airfreight-benefits-box {
+    padding: 35px 28px;
+  }
+
+
+  .airfreight-page .airfreight-cta {
+    padding: 38px 28px;
+
+    border-radius: 18px;
+  }
+
+
+  .airfreight-page .airfreight-cta-btn {
+    width: 100%;
+  }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 450px) {
+
+  .airfreight-page .airfreight-hero-content h1 {
+    font-size: 36px;
+  }
+
+
+  .airfreight-page .airfreight-hero-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  .airfreight-page .airfreight-btn-primary {
+    width: 100%;
+  }
+
+
+  .airfreight-page .airfreight-intro h2 {
+    font-size: 30px;
+  }
+
+
+  .airfreight-page .airfreight-cta h2 {
+    font-size: 31px;
+  }
+
+}

@@ -3,486 +3,628 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
-import heroImg from "../assets/images/ware.jpg";
-import companyImg from "../assets/images/careers1.jpg";
-import chairmanImg from "../assets/images/owner.jpg";
+import heroImg from "../assets/images/abouts.jpg";
+import companyImg from "../assets/images/contacts.jpg";
+import chairmanImg from "../assets/images/owner1.jpg";
 
 const AboutUs = () => {
+  return (
+    <div className="about-page">
 
-return (
+      {/* =====================================================
+          HERO
+      ===================================================== */}
 
-<div className="about-page">
+      <section
+        className="about-hero"
+        style={{ backgroundImage: `url(${heroImg})` }}
+      >
+        <div className="about-overlay"></div>
 
-    {/* ================= HERO ================= */}
+        <div className="container">
+          <div className="about-hero-content">
 
-    <section
-      className="about-hero"
-      style={{
-        backgroundImage: `url(${heroImg})`
-      }}
-    >
-
-      <div className="about-overlay"></div>
-
-      <div className="container">
-
-        <div className="about-hero-content">
-
-          <span>WELCOME TO</span>
-
-          <h1>City Express Cargo</h1>
-
-          <p>
-            City Express Cargo provides reliable domestic,
-            international and specialized cargo logistics
-            solutions with a strong commitment to safety,
-            timely delivery and customer satisfaction.
-          </p>
-
-          <Link
-            to="/contact-us"
-            className="btn-primary"
-          >
-            Contact Us
-          </Link>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    {/* ================= COMPANY INTRO ================= */}
-
-    <section className="company-section">
-
-      <div className="container">
-
-        <div className="about-company-grid">
-
-          {/* ================= LEFT ================= */}
-
-          <div className="company-content">
-
-            <span className="section-tag">
-              ABOUT COMPANY
+            <span className="about-hero-eyebrow">
+              ABOUT CITY EXPRESS COURIER
             </span>
 
-            <h2>
-              Your Trusted Cargo & Logistics Partner
-            </h2>
+            <h1>
+              Moving Your Business
+              <span> Forward With Confidence.</span>
+            </h1>
 
             <p>
-              City Express Cargo is a customer-focused cargo
-              and logistics company providing dependable
-              transportation solutions for businesses and
-              individuals. Our services are designed to move
-              shipments safely, efficiently and on time.
+              City Express Courier provides dependable courier and delivery
+              solutions designed around safety, efficiency, timely delivery
+              and customer satisfaction.
             </p>
 
-            <p>
-              We provide a wide range of logistics solutions
-              including Domestic Cargo, International Cargo,
-              Air Cargo, Surface Cargo, Cargo By Train,
-              Cargo By Sea, E-Commerce Logistics and FTL
-              transportation services. Our focus is on
-              reliable operations, secure cargo handling and
-              timely delivery.
-            </p>
+            <div className="about-hero-actions">
 
-            <div className="company-points">
+              <Link
+                to="/contact-us"
+                className="btn-primary"
+              >
+                Get In Touch
+              </Link>
 
-              <div className="point">
-                ✔ Domestic & International Cargo Network
-              </div>
-
-              <div className="point">
-                ✔ Air, Surface, Rail & Sea Transportation
-              </div>
-
-              <div className="point">
-                ✔ Safe & Reliable Cargo Handling
-              </div>
-
-              <div className="point">
-                ✔ Customer-Focused Logistics Solutions
-              </div>
+              <Link
+                to="/services"
+                className="about-btn-secondary"
+              >
+                Explore Our Services
+              </Link>
 
             </div>
 
           </div>
+        </div>
+      </section>
 
 
-          {/* ================= RIGHT IMAGE ================= */}
+      {/* =====================================================
+          COMPANY INTRODUCTION
+      ===================================================== */}
 
-          <div className="company-image">
+      <section className="company-section">
 
-            <img
-              src={companyImg}
-              alt="City Express Cargo"
-            />
+        <div className="container">
 
+          <div className="about-company-grid">
+
+            {/* LEFT CONTENT */}
+
+            <div className="company-content">
+
+              <span className="section-tag">
+                WHO WE ARE
+              </span>
+
+              <h2>
+                A Reliable Partner For
+                <span> Every Delivery.</span>
+              </h2>
+
+              <p>
+                City Express Courier is a customer-focused courier and delivery
+                company providing dependable transportation solutions for
+                businesses and individuals. We are committed to making parcel
+                movement simpler, safer and more efficient.
+              </p>
+
+              <p>
+                From domestic and international courier services to express,
+                same day, air, surface, rail, e-commerce and FTL deliveries,
+                our services are designed to support different delivery
+                requirements with reliable operations and careful shipment
+                handling.
+              </p>
+
+
+              {/* COMPANY HIGHLIGHTS */}
+
+              <div className="company-points">
+
+                <div className="point">
+                  <span className="point-icon">✓</span>
+                  <span>Domestic & International Courier</span>
+                </div>
+
+                <div className="point">
+                  <span className="point-icon">✓</span>
+                  <span>Express, Air, Surface & Rail Delivery</span>
+                </div>
+
+                <div className="point">
+                  <span className="point-icon">✓</span>
+                  <span>Safe & Responsible Shipment Handling</span>
+                </div>
+
+                <div className="point">
+                  <span className="point-icon">✓</span>
+                  <span>Customer-Focused Courier Solutions</span>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* RIGHT IMAGE */}
+
+            <div className="company-image">
+
+              <img
+                src={companyImg}
+                alt="City Express Courier delivery operations"
+              />
+
+              <div className="company-image-badge">
+
+                <strong>City Express</strong>
+
+                <span>
+                  Courier & Delivery
+                </span>
+
+              </div>
+
+            </div>
           </div>
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
 
 
-    {/* ================= WHY CHOOSE US ================= */}
+      {/* =====================================================
+          WHY CHOOSE US
+      ===================================================== */}
 
-    <section className="why-us">
+      <section className="why-us">
 
-      <div className="container">
+        <div className="container">
 
-        <div className="about-section-heading">
+          <div className="about-section-heading">
 
-          <span>WHY CHOOSE US</span>
-
-          <h2>
-            Reliable Logistics. Every Shipment. Every Time.
-          </h2>
-
-          <p>
-            City Express Cargo combines reliable
-            transportation, secure cargo handling and
-            customer-focused service to provide efficient
-            logistics solutions for businesses and
-            individuals.
-          </p>
-
-        </div>
-
-
-        <div className="about-why-grid">
-
-
-          <div className="why-card">
-
-            <div className="why-icon">🚚</div>
-
-            <h3>Reliable & On-Time Delivery</h3>
-
-            <p>
-              We focus on efficient transportation and
-              timely delivery to ensure your shipments
-              reach their destination safely and as
-              scheduled.
-            </p>
-
-          </div>
-
-
-          <div className="why-card">
-
-            <div className="why-icon">📦</div>
-
-            <h3>Safe Cargo Handling</h3>
-
-            <p>
-              Every shipment is handled with care and
-              attention to ensure secure movement from
-              pickup to final delivery.
-            </p>
-
-          </div>
-
-
-          <div className="why-card">
-
-            <div className="why-icon">📍</div>
-
-            <h3>Shipment Tracking</h3>
-
-            <p>
-              Stay informed about your shipment with
-              tracking support that helps you monitor
-              your cargo throughout its journey.
-            </p>
-
-          </div>
-
-
-          <div className="why-card">
-
-            <div className="why-icon">🌍</div>
-
-            <h3>Wide Logistics Network</h3>
-
-            <p>
-              Our domestic and international logistics
-              solutions help connect businesses and
-              customers across multiple transportation
-              channels.
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    {/* ================= CHAIRMAN MESSAGE ================= */}
-
-    <section className="chairman-section">
-
-      <div className="container">
-
-        <div className="chairman-grid">
-
-
-          {/* ================= CHAIRMAN IMAGE ================= */}
-
-          <div className="chairman-image">
-
-            <img
-              src={chairmanImg}
-              alt="Founder & Chairman"
-            />
-
-          </div>
-
-
-          {/* ================= MESSAGE ================= */}
-
-          <div className="chairman-content">
-
-            <span className="section-tag">
-              CHAIRMAN'S MESSAGE
+            <span>
+              WHY CITY EXPRESS COURIER
             </span>
 
             <h2>
-              A Message From Our Founder & Chairman
+              Delivery Built Around
+              <span> Reliability & Trust.</span>
             </h2>
 
             <p>
-              At City Express Cargo, we believe that every
-              shipment represents a responsibility and a
-              promise of trust. Our goal is to provide
-              reliable, secure and efficient cargo and
-              logistics services that meet the changing
-              needs of our customers.
+              We focus on dependable delivery, careful shipment handling
+              and responsive customer service to create a smooth courier
+              experience from pickup to final delivery.
             </p>
 
-            <p>
-              We are continuously focused on improving our
-              transportation network, operational processes
-              and customer service so that every shipment
-              receives the attention it deserves. From
-              domestic cargo to international shipments and
-              specialized transportation services, we aim
-              to deliver dependable logistics solutions.
-            </p>
-
-            <p>
-              I sincerely thank our valued customers,
-              business partners and team members for their
-              continued trust and support. Together, we will
-              continue building City Express Cargo as a
-              reliable logistics partner and expanding our
-              services to serve customers more efficiently.
-            </p>
+          </div>
 
 
-            <div className="signature">
+          <div className="about-why-grid">
 
-              <h4>
-                Jagjeet Singh Ahlawat
-              </h4>
 
-              <span>
-                Founder & Chairman
-              </span>
+            {/* CARD 1 */}
+
+            <div className="why-card">
+
+              <div className="why-icon">
+                🚚
+              </div>
+
+              <h3>
+                Reliable Delivery
+              </h3>
 
               <p>
-                City Express Cargo
+                Efficient delivery processes designed to help shipments
+                reach their destinations safely and on schedule.
               </p>
 
             </div>
 
+
+            {/* CARD 2 */}
+
+            <div className="why-card">
+
+              <div className="why-icon">
+                📦
+              </div>
+
+              <h3>
+                Safe Shipment Handling
+              </h3>
+
+              <p>
+                We give careful attention to parcel and shipment handling
+                throughout the courier and delivery process.
+              </p>
+
+            </div>
+
+
+            {/* CARD 3 */}
+
+            <div className="why-card">
+
+              <div className="why-icon">
+                📍
+              </div>
+
+              <h3>
+                Shipment Visibility
+              </h3>
+
+              <p>
+                Tracking support helps customers stay informed about their
+                shipment journey and delivery progress.
+              </p>
+
+            </div>
+
+
+            {/* CARD 4 */}
+
+            <div className="why-card">
+
+              <div className="why-icon">
+                🌍
+              </div>
+
+              <h3>
+                Multiple Delivery Services
+              </h3>
+
+              <p>
+                Flexible courier solutions covering domestic, international,
+                express, air, surface, rail and specialized delivery needs.
+              </p>
+
+            </div>
+
+
           </div>
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
 
 
-    {/* ================= VISION • MISSION • VALUES ================= */}
+      {/* =====================================================
+          CHAIRMAN MESSAGE
+      ===================================================== */}
 
-    <section className="vmv-section">
+      <section className="chairman-section">
 
-      <div className="container">
+        <div className="container">
 
-        <div className="about-vmv-grid">
+          <div className="chairman-grid">
 
 
-          {/* ================= VISION ================= */}
+            {/* IMAGE */}
 
-          <div className="vmv-card">
+            <div className="chairman-image">
 
-            <div className="vmv-icon">🌍</div>
+              <img
+                src={chairmanImg}
+                alt="Jagjeet Singh Ahlawat, Founder and Chairman"
+              />
 
-            <h3>Our Vision</h3>
+              <div className="chairman-image-caption">
+
+                <strong>
+                  Jagjeet Singh Ahlawat
+                </strong>
+
+                <span>
+                  Founder & Chairman
+                </span>
+
+              </div>
+
+            </div>
+
+
+            {/* MESSAGE */}
+
+            <div className="chairman-content">
+
+              <span className="section-tag">
+                LEADERSHIP
+              </span>
+
+              <h2>
+                A Message From Our
+                <span> Founder & Chairman</span>
+              </h2>
+
+              <p>
+                At City Express Courier, we believe that every delivery
+                represents more than a package. It represents a responsibility,
+                a commitment and the trust our customers place in us.
+              </p>
+
+              <p>
+                Our goal is to provide reliable, secure and efficient courier
+                and delivery services that respond to the changing needs of
+                businesses and individuals. We continuously focus on improving
+                our delivery network, operational processes and customer
+                service.
+              </p>
+
+              <p>
+                From domestic courier to international shipments and
+                specialized delivery services, our approach remains centered
+                around dependable operations, responsible shipment handling
+                and customer satisfaction.
+              </p>
+
+              <p>
+                I sincerely thank our customers, business partners and team
+                members for their continued trust and support. We look forward
+                to strengthening our services and building long-term
+                relationships through reliable courier and delivery solutions.
+              </p>
+
+
+              <div className="signature">
+
+                <h4>
+                  Jagjeet Singh Ahlawat
+                </h4>
+
+                <span>
+                  Founder & Chairman
+                </span>
+
+                <p>
+                  City Express Courier
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          VISION / MISSION / VALUES
+      ===================================================== */}
+
+      <section className="vmv-section">
+
+        <div className="container">
+
+          <div className="about-section-heading">
+
+            <span>
+              OUR FOUNDATION
+            </span>
+
+            <h2>
+              What Guides
+              <span> Our Journey.</span>
+            </h2>
 
             <p>
-              To become a trusted cargo and logistics
-              partner by providing reliable, efficient and
-              customer-focused transportation solutions
-              connecting businesses and people across India
-              and international destinations.
+              Our vision, mission and values shape the way we serve customers,
+              manage deliveries and build lasting business relationships.
             </p>
 
           </div>
 
 
-          {/* ================= MISSION ================= */}
+          <div className="about-vmv-grid">
 
-          <div className="vmv-card">
 
-            <div className="vmv-icon">🚀</div>
+            {/* VISION */}
 
-            <h3>Our Mission</h3>
+            <div className="vmv-card">
 
-            <p>
-              To provide safe, timely and cost-effective
-              cargo transportation through efficient
-              logistics operations, dependable service and
-              continuous improvement in customer
-              experience.
-            </p>
+              <div className="vmv-icon">
+                🌍
+              </div>
+
+              <span className="vmv-number">
+                01
+              </span>
+
+              <h3>
+                Our Vision
+              </h3>
+
+              <p>
+                To become a trusted courier and delivery partner by providing
+                reliable, efficient and customer-focused delivery solutions
+                connecting businesses and people across India and
+                international destinations.
+              </p>
+
+            </div>
+
+
+            {/* MISSION */}
+
+            <div className="vmv-card">
+
+              <div className="vmv-icon">
+                🚀
+              </div>
+
+              <span className="vmv-number">
+                02
+              </span>
+
+              <h3>
+                Our Mission
+              </h3>
+
+              <p>
+                To provide safe, timely and cost-effective courier services
+                through efficient delivery operations, dependable service and
+                continuous improvement in customer experience.
+              </p>
+
+            </div>
+
+
+            {/* VALUES */}
+
+            <div className="vmv-card">
+
+              <div className="vmv-icon">
+                🤝
+              </div>
+
+              <span className="vmv-number">
+                03
+              </span>
+
+              <h3>
+                Our Core Values
+              </h3>
+
+              <p>
+                Reliability, integrity, transparency, safety, customer
+                satisfaction and operational excellence guide the way we
+                manage every shipment and every customer relationship.
+              </p>
+
+            </div>
+
 
           </div>
-
-
-          {/* ================= VALUES ================= */}
-
-          <div className="vmv-card">
-
-            <div className="vmv-icon">🤝</div>
-
-            <h3>Our Core Values</h3>
-
-            <p>
-              Reliability, integrity, customer satisfaction,
-              transparency, safety and operational excellence
-              guide the way we manage every shipment and
-              every customer relationship.
-            </p>
-
-          </div>
-
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
 
 
-    {/* ================= COMPANY STATS ================= */}
+      {/* =====================================================
+          COMPANY STATS
+      ===================================================== */}
 
-    <section className="company-stats">
+      <section className="company-stats">
 
-      <div className="container">
+        <div className="container">
 
-        <div className="about-stats-grid">
+          <div className="about-stats-grid">
 
 
-          <div className="about-stat-card">
+            <div className="about-stat-card">
 
-            <h2>8+</h2>
+              <div className="about-stat-icon">
+                🚚
+              </div>
 
-            <span>
-              Cargo & Logistics Services
-            </span>
+              <h2>
+                8+
+              </h2>
+
+              <span>
+                Courier & Delivery Services
+              </span>
+
+            </div>
+
+
+            <div className="about-stat-card">
+
+              <div className="about-stat-icon">
+                🕐
+              </div>
+
+              <h2>
+                24×7
+              </h2>
+
+              <span>
+                Shipment Support
+              </span>
+
+            </div>
+
+
+            <div className="about-stat-card">
+
+              <div className="about-stat-icon">
+                🤝
+              </div>
+
+              <h2>
+                100%
+              </h2>
+
+              <span>
+                Customer-Focused Service
+              </span>
+
+            </div>
+
+
+            <div className="about-stat-card">
+
+              <div className="about-stat-icon">
+                🇮🇳
+              </div>
+
+              <h2>
+                Pan India
+              </h2>
+
+              <span>
+                Courier Service Network
+              </span>
+
+            </div>
+
 
           </div>
-
-
-          <div className="about-stat-card">
-
-            <h2>24×7</h2>
-
-            <span>
-              Shipment Support
-            </span>
-
-          </div>
-
-
-          <div className="about-stat-card">
-
-            <h2>100%</h2>
-
-            <span>
-              Customer-Focused Service
-            </span>
-
-          </div>
-
-
-          <div className="about-stat-card">
-
-            <h2>Pan India</h2>
-
-            <span>
-              Cargo Service Network
-            </span>
-
-          </div>
-
 
         </div>
 
-      </div>
-
-    </section>
+      </section>
 
 
-    {/* ================= CTA ================= */}
+      {/* =====================================================
+          FINAL CTA
+      ===================================================== */}
 
-    <section className="about-cta">
+      <section className="about-cta">
 
-      <div className="container">
+        <div className="container">
 
-        <h2>
-          Ready To Ship With City Express Cargo?
-        </h2>
+          <span className="cta-eyebrow">
+            LET'S MOVE FORWARD
+          </span>
 
-        <p>
-          Whether you need domestic cargo, international
-          shipping, air cargo, surface transportation,
-          rail cargo, sea cargo, e-commerce logistics or
-          FTL services, City Express Cargo is ready to
-          provide reliable and efficient transportation
-          solutions for your shipment.
-        </p>
+          <h2>
+            Ready To Ship With
+            <span> City Express Courier?</span>
+          </h2>
 
-        <Link
-          to="/contact-us"
-          className="btn-primary"
-        >
-          Request a Free Quote
-        </Link>
+          <p>
+            Whether you need domestic courier, international delivery, express
+            service, same day delivery, air delivery, surface transportation,
+            rail delivery, e-commerce logistics or FTL services, our team is
+            ready to discuss the right delivery solution for your shipment.
+          </p>
 
-      </div>
+          <div className="about-cta-actions">
 
-    </section>
+            <Link
+              to="/contact-us"
+              className="btn-primary"
+            >
+              Request a Free Quote
+            </Link>
+
+            <Link
+              to="/services"
+              className="about-btn-secondary"
+            >
+              View Services
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
-</div>
-
-);
-
+    </div>
+  );
 };
 
 export default AboutUs;

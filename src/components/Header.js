@@ -157,7 +157,7 @@ const Header = () => {
 
               <div className="header-right-top">
 
-                <span>🧾 GSTIN : 06DYLPP8013E1ZC</span>
+                <span>🧾 GSTIN : 06AGMPA9167E1ZD</span>
 
               </div>
 
@@ -276,7 +276,7 @@ const Header = () => {
 
                         }}
                       >
-                        Road Transport
+                        Domestic Courier
                       </NavLink>
 
                     </li>
@@ -296,7 +296,7 @@ const Header = () => {
 
                         }}
                       >
-                        Express Delivery
+                       Express Courier
                       </NavLink>
 
                     </li>
@@ -316,7 +316,7 @@ const Header = () => {
 
                         }}
                       >
-                        Air Freight
+                        International Courier
                       </NavLink>
 
                     </li>
@@ -336,7 +336,7 @@ const Header = () => {
 
                         }}
                       >
-                        Warehousing
+                       Sea Cargo
                       </NavLink>
 
                     </li>
@@ -416,7 +416,7 @@ const Header = () => {
 
                         }}
                       >
-                        Cargo By Train
+                        Courier By Train
                       </NavLink>
 
                     </li>

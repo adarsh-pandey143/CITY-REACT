@@ -1,3 +1,4 @@
+
 /* ==========================================================
    HEADER BASE
 ========================================================== */
@@ -14,101 +15,82 @@
 ========================================================== */
 
 .header-top {
-
     background: var(--primary-dark);
     color: var(--text-white);
-
-    padding: 9px 0;
-
-    border-bottom: 1px solid rgba(255,255,255,.10);
-
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-
 .header-top-content {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 20px;
-
 }
-
 
 .header-contact {
-
     display: flex;
     align-items: center;
-
-    gap: 15px;
-
+    gap: 10px;
 }
 
-
 .header-contact a {
-
     display: flex;
     align-items: center;
-
     gap: 8px;
 
-    color: #fff;
+    color: var(--text-white);
 
     font-size: 13px;
     font-weight: 500;
 
-    transition: var(--transition);
-
     padding: 5px 12px;
 
-    border: 1px solid rgba(255,255,255,.16);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
 
-    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
 
-    background: rgba(255,255,255,.07);
-
+    transition: var(--transition);
 }
-
 
 .header-contact a:hover {
-
-    background: rgba(255,255,255,.15);
-
-    color: #fff;
-
-    transform: translateY(-1px);
-
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--text-white);
+    border-color: rgba(255, 255, 255, 0.25);
 }
-
 
 .header-contact svg {
-
-    font-size: 13px;
-
+    font-size: 12px;
 }
 
 
+/* ==========================================================
+   TOP BAR RIGHT
+========================================================== */
+
+.header-right-top {
+    display: flex;
+    align-items: center;
+}
+
 .header-right-top span {
-
     display: inline-flex;
-
     align-items: center;
 
     padding: 5px 13px;
 
-    border: 1px solid rgba(255,255,255,.16);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 6px;
 
-    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
 
-    background: rgba(255,255,255,.07);
-
-    color: #fff;
+    color: var(--text-white);
 
     font-size: 13px;
-
     font-weight: 500;
 
+    letter-spacing: 0.2px;
 }
 
 
@@ -117,7 +99,6 @@
 ========================================================== */
 
 .navbar {
-
     width: 100%;
 
     background: var(--surface);
@@ -125,44 +106,42 @@
     border-bottom: 1px solid var(--border);
 
     transition: var(--transition);
-
 }
 
 
-.navbar.sticky {
+/* ==========================================================
+   STICKY NAVBAR
+========================================================== */
 
+.navbar.sticky {
     position: fixed;
 
     top: 0;
     left: 0;
 
-    background: rgba(255,255,255,.96);
+    background: rgba(255, 255, 255, 0.97);
 
     backdrop-filter: blur(14px);
-
     -webkit-backdrop-filter: blur(14px);
 
-    box-shadow: 0 8px 30px rgba(0,43,115,.10);
+    box-shadow:
+        0 8px 30px rgba(0, 43, 115, 0.10);
 
-    border-bottom: 1px solid rgba(0,59,149,.10);
+    border-bottom:
+        1px solid rgba(0, 59, 149, 0.10);
 
-    animation: slideDown .3s ease;
-
+    animation: slideDown 0.3s ease;
 }
 
 
 @keyframes slideDown {
 
     from {
-
         transform: translateY(-100%);
-
     }
 
     to {
-
         transform: translateY(0);
-
     }
 
 }
@@ -173,17 +152,13 @@
 ========================================================== */
 
 .navbar-content {
-
     min-height: 82px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     gap: 30px;
-
 }
 
 
@@ -192,33 +167,23 @@
 ========================================================== */
 
 .logo {
-
     display: flex;
-
     align-items: center;
 
     flex-shrink: 0;
-
 }
 
-
 .logo-image {
-
     width: 150px;
-
     height: auto;
 
     object-fit: contain;
 
     transition: var(--transition);
-
 }
 
-
 .logo:hover .logo-image {
-
-    transform: scale(1.02);
-
+    transform: scale(1.025);
 }
 
 
@@ -227,104 +192,93 @@
 ========================================================== */
 
 .nav-menu {
-
     display: flex;
-
     align-items: center;
 
-    gap: 28px;
+    gap: 27px;
 
     margin: 0;
-
     padding: 0;
 
     list-style: none;
-
 }
 
 
-/* Menu Items */
+/* ==========================================================
+   MENU ITEMS
+========================================================== */
 
 .nav-menu li {
-
     position: relative;
-
     list-style: none;
-
 }
 
 
-/* Links */
+/* ==========================================================
+   NAVIGATION LINKS
+========================================================== */
 
 .nav-menu li a {
+    position: relative;
 
     color: var(--text);
 
     font-size: 14px;
-
     font-weight: 600;
 
     text-transform: uppercase;
 
+    letter-spacing: 0.2px;
+
     transition: var(--transition);
-
-    position: relative;
-
-    list-style: none;
-
-    letter-spacing: .2px;
-
 }
 
 
-/* Hover */
+/* ==========================================================
+   LINK HOVER
+========================================================== */
 
 .nav-menu li a:hover {
-
     color: var(--primary);
-
 }
 
 
-/* Active Link */
+/* ==========================================================
+   ACTIVE LINK
+========================================================== */
 
 .nav-menu li a.active {
-
     color: var(--primary);
-
 }
 
 
-/* Underline Animation */
+/* ==========================================================
+   NAV UNDERLINE
+========================================================== */
 
 .nav-menu li a::after {
-
     content: "";
 
     position: absolute;
 
-    left: 0;
-
-    bottom: -8px;
+    left: 50%;
+    bottom: -9px;
 
     width: 0;
-
-    height: 2px;
+    height: 3px;
 
     background: var(--primary);
 
-    border-radius: 10px;
+    border-radius: 20px;
+
+    transform: translateX(-50%);
 
     transition: var(--transition);
-
 }
-
 
 .nav-menu li a:hover::after,
 .nav-menu li a.active::after {
-
-    width: 100%;
-
+    width: 70%;
 }
 
 
@@ -333,54 +287,39 @@
 ========================================================== */
 
 .dropdown-toggle {
-
     display: flex;
-
     align-items: center;
 
     gap: 7px;
 
     border: none;
-
-    background: none;
+    background: transparent;
 
     cursor: pointer;
 
     color: var(--text);
 
     font-size: 14px;
-
     font-weight: 600;
 
     text-transform: uppercase;
 
+    letter-spacing: 0.2px;
+
     transition: var(--transition);
-
-    letter-spacing: .2px;
-
 }
-
 
 .dropdown-toggle:hover {
-
     color: var(--primary);
-
 }
-
 
 .dropdown-toggle svg {
-
     font-size: 11px;
-
-    transition: .3s ease;
-
+    transition: 0.3s ease;
 }
 
-
 .dropdown-toggle .rotate {
-
     transform: rotate(180deg);
-
 }
 
 
@@ -389,86 +328,86 @@
 ========================================================== */
 
 .dropdown-menu {
-
     position: absolute;
 
     top: 43px;
+    left: -18px;
 
-    left: -10px;
-
-    width: 230px;
+    width: 245px;
 
     background: var(--surface);
 
     border: 1px solid var(--border);
 
-    border-radius: var(--radius-md);
+    border-radius: 10px;
 
-    box-shadow: var(--shadow-lg);
+    box-shadow:
+        0 18px 40px rgba(0, 43, 115, 0.14);
 
-    padding: 8px 0;
+    padding: 8px;
 
     opacity: 0;
-
     visibility: hidden;
 
     transform: translateY(10px);
 
     transition: var(--transition);
-
 }
 
 
-/* Small top accent */
+/* ==========================================================
+   DROPDOWN TOP ACCENT
+========================================================== */
 
 .dropdown-menu::before {
-
     content: "";
 
     position: absolute;
 
     top: -5px;
-
-    left: 22px;
+    left: 25px;
 
     width: 10px;
-
     height: 10px;
 
     background: var(--surface);
 
     border-left: 1px solid var(--border);
-
     border-top: 1px solid var(--border);
 
     transform: rotate(45deg);
-
 }
 
 
+/* ==========================================================
+   DROPDOWN ACTIVE
+========================================================== */
+
 .dropdown-menu.active {
-
     opacity: 1;
-
     visibility: visible;
 
     transform: translateY(0);
-
 }
 
+
+/* ==========================================================
+   DROPDOWN ITEMS
+========================================================== */
 
 .dropdown-menu li {
-
     width: 100%;
-
 }
 
 
-.dropdown-menu li a {
+/* ==========================================================
+   DROPDOWN LINKS
+========================================================== */
 
+.dropdown-menu li a {
     display: block;
 
-    padding: 11px 18px;
+    padding: 11px 14px;
 
     font-size: 13px;
 
@@ -478,24 +417,29 @@
 
     color: var(--text);
 
+    border-radius: 7px;
+
+    transition: var(--transition);
 }
 
+
+/* Remove main menu underline */
 
 .dropdown-menu li a::after {
-
     display: none;
-
 }
 
 
-.dropdown-menu li a:hover {
+/* ==========================================================
+   DROPDOWN HOVER
+========================================================== */
 
-    background: var(--bg);
+.dropdown-menu li a:hover {
+    background: var(--bg-blue);
 
     color: var(--primary);
 
-    padding-left: 23px;
-
+    padding-left: 19px;
 }
 
 
@@ -504,64 +448,10 @@
 ========================================================== */
 
 .navbar-right {
-
     display: flex;
-
     align-items: center;
 
     gap: 12px;
-
-}
-
-
-/* ==========================================================
-   THEME BUTTON
-========================================================== */
-
-/*
-   Agar Theme/Dark-Light button website se remove kar diya hai
-   to is complete .theme-toggle section ko delete kar sakte ho.
-*/
-
-.theme-toggle {
-
-    width: 40px;
-
-    height: 40px;
-
-    border-radius: 50%;
-
-    border: 1px solid var(--border);
-
-    background: var(--surface);
-
-    color: var(--text);
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    cursor: pointer;
-
-    font-size: 17px;
-
-    transition: var(--transition);
-
-}
-
-
-.theme-toggle:hover {
-
-    background: var(--primary);
-
-    border-color: var(--primary);
-
-    color: #fff;
-
-    transform: translateY(-2px);
-
 }
 
 
@@ -570,46 +460,87 @@
 ========================================================== */
 
 .quote-btn {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 12px 23px;
 
-    border-radius: 50px;
+    border-radius: 7px;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--primary-dark)
-    );
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-dark)
+        );
 
-    color: #fff !important;
+    color: var(--text-white) !important;
 
     font-size: 13px;
-
     font-weight: 700;
 
     text-transform: uppercase;
 
-    letter-spacing: .3px;
+    letter-spacing: 0.4px;
 
     transition: var(--transition);
 
-    box-shadow: 0 5px 15px rgba(0,59,149,.18);
+    box-shadow:
+        0 6px 18px rgba(0, 59, 149, 0.20);
 
+    overflow: hidden;
 }
 
 
+/* ==========================================================
+   QUOTE BUTTON SHINE
+========================================================== */
+
+.quote-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.18),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: 0.6s ease;
+}
+
+.quote-btn:hover::before {
+    left: 130%;
+}
+
 .quote-btn:hover {
+    transform: translateY(-2px);
 
-    transform: translateY(-3px);
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-dark),
+            var(--primary)
+        );
 
-    background: linear-gradient(
-        135deg,
-        var(--primary-dark),
-        var(--primary)
-    );
+    color: var(--text-white) !important;
 
-    box-shadow: 0 10px 22px rgba(0,43,115,.22);
-
+    box-shadow:
+        0 10px 25px rgba(0, 43, 115, 0.24);
 }
 
 
@@ -618,40 +549,36 @@
 ========================================================== */
 
 .mobile-menu-toggle {
-
     display: none;
 
     width: 42px;
-
     height: 42px;
 
     border-radius: 8px;
 
     background: var(--primary);
 
-    color: #fff;
+    color: var(--text-white);
 
     border: none;
 
     cursor: pointer;
 
-    font-size: 20px;
+    font-size: 19px;
 
     justify-content: center;
-
     align-items: center;
 
     transition: var(--transition);
 
+    box-shadow:
+        0 5px 14px rgba(0, 59, 149, 0.16);
 }
 
-
 .mobile-menu-toggle:hover {
-
     background: var(--primary-dark);
 
     transform: translateY(-2px);
-
 }
 
 
@@ -660,34 +587,26 @@
 ========================================================== */
 
 .mobile-overlay {
-
     position: fixed;
 
     inset: 0;
 
-    background: rgba(0,20,55,.48);
+    background: rgba(0, 20, 55, 0.48);
 
-    backdrop-filter: blur(2px);
-
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 
     opacity: 0;
-
     visibility: hidden;
 
-    transition: .3s;
+    transition: 0.3s;
 
     z-index: 998;
-
 }
 
-
 .mobile-overlay.active {
-
     opacity: 1;
-
     visibility: visible;
-
 }
 
 
@@ -695,30 +614,20 @@
    TABLET RESPONSIVE
 ========================================================== */
 
-@media(max-width:1100px) {
-
+@media (max-width: 1100px) {
 
     .nav-menu {
-
         gap: 18px;
-
     }
-
 
     .nav-menu li a,
     .dropdown-toggle {
-
         font-size: 13px;
-
     }
-
 
     .quote-btn {
-
         padding: 10px 17px;
-
     }
-
 
 }
 
@@ -727,98 +636,83 @@
    MOBILE RESPONSIVE MENU
 ========================================================== */
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
 
+    /* ------------------------------------------------------
+       TOP BAR
+    ------------------------------------------------------ */
 
     .header-top {
-
-        padding: 10px 0;
-
+        padding: 9px 0;
     }
-
 
     .header-top-content {
-
         justify-content: center;
-
     }
 
-
     .header-contact {
-
         flex-wrap: wrap;
 
         justify-content: center;
 
-        gap: 8px;
-
+        gap: 6px;
     }
 
-
     .header-right-top {
-
         display: flex;
 
         align-items: center;
-
         justify-content: flex-end;
-
     }
 
 
-    /* Navbar */
+    /* ------------------------------------------------------
+       NAVBAR
+    ------------------------------------------------------ */
 
     .navbar-content {
-
         min-height: 72px;
-
     }
 
+
+    /* ------------------------------------------------------
+       LOGO
+    ------------------------------------------------------ */
 
     .logo-image {
-
         width: 120px;
-
     }
 
 
-    /* Show Mobile Button */
+    /* ------------------------------------------------------
+       MOBILE BUTTON
+    ------------------------------------------------------ */
 
     .mobile-menu-toggle {
-
         display: flex;
-
     }
 
 
-    .theme-toggle {
-
-        width: 38px;
-
-        height: 38px;
-
-    }
-
+    /* ------------------------------------------------------
+       QUOTE BUTTON
+    ------------------------------------------------------ */
 
     .quote-btn {
-
         display: none;
-
     }
 
 
-    /* Navigation Drawer */
+    /* ------------------------------------------------------
+       NAVIGATION DRAWER
+    ------------------------------------------------------ */
 
     .nav-menu {
-
         position: fixed;
 
         top: 0;
-
         right: -100%;
 
         width: 290px;
-
         height: 100vh;
 
         background: var(--surface);
@@ -829,76 +723,65 @@
 
         padding: 100px 25px 30px;
 
-        gap: 20px;
+        gap: 18px;
 
-        box-shadow: -10px 0 30px rgba(0,43,115,.15);
+        box-shadow:
+            -12px 0 35px rgba(0, 43, 115, 0.16);
 
-        border-left: 1px solid var(--border);
+        border-left:
+            3px solid var(--primary);
 
-        transition: .4s ease;
+        transition: 0.4s ease;
 
         z-index: 999;
 
         overflow-y: auto;
-
     }
-
 
     .nav-menu.active {
-
         right: 0;
-
     }
 
+
+    /* ------------------------------------------------------
+       MOBILE MENU ITEMS
+    ------------------------------------------------------ */
 
     .nav-menu li {
-
         width: 100%;
-
     }
 
-
     .nav-menu li a {
-
         display: block;
 
         font-size: 15px;
 
-        padding: 8px 0;
-
+        padding: 9px 0;
     }
-
 
     .nav-menu li a::after {
-
         display: none;
-
     }
-
 
     .nav-menu li a:hover,
     .nav-menu li a.active {
-
         color: var(--primary);
-
     }
 
 
-    /* Dropdown */
+    /* ------------------------------------------------------
+       MOBILE DROPDOWN
+    ------------------------------------------------------ */
 
     .dropdown-toggle {
-
         width: 100%;
 
         justify-content: space-between;
 
-        padding: 8px 0;
-
+        padding: 9px 0;
     }
 
-
     .dropdown-menu {
-
         position: static;
 
         width: 100%;
@@ -907,58 +790,52 @@
 
         border: none;
 
-        margin-top: 10px;
+        margin-top: 8px;
 
         padding: 0;
 
         display: none;
 
         opacity: 1;
-
         visibility: visible;
 
         transform: none;
-
     }
-
 
     .dropdown-menu::before {
-
         display: none;
-
     }
-
 
     .dropdown-menu.active {
-
         display: block;
-
     }
 
+
+    /* ------------------------------------------------------
+       MOBILE DROPDOWN LINKS
+    ------------------------------------------------------ */
 
     .dropdown-menu li a {
+        padding: 10px 14px;
 
-        padding: 11px 15px;
+        background: var(--bg-soft);
 
-        background: var(--bg);
+        border: 1px solid transparent;
 
-        border-radius: 8px;
+        border-radius: 7px;
 
-        margin-bottom: 7px;
+        margin-bottom: 6px;
 
         font-size: 13px;
-
     }
-
 
     .dropdown-menu li a:hover {
-
         padding-left: 18px;
 
-        background: #EAF1FB;
+        background: var(--bg-blue);
 
+        border-color: var(--border);
     }
-
 
 }
 
@@ -967,45 +844,34 @@
    SMALL MOBILE
 ========================================================== */
 
-@media(max-width:480px) {
+@media (max-width: 480px) {
 
+    .header-contact a {
+        padding: 4px 8px;
+    }
 
     .header-contact a span {
-
         font-size: 11px;
-
     }
-
 
     .navbar-content {
-
         gap: 10px;
-
     }
-
 
     .logo-image {
-
         width: 105px;
-
     }
-
 
     .navbar-right {
-
         gap: 7px;
-
     }
 
-
-    .mobile-menu-toggle,
-    .theme-toggle {
-
+    .mobile-menu-toggle {
         width: 36px;
-
         height: 36px;
 
+        font-size: 17px;
     }
 
-
 }
+

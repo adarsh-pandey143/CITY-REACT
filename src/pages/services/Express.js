@@ -1,231 +1,703 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../pages/Page.css";
 
-import expressImage from "../../assets/images/air.jpg";
+import "./Express.css";
 
+import expressImage from "../../assets/images/int.jpg";
 
 const Express = () => {
+  return (
+    <div className="express-page">
 
-
-return (
-
-<div className="service-page">
-
-
-
-{/* ================= HERO ================= */}
-
-
-
-<section
-  className="service-hero"
-  style={{
-    backgroundImage: `url(${expressImage})`
-  }}
->
-
-  <div className="service-overlay"></div>
-
-  <div className="container">
-
-    <div className="service-hero-content">
-
-      <span>
-        EXPRESS DELIVERY
-      </span>
-
-      <h1>
-        Fast, Reliable & Time-Critical Delivery Services
-      </h1>
-
-      <p>
-        World Wide Courier Cargo provides express delivery
-        solutions for urgent documents, parcels and commercial
-        shipments. We ensure fast transit, secure handling and
-        on-time delivery through our trusted logistics network.
-      </p>
-
-      <Link
-        to="/NotFound"
-        className="btn-primary"
+      {/* =====================================================
+          HERO
+      ===================================================== */}
+      <section
+        className="express-page-hero"
+        style={{
+          backgroundImage: `url(${expressImage})`,
+        }}
       >
-        Request A Free Quote
-      </Link>
+        <div className="express-page-hero-overlay"></div>
 
-    </div>
+        <div className="express-page-container">
+          <div className="express-page-hero-content">
 
-  </div>
+            <div className="express-page-status">
+              <span className="express-page-status-dot"></span>
+              PRIORITY DELIVERY SERVICES
+            </div>
 
-</section>
+            <span className="express-page-eyebrow">
+              CITY EXPRESS COURIER
+            </span>
 
-{/* ================= CONTENT ================= */}
+            <h1>
+              When Time
+              <span>Can't Wait.</span>
+            </h1>
 
-<section className="service-content-section">
+            <p>
+              Fast and dependable express delivery solutions
+              for urgent documents, parcels and commercial
+              shipments requiring efficient transportation
+              and timely delivery.
+            </p>
 
-  <div className="container">
+            <div className="express-page-hero-actions">
 
-    {/* ================= INTRO ================= */}
+              <Link
+                to="/contact-us"
+                className="express-page-primary-btn"
+              >
+                Request Express Delivery
+                <span>→</span>
+              </Link>
 
-    <div className="service-intro">
+              <a
+                href="#express-process"
+                className="express-page-secondary-btn"
+              >
+                View Delivery Process
+              </a>
 
-      <span className="section-tag">
-        EXPRESS DELIVERY SOLUTIONS
-      </span>
+            </div>
 
-      <h2>
-        Fast, Secure & Time-Sensitive Delivery Services
-      </h2>
+          </div>
+        </div>
+      </section>
 
-      <p>
-        World Wide Courier Cargo specializes in express
-        delivery solutions for businesses and individuals
-        who require fast, reliable and secure transportation.
-        Whether it's important documents, parcels or commercial
-        shipments, we ensure every delivery reaches its
-        destination safely and on schedule.
-      </p>
 
-    </div>
+      {/* =====================================================
+          SPEED INTRO
+      ===================================================== */}
+      <section className="express-page-intro-section">
 
-    {/* ================= FEATURES ================= */}
+        <div className="express-page-container">
 
-    <div className="feature-grid">
+          <div className="express-page-intro-grid">
 
-      <div className="feature-card">
+            <div className="express-page-intro-title">
 
-        <h3>⚡ Same Day Delivery</h3>
+              <span>
+                EXPRESS DELIVERY
+              </span>
 
-        <p>
-          Rapid delivery solutions for urgent shipments
-          requiring immediate transportation.
-        </p>
+              <h2>
+                Built Around
+                <strong>Your Urgency.</strong>
+              </h2>
 
-      </div>
+            </div>
 
-      <div className="feature-card">
 
-        <h3>🚚 Next Day Delivery</h3>
+            <div className="express-page-intro-copy">
 
-        <p>
-          Reliable next-day delivery service with
-          committed transit schedules.
-        </p>
+              <p>
+                City Express Courier provides express delivery
+                solutions for shipments where speed and
+                dependable transportation are important.
+              </p>
 
-      </div>
+              <p>
+                From important documents and parcels to
+                business consignments, our express logistics
+                services are designed to support urgent
+                delivery requirements.
+              </p>
 
-      <div className="feature-card">
+            </div>
 
-        <h3>📍 Live Shipment Tracking</h3>
+          </div>
 
-        <p>
-          Monitor your shipment in real time from
-          pickup to final delivery.
-        </p>
 
-      </div>
+          {/* SPEED STATS */}
+          <div className="express-page-speed-strip">
 
-      <div className="feature-card">
+            <div className="express-page-speed-item">
 
-        <h3>📦 Secure Package Handling</h3>
+              <strong>01</strong>
 
-        <p>
-          Every shipment is handled carefully to
-          ensure maximum safety during transit.
-        </p>
+              <div>
+                <span>PRIORITY</span>
+                <p>Urgent shipment handling</p>
+              </div>
 
-      </div>
+            </div>
 
-      <div className="feature-card">
 
-        <h3>🕒 Time-Critical Deliveries</h3>
+            <div className="express-page-speed-item">
 
-        <p>
-          Dedicated transportation solutions for
-          urgent business and commercial consignments.
-        </p>
+              <strong>02</strong>
 
-      </div>
+              <div>
+                <span>FAST TRANSIT</span>
+                <p>Efficient shipment movement</p>
+              </div>
 
-      <div className="feature-card">
+            </div>
 
-        <h3>🤝 Dedicated Customer Support</h3>
 
-        <p>
-          Our support team keeps you informed and
-          assists you throughout the delivery process.
-        </p>
+            <div className="express-page-speed-item">
 
-      </div>
+              <strong>03</strong>
 
-    </div>
+              <div>
+                <span>TRACKING</span>
+                <p>Shipment status visibility</p>
+              </div>
 
-    {/* ================= BENEFITS ================= */}
+            </div>
 
-    <div className="service-benefits">
 
-      <h2>
-        Why Choose Our Express Delivery Service?
-      </h2>
+            <div className="express-page-speed-item">
 
-      <ul>
+              <strong>04</strong>
 
-        <li>✓ Fast and dependable delivery solutions</li>
+              <div>
+                <span>SUPPORT</span>
+                <p>Assistance throughout delivery</p>
+              </div>
 
-        <li>✓ Priority handling for urgent shipments</li>
+            </div>
 
-        <li>✓ Real-time shipment tracking</li>
+          </div>
 
-        <li>✓ Safe and secure package transportation</li>
+        </div>
 
-        <li>✓ Experienced logistics professionals</li>
+      </section>
 
-        <li>✓ Wide service coverage across India</li>
 
-        <li>✓ Transparent communication and customer support</li>
+      {/* =====================================================
+          DELIVERY OPTIONS
+      ===================================================== */}
+      <section className="express-page-options-section">
 
-        <li>✓ Cost-effective express logistics solutions</li>
+        <div className="express-page-container">
 
-      </ul>
+          <div className="express-page-heading-row">
 
-    </div>
+            <div>
 
-    {/* ================= CTA ================= */}
+              <span>
+                DELIVERY OPTIONS
+              </span>
 
-    <div className="service-cta">
+              <h2>
+                Choose The Right
+                <strong>Express Solution.</strong>
+              </h2>
 
-      <h2>
-        Need An Urgent Delivery Solution?
-      </h2>
+            </div>
 
-      <p>
-        Contact World Wide Courier Cargo today for
-        fast, secure and reliable express delivery
-        services. Our logistics experts are ready
-        to provide customized solutions for your
-        business and personal shipping needs.
-      </p>
+            <p>
+              Express delivery requirements can vary by
+              shipment type, urgency and destination. Select
+              a service approach suitable for your requirement.
+            </p>
 
-      <Link
-        to="/NotFound"
-        className="btn-primary"
+          </div>
+
+
+          <div className="express-page-options-grid">
+
+            {/* SAME DAY */}
+            <div className="express-page-option-card express-page-option-priority">
+
+              <div className="express-page-option-top">
+
+                <span className="express-page-option-number">
+                  01
+                </span>
+
+                <span className="express-page-option-icon">
+                  ⚡
+                </span>
+
+              </div>
+
+              <span className="express-page-option-label">
+                HIGH PRIORITY
+              </span>
+
+              <h3>
+                Same Day Delivery
+              </h3>
+
+              <p>
+                Rapid delivery solutions for urgent shipments
+                that require transportation within the same
+                day, subject to route and service availability.
+              </p>
+
+              <div className="express-page-option-footer">
+
+                <span>
+                  URGENT SHIPMENTS
+                </span>
+
+                <Link to="/contact-us">
+                  Enquire
+                  <b>→</b>
+                </Link>
+
+              </div>
+
+            </div>
+
+
+            {/* NEXT DAY */}
+            <div className="express-page-option-card">
+
+              <div className="express-page-option-top">
+
+                <span className="express-page-option-number">
+                  02
+                </span>
+
+                <span className="express-page-option-icon">
+                  ◷
+                </span>
+
+              </div>
+
+              <span className="express-page-option-label">
+                FAST DELIVERY
+              </span>
+
+              <h3>
+                Next Day Delivery
+              </h3>
+
+              <p>
+                Convenient next-day delivery support for
+                shipments requiring a faster transit schedule
+                between supported locations.
+              </p>
+
+              <div className="express-page-option-footer">
+
+                <span>
+                  TIME SENSITIVE
+                </span>
+
+                <Link to="/contact-us">
+                  Enquire
+                  <b>→</b>
+                </Link>
+
+              </div>
+
+            </div>
+
+
+            {/* BUSINESS */}
+            <div className="express-page-option-card">
+
+              <div className="express-page-option-top">
+
+                <span className="express-page-option-number">
+                  03
+                </span>
+
+                <span className="express-page-option-icon">
+                  ▣
+                </span>
+
+              </div>
+
+              <span className="express-page-option-label">
+                BUSINESS DELIVERY
+              </span>
+
+              <h3>
+                Commercial Express
+              </h3>
+
+              <p>
+                Express transportation support for business
+                documents, commercial parcels and urgent
+                consignments.
+              </p>
+
+              <div className="express-page-option-footer">
+
+                <span>
+                  BUSINESS SHIPMENTS
+                </span>
+
+                <Link to="/contact-us">
+                  Enquire
+                  <b>→</b>
+                </Link>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          EXPRESS PROCESS
+      ===================================================== */}
+      <section
+        className="express-page-process-section"
+        id="express-process"
       >
-        Request A Free Quote
-      </Link>
+
+        <div className="express-page-container">
+
+          <div className="express-page-process-header">
+
+            <span>
+              EXPRESS DELIVERY PROCESS
+            </span>
+
+            <h2>
+              From Pickup
+              <strong>To Final Delivery.</strong>
+            </h2>
+
+            <p>
+              Our express delivery workflow is designed to
+              keep shipment movement organized from the
+              initial request through final delivery.
+            </p>
+
+          </div>
+
+
+          <div className="express-page-timeline">
+
+            <div className="express-page-timeline-line"></div>
+
+
+            {/* STEP 01 */}
+            <div className="express-page-timeline-item">
+
+              <div className="express-page-timeline-marker">
+                01
+              </div>
+
+              <div className="express-page-timeline-content">
+
+                <span>
+                  STEP ONE
+                </span>
+
+                <h3>
+                  Shipment Request
+                </h3>
+
+                <p>
+                  Share your shipment details, pickup location,
+                  destination and delivery requirements.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* STEP 02 */}
+            <div className="express-page-timeline-item">
+
+              <div className="express-page-timeline-marker">
+                02
+              </div>
+
+              <div className="express-page-timeline-content">
+
+                <span>
+                  STEP TWO
+                </span>
+
+                <h3>
+                  Pickup Coordination
+                </h3>
+
+                <p>
+                  Our team coordinates shipment pickup based
+                  on the agreed service and available route.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* STEP 03 */}
+            <div className="express-page-timeline-item">
+
+              <div className="express-page-timeline-marker">
+                03
+              </div>
+
+              <div className="express-page-timeline-content">
+
+                <span>
+                  STEP THREE
+                </span>
+
+                <h3>
+                  Priority Movement
+                </h3>
+
+                <p>
+                  Shipment enters the transportation process
+                  for movement toward its destination.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* STEP 04 */}
+            <div className="express-page-timeline-item">
+
+              <div className="express-page-timeline-marker">
+                04
+              </div>
+
+              <div className="express-page-timeline-content">
+
+                <span>
+                  STEP FOUR
+                </span>
+
+                <h3>
+                  Final Delivery
+                </h3>
+
+                <p>
+                  Shipment reaches the designated delivery
+                  location with available status updates.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          FEATURES
+      ===================================================== */}
+      <section className="express-page-features-section">
+
+        <div className="express-page-container">
+
+          <div className="express-page-features-heading">
+
+            <span>
+              SERVICE FEATURES
+            </span>
+
+            <h2>
+              Everything Your
+              <strong>Urgent Shipment Needs.</strong>
+            </h2>
+
+          </div>
+
+
+          <div className="express-page-feature-grid">
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                ⚡
+              </div>
+
+              <div>
+                <h3>
+                  Fast Transit
+                </h3>
+
+                <p>
+                  Efficient transportation options for
+                  time-sensitive shipments.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                📦
+              </div>
+
+              <div>
+                <h3>
+                  Secure Handling
+                </h3>
+
+                <p>
+                  Careful handling of documents, parcels
+                  and commercial shipments.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                ⌖
+              </div>
+
+              <div>
+                <h3>
+                  Shipment Tracking
+                </h3>
+
+                <p>
+                  Available shipment updates help you
+                  stay informed during transit.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                ◉
+              </div>
+
+              <div>
+                <h3>
+                  Delivery Coordination
+                </h3>
+
+                <p>
+                  Organized coordination from pickup
+                  through final delivery.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                ◎
+              </div>
+
+              <div>
+                <h3>
+                  Flexible Solutions
+                </h3>
+
+                <p>
+                  Service options designed around different
+                  shipment urgency and requirements.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="express-page-feature">
+
+              <div className="express-page-feature-icon">
+                ☎
+              </div>
+
+              <div>
+                <h3>
+                  Customer Assistance
+                </h3>
+
+                <p>
+                  Support for shipment-related questions
+                  throughout the delivery process.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          FINAL CTA
+      ===================================================== */}
+      <section className="express-page-cta-section">
+
+        <div className="express-page-container">
+
+          <div className="express-page-cta">
+
+            <div className="express-page-cta-speed">
+
+              <span>
+                EXPRESS
+              </span>
+
+              <strong>
+                →
+              </strong>
+
+            </div>
+
+
+            <div className="express-page-cta-content">
+
+              <span>
+                HAVE AN URGENT SHIPMENT?
+              </span>
+
+              <h2>
+                Don't Let Time
+                <strong>Slow You Down.</strong>
+              </h2>
+
+              <p>
+                Contact City Express Courier to discuss your
+                express delivery requirement and available
+                transportation options.
+              </p>
+
+            </div>
+
+
+            <Link
+              to="/contact-us"
+              className="express-page-cta-button"
+            >
+              Request A Quote
+              <span>→</span>
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
-
-  </div>
-
-</section>
-
-</div>
-
-
-);
-
-
+  );
 };
-
 
 export default Express;

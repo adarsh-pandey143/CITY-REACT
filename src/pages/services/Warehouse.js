@@ -1,236 +1,451 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../../pages/Page.css";
+import "./Warehouse.css";
 
-import warehouseImage from "../../assets/images/ware.jpg";
-
+import warehouseImage from "../../assets/images/cargo.jpg";
 
 const Warehouse = () => {
+  return (
+    <div className="warehouse-page">
 
-
-return (
-
-<div className="service-page">
-
-
-
-{/* ================= HERO ================= */}
-
-<section
-  className="service-hero"
-  style={{
-    backgroundImage: `url(${warehouseImage})`
-  }}
->
-
-  <div className="service-overlay"></div>
-
-  <div className="container">
-
-    <div className="service-hero-content">
-
-      <span>
-        WAREHOUSING & DISTRIBUTION
-      </span>
-
-      <h1>
-        Secure Warehouse & Inventory Management Solutions
-      </h1>
-
-      <p>
-        World Wide Courier Cargo offers modern warehousing,
-        inventory management and distribution services to
-        help businesses store, manage and deliver goods
-        efficiently. 
-      </p>
-
-      <Link
-        to="/NotFound"
-        className="btn-primary"
+      {/* ================= HERO ================= */}
+      <section
+        className="warehouse-hero"
+        style={{
+          backgroundImage: `url(${warehouseImage})`,
+        }}
       >
-        Request A Free Quote
-      </Link>
+        <div className="warehouse-hero-overlay"></div>
+
+        <div className="warehouse-container">
+          <div className="warehouse-hero-content">
+
+            <span className="warehouse-hero-eyebrow">
+              SEA COURIER SERVICES
+            </span>
+
+            <h1>
+              Reliable Sea Courier &
+              <span>International Shipment Solutions</span>
+            </h1>
+
+            <p>
+              City Express Courier provides dependable sea courier services
+              for businesses and customers requiring secure, cost-effective
+              and reliable transportation of shipments to international
+              destinations.
+            </p>
+
+            <Link
+              to="/contact-us"
+              className="warehouse-primary-btn"
+            >
+              Request A Free Quote
+              <span>→</span>
+            </Link>
+
+          </div>
+        </div>
+
+        <div className="warehouse-hero-bottom">
+          <div>SECURE SHIPPING</div>
+          <div>INTERNATIONAL DELIVERY</div>
+          <div>COST-EFFECTIVE SERVICE</div>
+        </div>
+      </section>
+
+
+      {/* ================= CONTENT ================= */}
+      <section className="warehouse-content-section">
+
+        <div className="warehouse-container">
+
+          {/* ================= INTRO ================= */}
+          <div className="warehouse-intro">
+
+            <span className="warehouse-section-tag">
+              SEA COURIER SOLUTIONS
+            </span>
+
+            <h2>
+              Reliable Sea Courier &
+              <span>International Shipping Services</span>
+            </h2>
+
+            <p>
+              City Express Courier provides sea courier solutions for
+              businesses and individuals who need dependable international
+              shipment transportation. Our sea delivery services are designed
+              for secure handling, organized shipment movement and
+              cost-effective transportation across international destinations.
+            </p>
+
+          </div>
+
+
+          {/* ================= FEATURES ================= */}
+          <div className="warehouse-feature-grid">
+
+            <div className="warehouse-feature-card warehouse-feature-card-highlight">
+
+              <div className="warehouse-feature-number">
+                01
+              </div>
+
+              <div className="warehouse-feature-icon">
+                🚢
+              </div>
+
+              <h3>
+                International Sea Shipping
+              </h3>
+
+              <p>
+                Reliable sea transportation solutions for shipments moving
+                between international destinations through established
+                shipping routes.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+
+            <div className="warehouse-feature-card">
+
+              <div className="warehouse-feature-number">
+                02
+              </div>
+
+              <div className="warehouse-feature-icon">
+                📦
+              </div>
+
+              <h3>
+                Secure Shipment Handling
+              </h3>
+
+              <p>
+                Careful handling of parcels and shipments throughout the
+                sea courier process to support safe and organized delivery.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+
+            <div className="warehouse-feature-card">
+
+              <div className="warehouse-feature-number">
+                03
+              </div>
+
+              <div className="warehouse-feature-icon">
+                🌍
+              </div>
+
+              <h3>
+                International Destinations
+              </h3>
+
+              <p>
+                Sea courier support for businesses and customers sending
+                shipments to destinations across international markets.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+
+            <div className="warehouse-feature-card">
+
+              <div className="warehouse-feature-number">
+                04
+              </div>
+
+              <div className="warehouse-feature-icon">
+                ⚓
+              </div>
+
+              <h3>
+                Port-to-Destination Delivery
+              </h3>
+
+              <p>
+                Organized shipment movement from port handling through
+                delivery coordination for a smoother international courier
+                experience.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+
+            <div className="warehouse-feature-card">
+
+              <div className="warehouse-feature-number">
+                05
+              </div>
+
+              <div className="warehouse-feature-icon">
+                🛡
+              </div>
+
+              <h3>
+                Safe Shipment Management
+              </h3>
+
+              <p>
+                Responsible shipment management and handling practices
+                designed to support secure movement during sea transportation.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+
+            <div className="warehouse-feature-card">
+
+              <div className="warehouse-feature-number">
+                06
+              </div>
+
+              <div className="warehouse-feature-icon">
+                📍
+              </div>
+
+              <h3>
+                Sea Delivery Coordination
+              </h3>
+
+              <p>
+                Coordinated sea courier operations helping businesses manage
+                international shipments and delivery requirements efficiently.
+              </p>
+
+              <Link to="/contact-us">
+                Discuss Service
+                <span>→</span>
+              </Link>
+
+            </div>
+
+          </div>
+
+
+          {/* ================= BENEFITS ================= */}
+          <div className="warehouse-benefits">
+
+            <div className="warehouse-benefits-heading">
+
+              <span className="warehouse-section-tag">
+                WHY CHOOSE US
+              </span>
+
+              <h2>
+                Reliable Sea Shipping.
+                <span>Global Delivery.</span>
+              </h2>
+
+              <p>
+                Sea courier services provide a practical solution for
+                international shipments requiring secure transportation,
+                organized handling and cost-effective delivery.
+              </p>
+
+            </div>
+
+
+            <div className="warehouse-benefits-list">
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  01
+                </div>
+
+                <div>
+                  <h3>
+                    Secure Sea Transportation
+                  </h3>
+
+                  <p>
+                    Reliable shipment handling and transportation support
+                    for international sea courier requirements.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  02
+                </div>
+
+                <div>
+                  <h3>
+                    Cost-Effective Shipping
+                  </h3>
+
+                  <p>
+                    Sea transportation offers a practical option for
+                    businesses managing international shipment requirements.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  03
+                </div>
+
+                <div>
+                  <h3>
+                    Professional Shipment Handling
+                  </h3>
+
+                  <p>
+                    Careful handling and organized shipment processes help
+                    maintain reliable movement throughout sea transportation.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  04
+                </div>
+
+                <div>
+                  <h3>
+                    International Delivery Support
+                  </h3>
+
+                  <p>
+                    Coordinated support for businesses and customers sending
+                    shipments to international destinations.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  05
+                </div>
+
+                <div>
+                  <h3>
+                    Organized Port Coordination
+                  </h3>
+
+                  <p>
+                    Structured coordination helps manage shipment movement
+                    through ports and onward delivery requirements.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="warehouse-benefit-item">
+
+                <div className="warehouse-benefit-number">
+                  06
+                </div>
+
+                <div>
+                  <h3>
+                    Global Shipment Assistance
+                  </h3>
+
+                  <p>
+                    Courier support for businesses managing regular
+                    international sea shipment and delivery requirements.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* ================= CTA ================= */}
+          <div className="warehouse-cta">
+
+            <div className="warehouse-cta-mark">
+              CITY
+            </div>
+
+            <div className="warehouse-cta-content">
+
+              <span>
+                CITY EXPRESS COURIER
+              </span>
+
+              <h2>
+                Need Reliable
+                <span>Sea Courier Services?</span>
+              </h2>
+
+              <p>
+                Tell us about your international shipment requirements and
+                our team can help you plan a suitable sea courier and delivery
+                solution.
+              </p>
+
+            </div>
+
+            <Link
+              to="/contact-us"
+              className="warehouse-cta-button"
+            >
+              Request A Free Quote
+              <span>→</span>
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
-
-  </div>
-
-</section>
-
-{/* ================= CONTENT ================= */}
-
-<section className="service-content-section">
-
-  <div className="container">
-
-    {/* ================= INTRO ================= */}
-
-    <div className="service-intro">
-
-      <span className="section-tag">
-        WAREHOUSING SOLUTIONS
-      </span>
-
-      <h2>
-        Smart Warehousing & Inventory Management Services
-      </h2>
-
-      <p>
-        World Wide Courier Cargo provides secure warehousing,
-        inventory management and distribution solutions
-        designed to support businesses of every size. Our
-        modern storage facilities, efficient operations and
-        experienced logistics professionals ensure your goods
-        remain safe, organized and ready for timely dispatch.
-      </p>
-
-    </div>
-
-    {/* ================= FEATURES ================= */}
-
-    <div className="feature-grid">
-
-      <div className="feature-card">
-
-        <h3>🏢 Secure Storage Facilities</h3>
-
-        <p>
-          Spacious and secure warehouses designed
-          for safe storage of commercial goods,
-          parcels and industrial cargo.
-        </p>
-
-      </div>
-
-      <div className="feature-card">
-
-        <h3>📊 Inventory Management</h3>
-
-        <p>
-          Efficient inventory monitoring with
-          organized stock control for improved
-          supply chain operations.
-        </p>
-
-      </div>
-
-      <div className="feature-card">
-
-        <h3>📦 Pick, Pack & Dispatch</h3>
-
-        <p>
-          Fast order processing, professional
-          packaging and accurate dispatch for
-          timely deliveries.
-        </p>
-
-      </div>
-
-      <div className="feature-card">
-
-        <h3>🚚 Distribution Services</h3>
-
-        <p>
-          Seamless distribution solutions ensuring
-          smooth movement of goods across multiple
-          destinations.
-        </p>
-
-      </div>
-
-      <div className="feature-card">
-
-        <h3>🛡 Safe Cargo Handling</h3>
-
-        <p>
-          Professional loading, unloading and
-          storage practices to protect every
-          shipment from damage.
-        </p>
-
-      </div>
-
-      <div className="feature-card">
-
-        <h3>📍 Logistics Coordination</h3>
-
-        <p>
-          Integrated warehouse and transportation
-          support for faster order fulfillment
-          and efficient supply chain management.
-        </p>
-
-      </div>
-
-    </div>
-
-    {/* ================= BENEFITS ================= */}
-
-    <div className="service-benefits">
-
-      <h2>
-        Why Choose Our Warehousing Services?
-      </h2>
-
-      <ul>
-
-        <li>✓ Secure and well-managed warehouse facilities</li>
-
-        <li>✓ Efficient inventory management system</li>
-
-        <li>✓ Professional cargo handling and storage</li>
-
-        <li>✓ Fast pick, pack and dispatch operations</li>
-
-        <li>✓ Reliable distribution and logistics support</li>
-
-        <li>✓ Flexible storage solutions for businesses</li>
-
-        <li>✓ Experienced warehouse management team</li>
-
-        <li>✓ End-to-end supply chain assistance</li>
-
-      </ul>
-
-    </div>
-
-    {/* ================= CTA ================= */}
-
-    <div className="service-cta">
-
-      <h2>
-        Looking For Reliable Warehousing Solutions?
-      </h2>
-
-      <p>
-        Partner with World Wide Courier Cargo for
-        secure warehousing, efficient inventory
-        management and dependable distribution
-        services that keep your supply chain moving
-        smoothly and efficiently.
-      </p>
-
-      <Link
-        to="/NotFound"
-        className="btn-primary"
-      >
-        Request A Free Quote
-      </Link>
-
-    </div>
-
-  </div>
-
-</section>
-
-</div>
-
-
-);
-
-
+  );
 };
 
-
 export default Warehouse;
+

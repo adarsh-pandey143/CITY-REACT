@@ -1,0 +1,585 @@
+/* ==========================================================
+   CITY EXPRESS COURIER
+   ROADWAYS / DOMESTIC DELIVERY PAGE
+   PAGE-SPECIFIC CSS ONLY
+========================================================== */
+
+.roadways-page {
+  --road-primary: #003B95;
+  --road-primary-dark: #002B73;
+  --road-primary-light: #3B6FC4;
+  --road-secondary: #0B5CC7;
+
+  --road-bg: #F5F8FC;
+  --road-surface: #FFFFFF;
+
+  --road-text: #102A43;
+  --road-text-light: #64748B;
+  --road-white: #FFFFFF;
+
+  --road-border: #D9E2F0;
+
+  width: 100%;
+  overflow: hidden;
+  background: var(--road-surface);
+  color: var(--road-text);
+}
+
+.roadways-page *,
+.roadways-page *::before,
+.roadways-page *::after {
+  box-sizing: border-box;
+}
+
+.roadways-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.roadways-page .roadways-hero {
+  min-height: 650px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+
+  isolation: isolate;
+}
+
+.roadways-page .roadways-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 43, 115, 0.98) 0%,
+      rgba(0, 59, 149, 0.90) 38%,
+      rgba(0, 59, 149, 0.55) 68%,
+      rgba(0, 43, 115, 0.18) 100%
+    );
+}
+
+.roadways-page .roadways-hero-content {
+  max-width: 790px;
+
+  padding: 100px 0 85px;
+
+  color: var(--road-white);
+}
+
+.roadways-page .roadways-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 22px;
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.roadways-page .roadways-hero h1 {
+  margin: 0;
+
+  color: var(--road-white);
+
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 1;
+  letter-spacing: -2.8px;
+  font-weight: 800;
+}
+
+.roadways-page .roadways-hero h1 span {
+  display: block;
+  color: #c9ddff;
+}
+
+.roadways-page .roadways-hero-content > p {
+  max-width: 680px;
+
+  margin: 28px 0 34px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.roadways-page .roadways-primary-btn {
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  padding: 0 24px;
+
+  border-radius: 5px;
+
+  background: var(--road-white);
+  color: var(--road-primary);
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.roadways-page .roadways-primary-btn span {
+  font-size: 19px;
+}
+
+.roadways-page .roadways-primary-btn:hover {
+  transform: translateY(-3px);
+  background: #edf4ff;
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.roadways-page .roadways-content-section {
+  padding: 100px 0 90px;
+
+  background: var(--road-surface);
+}
+
+
+/* ==========================================================
+   INTRO
+========================================================== */
+
+.roadways-page .roadways-intro {
+  max-width: 880px;
+
+  margin-bottom: 65px;
+}
+
+.roadways-page .roadways-section-tag {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: var(--road-secondary);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.roadways-page .roadways-intro h2 {
+  margin: 0 0 22px;
+
+  color: var(--road-text);
+
+  font-size: clamp(38px, 4.5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.roadways-page .roadways-intro h2 strong {
+  display: block;
+  color: var(--road-primary);
+}
+
+.roadways-page .roadways-intro > p {
+  max-width: 820px;
+
+  margin: 0;
+
+  color: var(--road-text-light);
+
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+
+/* ==========================================================
+   FEATURE GRID
+========================================================== */
+
+.roadways-page .roadways-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-bottom: 90px;
+}
+
+.roadways-page .roadways-feature-card {
+  min-height: 275px;
+
+  padding: 30px;
+
+  border: 1px solid var(--road-border);
+  border-radius: 9px;
+
+  background: var(--road-surface);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.roadways-page .roadways-feature-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #b6cbe8;
+
+  box-shadow: 0 18px 40px rgba(0, 59, 149, 0.09);
+}
+
+.roadways-page .roadways-feature-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  border-radius: 9px;
+
+  background: #edf4ff;
+  color: var(--road-primary);
+
+  font-size: 22px;
+}
+
+.roadways-page .roadways-feature-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--road-text);
+
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.roadways-page .roadways-feature-card p {
+  margin: 0;
+
+  color: var(--road-text-light);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* ==========================================================
+   BENEFITS
+========================================================== */
+
+.roadways-page .roadways-benefits {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+
+  padding: 70px 0;
+
+  border-top: 1px solid var(--road-border);
+  border-bottom: 1px solid var(--road-border);
+}
+
+.roadways-page .roadways-benefits-heading > span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: var(--road-secondary);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.roadways-page .roadways-benefits-heading h2 {
+  margin: 0;
+
+  color: var(--road-text);
+
+  font-size: clamp(35px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -1.8px;
+}
+
+.roadways-page .roadways-benefits-heading h2 strong {
+  display: block;
+  color: var(--road-primary);
+}
+
+.roadways-page .roadways-benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid var(--road-border);
+}
+
+.roadways-page .roadways-benefit-item {
+  min-height: 82px;
+
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 12px;
+
+  border-bottom: 1px solid var(--road-border);
+}
+
+.roadways-page .roadways-benefit-item:nth-child(odd) {
+  border-right: 1px solid var(--road-border);
+}
+
+.roadways-page .roadways-benefit-item span {
+  color: var(--road-primary-light);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.roadways-page .roadways-benefit-item p {
+  margin: 0;
+
+  color: var(--road-text);
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.roadways-page .roadways-cta {
+  margin-top: 90px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 50px;
+
+  padding: 50px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      120deg,
+      var(--road-primary-dark),
+      var(--road-primary)
+    );
+
+  box-shadow: 0 20px 55px rgba(0, 43, 115, 0.16);
+}
+
+.roadways-page .roadways-cta-content > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #a9c9ff;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.roadways-page .roadways-cta-content h2 {
+  margin: 0 0 16px;
+
+  color: var(--road-white);
+
+  font-size: clamp(30px, 4vw, 47px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.roadways-page .roadways-cta-content h2 strong {
+  display: block;
+  color: #c6dcff;
+}
+
+.roadways-page .roadways-cta-content p {
+  max-width: 730px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.70);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.roadways-page .roadways-cta-button {
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 0 24px;
+
+  border-radius: 5px;
+
+  background: var(--road-white);
+  color: var(--road-primary);
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.roadways-page .roadways-cta-button:hover {
+  transform: translateY(-3px);
+  background: #edf4ff;
+}
+
+.roadways-page .roadways-cta-button span {
+  font-size: 18px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+  .roadways-page .roadways-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .roadways-page .roadways-benefits {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .roadways-page .roadways-cta {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .roadways-page .roadways-cta-button {
+    justify-self: start;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+  .roadways-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .roadways-page .roadways-hero {
+    min-height: 620px;
+  }
+
+  .roadways-page .roadways-hero-content {
+    padding: 85px 0 65px;
+  }
+
+  .roadways-page .roadways-hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -2px;
+  }
+
+  .roadways-page .roadways-hero-content > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .roadways-page .roadways-primary-btn {
+    width: 100%;
+  }
+
+
+  .roadways-page .roadways-content-section {
+    padding: 75px 0;
+  }
+
+  .roadways-page .roadways-intro h2 {
+    font-size: 38px;
+  }
+
+
+  .roadways-page .roadways-feature-grid {
+    grid-template-columns: 1fr;
+
+    margin-bottom: 65px;
+  }
+
+  .roadways-page .roadways-feature-card {
+    min-height: auto;
+  }
+
+
+  .roadways-page .roadways-benefits {
+    padding: 55px 0;
+  }
+
+  .roadways-page .roadways-benefits-heading h2 {
+    font-size: 36px;
+  }
+
+  .roadways-page .roadways-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .roadways-page .roadways-benefit-item:nth-child(odd) {
+    border-right: 0;
+  }
+
+
+  .roadways-page .roadways-cta {
+    margin-top: 65px;
+
+    padding: 32px 25px;
+  }
+
+  .roadways-page .roadways-cta-button {
+    width: 100%;
+  }
+
+}

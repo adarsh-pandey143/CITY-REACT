@@ -2,368 +2,566 @@
 import React from "react";
 import "./ContactUs.css";
 
-import contactBanner from "../assets/images/contact.jpg";
+import contactBanner from "../assets/images/contact3.jpg";
 
 
 const ContactUs = () => {
-
-
-return (
-
-<div className="contact-page">
-
-
-    {/* ================= HERO ================= */}
-
-   <section
-  className="contact-hero"
-  style={{
-    backgroundImage: `url(${contactBanner})`
-  }}
->
-
-  <div className="contact-overlay"></div>
-
-  <div className="container">
-
-    <div className="contact-hero-content">
-
-      <span>CONTACT US</span>
-
-      <h1>
-        We're Here To Support
-        Your Logistics Needs
-      </h1>
-
-      <p>
-        Get in touch with City Express Cargo for reliable
-        courier, cargo and logistics solutions. Our team is
-        ready to assist you with shipment inquiries,
-        transportation services and customized logistics
-        requirements.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-    {/* ================= CONTACT INFO ================= */}
-
- <section className="contact-info-section">
-
-  <div className="container">
-
-    <div className="contact-section-heading">
-
-      <span>GET IN TOUCH</span>
-
-      <h2>
-        Contact City Express Cargo
-      </h2>
-
-      <p>
-        Our team is ready to assist you with courier, cargo
-        and logistics requirements. Contact us for shipment
-        inquiries, transportation services, business
-        partnerships or any other logistics requirements.
-      </p>
-
-    </div>
-
-    <div className="contact-grid">
-
-
-      {/* ================= PHONE ================= */}
-
-      <div className="contact-card">
-
-        <div className="contact-icon">📞</div>
-
-        <h3>Call Us</h3>
-
-        <span>
-          Mobile No.
-          <p>
-            <a href="tel:+917042699313">
-              +91 70426-99313
-            </a>
-          </p>
-        </span>
-
-        <br />
-
-        <span>
-          Telephone No.
-          <p>
-            <a href="tel:+919212306365">
-              +91 92123-06365
-            </a>
-          </p>
-        </span>
-
-        <br />
-
-      </div>
-
-
-      {/* ================= EMAIL ================= */}
-
-
-<div className="contact-card">
-
-  <div className="contact-icon">✉️</div>
-
-  <h3>Email Us</h3>
-
-  <p>
-    <a href="mailto:info@cityexpcargo.com">
-      info@cityexpcargo.com
-    </a>
-  </p>
-
-  <p>
-    <a href="mailto:tocggn.7@gmail.com">
-      tocggn.7@gmail.com
-    </a>
-  </p>
-
-</div>
-
-
-
-      {/* ================= OFFICE ================= */}
-
-      <div className="contact-card">
-
-        <div className="contact-icon">📍</div>
-
-        <h3>Corporate Office</h3>
-
-        <p>
-          City Express Courier, C-40,<br />
-          Sanjaygram, Rajeev Nagar,<br />
-          Sheetla Mata Mandir Road,<br />
-          India
-        </p>
-
-      </div>
-
-
-      {/* ================= REGISTRATION ================= */}
-
-      <div className="contact-card">
-
-        <div className="contact-icon">🧾</div>
-
-        <h3>Business Information</h3>
-
-        <p>
-          <strong>Trade Name:</strong><br />
-          CITY EXPRESS COURIER
-        </p>
-
-        <p>
-          <strong>Legal Name:</strong><br />
-          Jagjeet Singh Ahlawat
-        </p>
-
-        <p>
-          <strong>GSTIN / Registration No.:</strong><br />
-          06DYLPP8013E1ZC
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-{/* ================= CONTACT FORM ================= */}
-
-<section className="contact-form-section">
-
-  <div className="container">
-
-    <div className="contact-wrapper">
-
-
-      {/* ================= LEFT SIDE ================= */}
-
-      <div className="contact-form-box">
-
-        <h2>
-          Send Us A Message
-        </h2>
-
-        <p>
-          Have a question about our courier, cargo or
-          logistics services? Fill out the form below
-          and our team will get back to you with the
-          right solution for your requirements.
-        </p>
-
-        <form className="contact-form">
-
-          <div className="form-group">
-
-            <input
-              type="text"
-              placeholder="Full Name"
-            />
+  return (
+    <div className="contact-page">
+
+      {/* =====================================================
+          HERO
+      ===================================================== */}
+
+      <section
+        className="contact-hero"
+        style={{
+          backgroundImage: `url(${contactBanner})`
+        }}
+      >
+        <div className="contact-overlay"></div>
+
+        <div className="container">
+          <div className="contact-hero-content">
+
+            <span className="contact-hero-eyebrow">
+              CONTACT CITY EXPRESS COURIER
+            </span>
+
+            <h1>
+              We're Here To Support
+              <span>Your Delivery Needs.</span>
+            </h1>
+
+            <p>
+              Get in touch with City Express Courier for fast, safe and
+              reliable courier and delivery solutions. Our team is ready
+              to assist you with shipment enquiries, delivery services
+              and customized courier requirements.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+
+      {/* =====================================================
+          CONTACT INFORMATION
+      ===================================================== */}
+
+      <section className="contact-info-section">
+
+        <div className="container">
+
+          <div className="contact-section-heading">
+
+            <span>GET IN TOUCH</span>
+
+            <h2>
+              Contact City Express Courier.
+            </h2>
+
+            <p>
+              Our team is ready to assist you with domestic, international,
+              express, air, surface and e-commerce delivery requirements.
+              Contact us for shipment enquiries, delivery services,
+              business partnerships or courier-related assistance.
+            </p>
 
           </div>
 
 
-          <div className="form-group">
+          <div className="contact-grid">
 
-            <input
-              type="email"
-              placeholder="Email Address"
-            />
+            {/* PHONE */}
+
+            <div className="contact-card">
+
+              <div className="contact-card-top">
+                <div className="contact-icon">
+                  📞
+                </div>
+
+                <span className="contact-card-number">
+                  01
+                </span>
+              </div>
+
+              <h3>
+                Call Us
+              </h3>
+
+              <div className="contact-detail">
+
+                <span>
+                  Mobile No.
+                </span>
+
+                <a href="tel:+8287877656">
+                  +91 82878-77656
+                </a>
+
+              </div>
+
+              <div className="contact-detail">
+
+                <span>
+                  Telephone No.
+                </span>
+
+                <a href="tel:+919212306365">
+                  +91 92123-06365
+                </a>
+
+              </div>
+
+            </div>
+
+
+            {/* EMAIL */}
+
+            <div className="contact-card">
+
+              <div className="contact-card-top">
+                <div className="contact-icon">
+                  ✉️
+                </div>
+
+                <span className="contact-card-number">
+                  02
+                </span>
+              </div>
+
+              <h3>
+                Email Us
+              </h3>
+
+              <div className="contact-detail">
+
+                <span>
+                  General Enquiries
+                </span>
+
+                <a href="mailto:info@cityexpcargo.com">
+                  info@cityexpcargo.com
+                </a>
+
+              </div>
+
+              <div className="contact-detail">
+
+                <span>
+                  Alternate Contact
+                </span>
+
+                <a href="mailto:tocggn.7@gmail.com">
+                  tocggn.7@gmail.com
+                </a>
+
+              </div>
+
+            </div>
+
+
+            {/* OFFICE */}
+
+            <div className="contact-card">
+
+              <div className="contact-card-top">
+                <div className="contact-icon">
+                  📍
+                </div>
+
+                <span className="contact-card-number">
+                  03
+                </span>
+              </div>
+
+              <h3>
+                Corporate Office
+              </h3>
+
+              <address className="office-address">
+                <span>
+                  City Express Courier
+                </span>
+
+                <span>
+                  Mata Ekvira building ,
+                </span>
+
+                <span>
+                 radha nagar Tulij road, 
+                </span>
+
+                <span>
+                  Nalasopara, East vasai, 
+                </span>
+
+                <span>
+                  Maharashtra 401209, India
+                </span>
+              </address>
+
+            </div>
+
+
+            {/* BUSINESS INFORMATION */}
+
+            <div className="contact-card">
+
+              <div className="contact-card-top">
+                <div className="contact-icon">
+                  🧾
+                </div>
+
+                <span className="contact-card-number">
+                  04
+                </span>
+              </div>
+
+              <h3>
+                Business Information
+              </h3>
+
+              <div className="business-detail">
+
+                <span>
+                  Trade Name
+                </span>
+
+                <strong>
+                  CITY EXPRESS COURIER
+                </strong>
+
+              </div>
+
+              <div className="business-detail">
+
+                <span>
+                  Legal Name
+                </span>
+
+                <strong>
+                  Jagjeet Singh Ahlawat
+                </strong>
+
+              </div>
+
+              <div className="business-detail">
+
+                <span>
+                  GSTIN / Registration No.
+                </span>
+
+                <strong>
+                  06AGMPA9167E1ZD
+                </strong>
+
+              </div>
+
+            </div>
 
           </div>
-
-
-          <div className="form-group">
-
-            <input
-              type="tel"
-              placeholder="Phone Number"
-            />
-
-          </div>
-
-
-          <div className="form-group">
-
-            <input
-              type="text"
-              placeholder="Company Name (Optional)"
-            />
-
-          </div>
-
-
-          <div className="form-group">
-
-            <textarea
-              rows="6"
-              placeholder="Tell us about your shipment or logistics requirements..."
-            ></textarea>
-
-          </div>
-
-
-          <button
-            type="submit"
-            className="btn-primary"
-          >
-            Send Message
-          </button>
-
-
-        </form>
-
-      </div>
-
-
-      {/* ================= RIGHT SIDE ================= */}
-
-      <div className="company-info">
-
-        <h2>
-          Why Choose City Express Cargo?
-        </h2>
-
-        <p>
-          City Express Cargo is committed to providing
-          reliable, secure and efficient courier, cargo
-          and logistics solutions. We offer multiple
-          transportation options to support domestic,
-          international and specialized shipment
-          requirements.
-        </p>
-
-
-        <div className="info-list">
-
-
-          <div className="info-item">
-            ✅ Domestic Cargo Services
-          </div>
-
-
-          <div className="info-item">
-            ✅ International Cargo Services
-          </div>
-
-
-          <div className="info-item">
-            ✅ Air Cargo Transportation
-          </div>
-
-
-          <div className="info-item">
-            ✅ Surface Cargo Services
-          </div>
-
-
-          <div className="info-item">
-            ✅ Cargo By Train & Sea
-          </div>
-
-
-          <div className="info-item">
-            ✅ E-Commerce & FTL Services
-          </div>
-
 
         </div>
 
-      </div>
+      </section>
 
 
-    </div>
+      {/* =====================================================
+          CONTACT FORM
+      ===================================================== */}
 
-  </div>
+      <section className="contact-form-section">
 
-</section>
+        <div className="container">
+
+          <div className="contact-wrapper">
+
+            {/* LEFT - FORM */}
+
+            <div className="contact-form-box">
+
+              <div className="form-heading">
+
+                <span>
+                  SEND AN ENQUIRY
+                </span>
+
+                <h2>
+                  Let's Discuss Your
+                  <strong> Delivery Requirements.</strong>
+                </h2>
+
+                <p>
+                  Share your shipment details with us and our team
+                  will get back to you with a suitable solution for
+                  your courier and delivery requirements.
+                </p>
+
+              </div>
 
 
-{/* ================= GOOGLE MAP ================= */}
+              <form className="contact-form">
 
-<section className="map-section">
+                <div className="form-row">
 
-    <div className="container">
+                  <div className="form-group">
 
-        <div className="map-wrapper">
+                    <label htmlFor="fullName">
+                      Full Name
+                    </label>
 
-          <iframe
-            title="City Express Courier - Corporate Office"
-            src="https://www.google.com/maps?q=City+Express+Courier,+C-40,+Sanjaygram,+Rajeev+Nagar,+Sheetla+Mata+Mandir+Road&output=embed"
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+                    <input
+                      id="fullName"
+                      type="text"
+                      placeholder="Enter your full name"
+                    />
+
+                  </div>
+
+
+                  <div className="form-group">
+
+                    <label htmlFor="email">
+                      Email Address
+                    </label>
+
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email address"
+                    />
+
+                  </div>
+
+                </div>
+
+
+                <div className="form-row">
+
+                  <div className="form-group">
+
+                    <label htmlFor="phone">
+                      Phone Number
+                    </label>
+
+                    <input
+                      id="phone"
+                      type="tel"
+                      placeholder="Enter your phone number"
+                    />
+
+                  </div>
+
+
+                  <div className="form-group">
+
+                    <label htmlFor="company">
+                      Company Name
+                    </label>
+
+                    <input
+                      id="company"
+                      type="text"
+                      placeholder="Company name (optional)"
+                    />
+
+                  </div>
+
+                </div>
+
+
+                <div className="form-group">
+
+                  <label htmlFor="message">
+                    Your Requirement
+                  </label>
+
+                  <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Tell us about your shipment or delivery requirements..."
+                  ></textarea>
+
+                </div>
+
+
+                <button
+                  type="submit"
+                  className="contact-submit-btn"
+                >
+                  Send Message
+                  <span>→</span>
+                </button>
+
+              </form>
+
+            </div>
+
+
+            {/* RIGHT - SERVICES */}
+
+            <div className="company-info">
+
+              <div className="company-info-inner">
+
+                <span className="company-info-eyebrow">
+                  OUR SERVICES
+                </span>
+
+                <h2>
+                  Courier Solutions
+                  <span>Built Around Your Needs.</span>
+                </h2>
+
+                <p>
+                  City Express Courier is committed to providing fast,
+                  secure and reliable courier and delivery solutions.
+                  Our services are designed to support different
+                  shipment requirements for individuals, businesses
+                  and e-commerce customers.
+                </p>
+
+
+                <div className="info-list">
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      Domestic Courier Services
+                    </span>
+                  </div>
+
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      International Courier Services
+                    </span>
+                  </div>
+
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      Express & Same Day Delivery
+                    </span>
+                  </div>
+
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      Air & Surface Delivery
+                    </span>
+                  </div>
+
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      Rail & Specialized Delivery
+                    </span>
+                  </div>
+
+
+                  <div className="info-item">
+                    <span className="info-check">
+                      ✓
+                    </span>
+
+                    <span>
+                      E-Commerce & FTL Services
+                    </span>
+                  </div>
+
+                </div>
+
+
+                <div className="company-info-footer">
+
+                  <span>
+                    NEED ASSISTANCE?
+                  </span>
+
+                  <a href="tel:+8287877656">
+                    +91 82878-77656
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
-    </div>
-
-</section>
+      </section>
 
 
+      {/* =====================================================
+          MAP
+      ===================================================== */}
+
+      <section className="map-section">
+
+        <div className="container">
+
+          <div className="map-heading">
+
+            <span>
+              FIND US
+            </span>
+
+            <h2>
+              Visit Our Corporate Office.
+            </h2>
+
+            <p>
+              Locate City Express Courier at our corporate office
+              and connect with our team for your courier and
+              delivery needs.
+            </p>
+
+          </div>
+
+
+         <div className="map-wrapper">
+  <iframe
+    title="City Express Courier - Nalasopara Office"
+    src="https://www.google.com/maps?q=Mata+Ekvira+Building,+Radha+Nagar,+Tulinj+Road,+Nalasopara+East,+Vasai,+Maharashtra+401209,+India&output=embed"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
 </div>
 
-);
+        </div>
 
+      </section>
+
+
+    </div>
+  );
 };
 
 

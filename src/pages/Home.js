@@ -1,66 +1,77 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
-import heroBg from "../assets/images/main.jpg";
+import homeimg from "../assets/images/homeimg.jpg";
 
-import roadImg from "../assets/images/road.jpg";
+import roadImg from "../assets/images/domestic1.jpg";
 import airImg from "../assets/images/air.jpg";
-import seaImg from "../assets/images/sea1.jpg";
-import warehouseImg from "../assets/images/ware.jpg";
+import seaImg from "../assets/images/cargo.jpg";
+import warehouseImg from "../assets/images/e-commerce.jpg";
 import intImg from "../assets/images/int.jpg";
 import surface from "../assets/images/surface.jpg";
 import train from "../assets/images/train.jpg";
 import flt from "../assets/images/flt.jpg";
 
-import hero1 from "../assets/images/hero1.jpg";
-import hero2 from "../assets/images/hero2.jpg";
+import hero1 from "../assets/images/main3.jpg";
+import hero2 from "../assets/images/main4.jpg";
 import hero3 from "../assets/images/hero3.jpg";
-import hero4 from "../assets/images/hero4.jpg";
+import hero4 from "../assets/images/main5.jpg";
 
 
 const Home = () => {
+
+    /* ==========================================================
+       HERO SLIDES
+    ========================================================== */
 
     const heroSlides = [
 
         {
             image: hero2,
-            tag: "CITY EXPRESS CARGO",
-            title: "Reliable Courier & Cargo Solutions",
+            tag: "CITY EXPRESS COURIER",
+            title: "Fast, Safe & Reliable Courier Services",
             description:
-                "City Express Cargo provides reliable courier, cargo and logistics solutions with secure handling, efficient transportation and dependable delivery across India."
+                "City Express Courier provides dependable domestic, international and express courier solutions with secure handling and timely delivery."
         },
 
         {
             image: hero4,
-            tag: "ROAD CARGO SERVICE",
-            title: "Safe & Reliable Road Cargo Transportation",
+            tag: "DOMESTIC COURIER",
+            title: "Reliable Courier Delivery Across India",
             description:
-                "Efficient road cargo transportation for commercial shipments, parcels and bulk consignments with professional handling and dependable delivery across major destinations."
+                "Send documents, parcels and commercial shipments with secure handling and dependable delivery to destinations across India."
         },
 
         {
             image: hero3,
-            tag: "AIR & EXPRESS CARGO",
-            title: "Fast Solutions for Time-Critical Shipments",
+            tag: "EXPRESS COURIER",
+            title: "When Your Shipment Can't Wait",
             description:
-                "Express air cargo and courier services for urgent documents, parcels and commercial shipments with fast transit and secure handling."
+                "Fast courier solutions for urgent documents, parcels and time-sensitive shipments with professional handling and dependable service."
         },
 
         {
             image: hero1,
-            tag: "RAIL PARCEL & TRAIN CARGO",
-            title: "Cost-Effective Rail Cargo Solutions",
+            tag: "INTERNATIONAL COURIER",
+            title: "Connecting Your Shipments Beyond Borders",
             description:
-                "Reliable rail parcel and train cargo services for commercial and bulk shipments, connecting Delhi with Guwahati, Srinagar and destinations across India."
+                "International courier solutions for documents and parcels with secure processing and dependable shipment support."
         }
 
     ];
 
 
+    /* ==========================================================
+       HERO SLIDER STATE
+    ========================================================== */
+
     const [current, setCurrent] = useState(0);
 
+
+    /* ==========================================================
+       AUTO SLIDER
+    ========================================================== */
 
     useEffect(() => {
 
@@ -78,6 +89,10 @@ const Home = () => {
     }, [heroSlides.length]);
 
 
+    /* ==========================================================
+       NEXT SLIDE
+    ========================================================== */
+
     const nextSlide = () => {
 
         setCurrent((prev) =>
@@ -86,6 +101,10 @@ const Home = () => {
 
     };
 
+
+    /* ==========================================================
+       PREVIOUS SLIDE
+    ========================================================== */
 
     const prevSlide = () => {
 
@@ -103,10 +122,14 @@ const Home = () => {
         <div className="home">
 
 
-            {/* ================= HERO SECTION ================= */}
-
+            {/* ==================================================
+               HERO SECTION
+            ================================================== */}
 
             <section className="hero">
+
+
+                {/* HERO BACKGROUND SLIDES */}
 
                 {heroSlides.map((slide, index) => (
 
@@ -127,52 +150,68 @@ const Home = () => {
                 ))}
 
 
+                {/* HERO CONTENT */}
+
                 <div className="container">
 
                     <div className="hero-content">
 
-                        <span className="hero-tag">
-
-                            {heroSlides[current].tag}
-
-                        </span>
+                        <div className="hero-text">
 
 
-                        <h1>
+                            {/* HERO TAG */}
 
-                            {heroSlides[current].title}
+                            <span className="hero-tag">
 
-                        </h1>
+                                {heroSlides[current].tag}
 
-
-                        <p>
-
-                            {heroSlides[current].description}
-
-                        </p>
+                            </span>
 
 
-                        <div className="hero-buttons">
+                            {/* HERO TITLE */}
+
+                            <h1>
+
+                                {heroSlides[current].title}
+
+                            </h1>
 
 
-                            <Link
-                                to="/NotFound"
-                                className="btn-primary"
-                            >
+                            {/* HERO DESCRIPTION */}
 
-                                Get Quote
+                            <p>
 
-                            </Link>
+                                {heroSlides[current].description}
+
+                            </p>
 
 
-                            <Link
-                                to="/tracking"
-                                className="btn-outline"
-                            >
+                            {/* HERO BUTTONS */}
 
-                                Track Shipment
+                            <div className="hero-buttons">
 
-                            </Link>
+
+                                <Link
+                                    to="/NotFound"
+                                    className="btn-primary"
+                                >
+
+                                    Get Quote
+
+                                </Link>
+
+
+                                <Link
+                                    to="/tracking"
+                                    className="btn-outline"
+                                >
+
+                                    Track Shipment
+
+                                </Link>
+
+
+                            </div>
 
 
                         </div>
@@ -182,9 +221,12 @@ const Home = () => {
                 </div>
 
 
+                {/* HERO PREVIOUS BUTTON */}
+
                 <button
                     className="hero-arrow left"
                     onClick={prevSlide}
+                    aria-label="Previous slide"
                 >
 
                     ❮
@@ -192,15 +234,20 @@ const Home = () => {
                 </button>
 
 
+                {/* HERO NEXT BUTTON */}
+
                 <button
                     className="hero-arrow right"
                     onClick={nextSlide}
+                    aria-label="Next slide"
                 >
 
                     ❯
 
                 </button>
 
+
+                {/* HERO DOTS */}
 
                 <div className="hero-dots">
 
@@ -214,6 +261,9 @@ const Home = () => {
                                     : "dot"
                             }
                             onClick={() => setCurrent(index)}
+                            role="button"
+                            tabIndex="0"
+                            aria-label={`Go to slide ${index + 1}`}
                         />
 
                     ))}
@@ -224,296 +274,487 @@ const Home = () => {
             </section>
 
 
+            {/* ==================================================
+               KEY COURIER SERVICES
+            ================================================== */}
 
+            <section className="courier-highlights">
 
-            {/* ================= SERVICES ================= */}
+                <div className="container">
 
+                    <div className="highlight-grid">
 
-<section className="services-section">
 
-  <div className="container">
+                        {/* DANGEROUS GOODS */}
 
-    <div className="home-section-heading">
+                        <div className="highlight-card dangerous-card">
 
-      <span>
-        OUR SERVICES
-      </span>
+                            <div className="highlight-icon">
 
-      <h2>
-        Complete Cargo & Logistics Solutions
-      </h2>
+                                DG
 
-      <p>
-        City Express Cargo offers comprehensive domestic and international
-        cargo solutions through air, surface, rail and sea transportation.
-        From full truck load services to e-commerce logistics, we provide
-        reliable and efficient solutions for businesses of every size.
-      </p>
+                            </div>
 
-    </div>
 
+                            <div className="highlight-content">
 
-    <div className="services-grid">
+                                <span className="highlight-label">
 
+                                    SPECIALIZED HANDLING
 
-      {/* ================= DOMESTIC ================= */}
+                                </span>
 
-      <div className="service-card">
 
-        <img
-          src={roadImg}
-          alt="Domestic Cargo Service"
-        />
+                                <h3>
 
-        <div className="service-content">
+                                    Dangerous Goods Experts
 
-          <h3>
-            Domestic Cargo
-          </h3>
+                                </h3>
 
-          <p>
-            Reliable domestic cargo transportation solutions for
-            businesses and individuals with safe handling and
-            timely delivery across India.
-          </p>
 
-          <Link to="/services/Roadways">
-            Read More →
-          </Link>
+                                <p>
 
-        </div>
+                                    Specialized handling support for
+                                    shipments requiring careful attention,
+                                    secure processing and professional
+                                    shipment management.
 
-      </div>
+                                </p>
 
+                            </div>
 
 
-      {/* ================= INTERNATIONAL ================= */}
+                            <span className="highlight-arrow">
 
-      <div className="service-card">
+                                →
 
-        <img
-          src={airImg}
-          alt="International Cargo Service"
-        />
+                            </span>
 
-        <div className="service-content">
+                        </div>
 
-          <h3>
-            International Cargo
-          </h3>
 
-          <p>
-            Efficient international cargo solutions for commercial
-            shipments with dependable transportation and professional
-            shipment handling.
-          </p>
+                        {/* SAME DAY DELIVERY */}
 
-          <Link to="/services/international">
-            Read More →
-          </Link>
+                        <div className="highlight-card same-day-card">
 
-        </div>
+                            <div className="highlight-icon">
 
-      </div>
+                                24H
 
+                            </div>
 
 
-      {/* ================= AIR CARGO ================= */}
+                            <div className="highlight-content">
 
-      <div className="service-card">
+                                <span className="highlight-label">
 
-        <img
-          src={intImg}
-          alt="Air Cargo Service"
-        />
+                                    FAST DELIVERY
 
-        <div className="service-content">
+                                </span>
 
-          <h3>
-            Air Cargo
-          </h3>
 
-          <p>
-            Fast and secure air cargo services for time-sensitive
-            shipments requiring efficient transit and reliable delivery.
-          </p>
+                                <h3>
 
-          <Link to="/services/air-cargo">
-            Read More →
-          </Link>
+                                    Same Day Delivery
 
-        </div>
+                                </h3>
 
-      </div>
 
+                                <p>
 
+                                    Fast delivery solutions for urgent
+                                    and time-sensitive shipments where
+                                    same-day service is available.
 
-      {/* ================= SURFACE CARGO ================= */}
+                                </p>
 
-      <div className="service-card">
+                            </div>
 
-        <img
-          src={surface}
-          alt="Surface Cargo Service"
-        />
 
-        <div className="service-content">
+                            <span className="highlight-arrow">
 
-          <h3>
-            Surface Cargo
-          </h3>
+                                →
 
-          <p>
-            Cost-effective surface cargo transportation for parcels,
-            commercial shipments and bulk consignments across major
-            destinations.
-          </p>
+                            </span>
 
-          <Link to="/services/surface">
-            Read More →
-          </Link>
+                        </div>
 
-        </div>
 
-      </div>
+                    </div>
 
+                </div>
 
+            </section>
 
-      {/* ================= RAIL ================= */}
 
-      <div className="service-card">
+            {/* ==================================================
+               SERVICES SECTION
+            ================================================== */}
 
-        <img
-          src={train}
-          alt="Rail Cargo Service"
-        />
+            <section className="services-section">
 
-        <div className="service-content">
 
-          <h3>
-            Cargo By Train
-          </h3>
+                <div className="container">
 
-          <p>
-            Reliable rail cargo and parcel transportation offering
-            an economical solution for moving shipments across
-            major railway destinations.
-          </p>
 
-          <Link to="/services/train">
-            Read More →
-          </Link>
+                    {/* SECTION HEADING */}
 
-        </div>
+                    <div className="home-section-heading">
 
-      </div>
+                        <span>
 
+                            OUR SERVICES
 
+                        </span>
 
-      {/* ================= SEA ================= */}
 
-      <div className="service-card">
+                        <h2>
 
-        <img
-          src={seaImg}
-          alt="Sea Cargo Service"
-        />
+                            Complete Courier & Delivery Solutions
 
-        <div className="service-content">
+                        </h2>
 
-          <h3>
-            Sea Cargo
-          </h3>
 
-          <p>
-            Efficient sea cargo solutions for larger and heavier
-            shipments with reliable transportation and professional
-            cargo handling.
-          </p>
+                        <p>
 
-          <Link to="/services/sea-cargo">
-            Read More →
-          </Link>
+                            City Express Courier provides reliable domestic,
+                            international and express delivery solutions
+                            for documents, parcels and commercial shipments.
+                            Our services are designed around secure handling,
+                            efficient transportation and dependable delivery.
 
-        </div>
+                        </p>
 
-      </div>
+                    </div>
 
 
+                    {/* SERVICES GRID */}
 
-      {/* ================= E-COMMERCE ================= */}
+                    <div className="services-grid">
 
-      <div className="service-card">
 
-        <img
-          src={warehouseImg}
-          alt="E-Commerce Logistics"
-        />
+                        {/* ================= DOMESTIC ================= */}
 
-        <div className="service-content">
+                        <div className="service-card">
 
-          <h3>
-            E-Commerce Logistics
-          </h3>
+                            <img
+                                src={roadImg}
+                                alt="Domestic Courier Service"
+                            />
 
-          <p>
-            End-to-end logistics support for e-commerce businesses,
-            including shipment movement, order fulfillment and
-            reliable delivery solutions.
-          </p>
 
-          <Link to="/services/e-commerce">
-            Read More →
-          </Link>
+                            <div className="service-content">
 
-        </div>
+                                <h3>
 
-      </div>
+                                    Domestic Courier
 
+                                </h3>
 
 
-      {/* ================= FTL ================= */}
+                                <p>
 
-      <div className="service-card">
+                                    Reliable domestic courier services for
+                                    documents, parcels and commercial
+                                    shipments across India.
 
-        <img
-          src={flt}
-          alt="FTL Full Truck Load Service"
-        />
+                                </p>
 
-        <div className="service-content">
 
-          <h3>
-            FTL Service
-          </h3>
+                                <Link to="/services/Roadways">
 
-          <p>
-            Full Truck Load transportation for large-volume shipments
-            with dedicated vehicle capacity, secure handling and
-            dependable delivery.
-          </p>
+                                    Read More →
 
-          <Link to="/services/ftl">
-            Read More →
-          </Link>
+                                </Link>
 
-        </div>
+                            </div>
 
-      </div>
+                        </div>
 
 
-    </div>
+                        {/* ================= INTERNATIONAL ================= */}
 
-  </div>
+                        <div className="service-card">
 
-</section>
+                            <img
+                                src={airImg}
+                                alt="International Courier Service"
+                            />
 
 
+                            <div className="service-content">
 
+                                <h3>
 
+                                    International Courier
 
-            {/* ================= WHY CHOOSE US ================= */}
+                                </h3>
 
+
+                                <p>
+
+                                    Secure international courier solutions
+                                    for documents and parcels with dependable
+                                    shipment support.
+
+                                </p>
+
+
+                                <Link to="/services/Airfreight">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= EXPRESS ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={intImg}
+                                alt="Express Courier Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    Express Courier
+
+                                </h3>
+
+
+                                <p>
+
+                                    Fast courier solutions for urgent and
+                                    time-sensitive documents, parcels and
+                                    commercial shipments.
+
+                                </p>
+
+
+                                <Link to="/services/Express">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= SURFACE ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={surface}
+                                alt="Surface Courier Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    Surface Courier
+
+                                </h3>
+
+
+                                <p>
+
+                                    Cost-effective surface transportation
+                                    for parcels and commercial shipments
+                                    across major destinations.
+
+                                </p>
+
+
+                                <Link to="/services/surface">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= TRAIN ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={train}
+                                alt="Rail Courier Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    Courier By Train
+
+                                </h3>
+
+
+                                <p>
+
+                                    Reliable rail parcel transportation
+                                    offering an economical solution for
+                                    moving shipments across India.
+
+                                </p>
+
+
+                                <Link to="/services/train">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= SEA ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={seaImg}
+                                alt="Sea Cargo Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    Sea Cargo
+
+                                </h3>
+
+
+                                <p>
+
+                                    Efficient sea transportation solutions
+                                    for larger and heavier commercial
+                                    shipments.
+
+                                </p>
+
+
+                                <Link to="/services/Warehouse">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= E-COMMERCE ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={warehouseImg}
+                                alt="E-Commerce Delivery Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    E-Commerce Delivery
+
+                                </h3>
+
+
+                                <p>
+
+                                    End-to-end courier and delivery support
+                                    for growing e-commerce businesses and
+                                    online shipments.
+
+                                </p>
+
+
+                                <Link to="/services/ecommerce">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* ================= FTL ================= */}
+
+                        <div className="service-card">
+
+                            <img
+                                src={flt}
+                                alt="FTL Transportation Service"
+                            />
+
+
+                            <div className="service-content">
+
+                                <h3>
+
+                                    FTL Service
+
+                                </h3>
+
+
+                                <p>
+
+                                    Dedicated full truck load transportation
+                                    for large commercial consignments with
+                                    secure and dependable delivery.
+
+                                </p>
+
+
+                                <Link to="/services/FltService">
+
+                                    Read More →
+
+                                </Link>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            {/* ==================================================
+               WHY CHOOSE US
+            ================================================== */}
 
             <section className="why-section">
 
@@ -524,49 +765,101 @@ const Home = () => {
                     <div className="why-grid">
 
 
+                        {/* IMAGE */}
+
+                        <div className="why-image">
+
+                            <img
+                                src={homeimg}
+                                alt="City Express Courier Services"
+                            />
+
+
+                            <div className="why-image-badge">
+
+                                <strong>
+                                    CITY EXPRESS
+                                </strong>
+
+                                <span>
+                                    Reliable Courier Partner
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        {/* CONTENT */}
+
                         <div className="why-content">
 
 
                             <span>
+
                                 WHY CHOOSE CITY EXPRESS
+
                             </span>
 
 
                             <h2>
-                                Your Trusted Courier & Cargo Partner
+
+                                Your Trusted Courier Partner
+
                             </h2>
 
 
                             <p>
-                                City Express Cargo combines road, rail and
-                                air transportation to provide dependable
-                                logistics solutions for businesses and
-                                individuals. Our focus is on safe handling,
-                                efficient transit and reliable delivery.
-                            </p>
 
+                                City Express Courier provides dependable
+                                courier and delivery solutions for individuals
+                                and businesses. From everyday parcels to
+                                urgent shipments, our focus is on secure
+                                handling, efficient transit and reliable
+                                delivery.
+
+                            </p>
 
 
                             <ul>
 
-                                <li>
-                                    ✓ Road, Rail & Air Cargo Services
-                                </li>
 
                                 <li>
+
+                                    ✓ Fast & Reliable Courier Services
+
+                                </li>
+
+
+                                <li>
+
+                                    ✓ Same Day Delivery Support
+
+                                </li>
+
+
+                                <li>
+
+                                    ✓ Dangerous Goods Handling Expertise
+
+                                </li>
+
+
+                                <li>
+
                                     ✓ Door-to-Door Delivery Solutions
+
                                 </li>
 
-                                <li>
-                                    ✓ Reliable Delhi to Guwahati & Srinagar Services
-                                </li>
 
                                 <li>
-                                    ✓ Secure Handling & Shipment Support
+
+                                    ✓ Secure Shipment Handling & Support
+
                                 </li>
+
 
                             </ul>
-
 
 
                             <Link
@@ -582,33 +875,16 @@ const Home = () => {
                         </div>
 
 
-
-
-                        <div className="why-image">
-
-
-                            <img
-                                src={heroBg}
-                                alt="City Express Cargo Logistics"
-                            />
-
-
-                        </div>
-
-
                     </div>
 
-
                 </div>
-
 
             </section>
 
 
-
-
-            {/* ================= TRACKING SECTION ================= */}
-
+            {/* ==================================================
+               TRACKING SECTION
+            ================================================== */}
 
             <section className="tracking-section">
 
@@ -623,25 +899,30 @@ const Home = () => {
 
 
                             <span>
+
                                 TRACK YOUR SHIPMENT
+
                             </span>
 
 
                             <h2>
-                                Track Your Cargo Anytime, Anywhere
+
+                                Know Where Your Shipment Is
+
                             </h2>
 
 
                             <p>
+
                                 Enter your Consignment Number or AWB Number
                                 to check shipment status, delivery updates
                                 and tracking details for your City Express
-                                Cargo shipment.
+                                Courier shipment.
+
                             </p>
 
 
                         </div>
-
 
 
                         <div className="tracking-action">
@@ -662,17 +943,14 @@ const Home = () => {
 
                     </div>
 
-
                 </div>
-
 
             </section>
 
 
-
-
-            {/* ================= STATS SECTION ================= */}
-
+            {/* ==================================================
+               STATS SECTION
+            ================================================== */}
 
             <section className="stats-section">
 
@@ -685,87 +963,82 @@ const Home = () => {
 
                         <div className="stat-card">
 
-
                             <h3>
+
                                 15+
+
                             </h3>
 
-
                             <p>
+
                                 Years of Experience
-                            </p>
 
+                            </p>
 
                         </div>
 
 
-
-
                         <div className="stat-card">
 
-
                             <h3>
+
                                 PAN
+
                             </h3>
 
-
                             <p>
+
                                 India Connectivity
-                            </p>
 
+                            </p>
 
                         </div>
 
 
-
-
                         <div className="stat-card">
 
-
                             <h3>
+
                                 3
+
                             </h3>
 
-
                             <p>
-                                Transport Modes
-                            </p>
 
+                                Delivery Modes
+
+                            </p>
 
                         </div>
 
 
-
-
                         <div className="stat-card">
 
-
                             <h3>
+
                                 24/7
+
                             </h3>
 
-
                             <p>
-                                Shipment Support
-                            </p>
 
+                                Shipment Support
+
+                            </p>
 
                         </div>
 
 
                     </div>
 
-
                 </div>
-
 
             </section>
 
 
-
-
-            {/* ================= CTA SECTION ================= */}
-
+            {/* ==================================================
+               CTA SECTION
+            ================================================== */}
 
             <section className="cta-section">
 
@@ -776,17 +1049,33 @@ const Home = () => {
                     <div className="cta-box">
 
 
-                        <h2>
-                            Ready to Ship Your Cargo?
-                        </h2>
+                        <div className="cta-content">
 
 
-                        <p>
-                            Choose City Express Cargo for reliable courier,
-                            road cargo, rail parcel and air cargo solutions.
-                            Get in touch with our team for secure and
-                            cost-effective transportation solutions.
-                        </p>
+                            <span>
+
+                                CITY EXPRESS COURIER
+
+                            </span>
+
+
+                            <h2>
+
+                                Ready to Send Your Shipment?
+
+                            </h2>
+
+
+                            <p>
+
+                                Choose City Express Courier for reliable
+                                domestic, international and express courier
+                                solutions. Get in touch with our team for
+                                secure, efficient and dependable delivery.
+
+                            </p>
+
+                        </div>
 
 
                         <Link
@@ -801,9 +1090,7 @@ const Home = () => {
 
                     </div>
 
-
                 </div>
-
 
             </section>
 
