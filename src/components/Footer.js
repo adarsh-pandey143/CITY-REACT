@@ -254,8 +254,8 @@ const Footer = () => {
                 <li>
                   Location:
                   <br />
-                  City Express Courier, mata Ekvira building ,
-                  radha nagar Tulij road, Nalasopara, East vasai, Maharashtra 401209, India
+                  City Express Courier, 
+                  KHASRA NO.1960, SANJAY GRAM, BLOCK -C, GURUGRAM, Gurgaon, Haryana, 122001
                 </li>
 
 

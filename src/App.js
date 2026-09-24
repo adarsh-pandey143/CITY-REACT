@@ -14,6 +14,7 @@ import Surface from './pages/services/surface';
 import Ecommerce from './pages/services/ecommerce';
 import Train from './pages/services/train';
 import FTLService from './pages/services/FltService';
+import Dangerous from "./pages/services/Dangerous";
 import Careers from './pages/Careers';
 import ProhibitedGoods from './pages/ProhibitedGoods';
 import Tracking from './pages/Tracking';
@@ -42,6 +43,10 @@ function App() {
                <Route path="/services/ecommerce" element={<Ecommerce />} />
                <Route path="/services/train" element={<Train />} />
                <Route path="/services/FltService" element={<FTLService />} />
+               <Route
+  path="/services/dangerous-goods"
+  element={<Dangerous />}
+/>
               <Route path="/careers" element={<Careers />} />
               <Route path="/prohibited-goods" element={<ProhibitedGoods />} />
               <Route path="/tracking" element={<Tracking />} />

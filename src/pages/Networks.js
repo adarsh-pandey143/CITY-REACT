@@ -145,10 +145,13 @@ const Networks = () => {
               </h3>
 
               <p>
-                Reliable road-based delivery for parcels, documents
-                and shipments, supported by organized movement and
-                careful handling throughout the delivery process.
-              </p>
+  Reliable road-based delivery for parcels, documents and shipments,
+  supported by organized movement and careful handling throughout the
+  delivery process. Our road transportation solutions help ensure
+  smooth pickup, secure transit and dependable delivery across
+  different locations, making it easier for businesses and customers
+  to manage their regular shipment requirements with confidence.
+</p>
 
               <Link
                 to="/services/Roadways"
@@ -162,55 +165,82 @@ const Networks = () => {
 
 
 
-            {/* BRANCH */}
+          {/* BRANCH */}
 
-            <div className="network-card">
+<div className="network-card">
 
-              <div className="network-card-top">
+  <div className="network-card-top">
 
-                <div className="network-icon">
-                  🏢
-                </div>
+    <div className="network-icon">
+      🏢
+    </div>
 
-                <span className="network-card-number">
-                  02
-                </span>
+    <span className="network-card-number">
+      02
+    </span>
 
-              </div>
+  </div>
 
-              <h3>
-                Branch Network
-              </h3>
+  <h3>
+    Branch Network
+  </h3>
 
-              <p className="branch-address">
+  <p className="branch-address">
 
-                <strong>
-                  City Express Courier
-                </strong>
+    <strong>
+      City Express Courier
+    </strong>
 
-                <span>
-                  Amber palce CHS,
-                </span>
+    {/* LOCATION 1 */}
+    <span className="branch-location-title">
+      Location 01
+    </span>
 
-                <span>
-                  chitranjan road near 
-                </span>
+    <span>
+      Mata Ekvira Building,
+    </span>
 
-                <span>
-                   BJP office ville palace,
-                </span>
+    <span>
+      Radha Nagar, Tulinj Road,
+    </span>
 
-                <span>
-                  East Mumbai,40005 
-                </span>
+    <span>
+      Nalasopara East, Vasai,
+    </span>
 
-              </p>
+    <span>
+  Mumbai, Maharashtra - 401209
+</span>
 
-              <div className="network-card-label">
-                Service Location
-              </div>
 
-            </div>
+    {/* LOCATION 2 */}
+    <span className="branch-location-title">
+      Location 02
+    </span>
+
+    <span>
+      Amber Palace CHS,
+    </span>
+
+    <span>
+      Chitranjan Road, Near BJP Office,
+    </span>
+
+    <span>
+      Vile Parle East,
+    </span>
+
+ <span>
+  Mumbai, Maharashtra - 400055
+</span>
+
+  </p>
+
+  <div className="network-card-label">
+    Service Locations
+  </div>
+
+</div>
 
 
 
@@ -234,11 +264,15 @@ const Networks = () => {
                 Smart Distribution
               </h3>
 
-              <p>
-                Organized delivery operations help coordinate shipment
-                handling, transportation and final delivery activities
-                for efficient and dependable shipment movement.
-              </p>
+             <p>
+  Organized delivery operations help coordinate shipment handling,
+  transportation and final delivery activities with greater efficiency
+  and reliability. Our team manages each stage of the shipment journey
+  carefully, helping ensure smooth movement from pickup to destination.
+  With coordinated logistics support and dependable service processes,
+  we help businesses manage their regular delivery requirements with
+  confidence and consistency.
+</p>
 
               <Link
                 to="/contact-us"
@@ -273,10 +307,13 @@ const Networks = () => {
               </h3>
 
               <p>
-                Flexible delivery options supporting domestic and
-                international shipment requirements through air,
-                surface and other transportation modes.
-              </p>
+  Flexible delivery options supporting domestic and international
+  shipment requirements through air, surface and other transportation
+  modes. Our logistics solutions are designed to handle different
+  shipment types, destinations and delivery requirements while
+  maintaining reliable coordination, secure handling and timely
+  movement from origin to destination.
+</p>
 
               <Link
                 to="/services/Airfreight"

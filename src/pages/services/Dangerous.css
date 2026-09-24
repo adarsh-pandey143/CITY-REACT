@@ -1,0 +1,909 @@
+/* =========================================================
+   CITY EXPRESS COURIER
+   DANGEROUS GOODS SERVICE PAGE
+   ========================================================= */
+
+.dangerous-page {
+  --dangerous-primary: #003B95;
+  --dangerous-primary-dark: #002B73;
+  --dangerous-primary-light: #3B6FC4;
+  --dangerous-secondary: #0B5CC7;
+
+  --dangerous-bg: #F5F8FC;
+  --dangerous-surface: #FFFFFF;
+
+  --dangerous-text: #102A43;
+  --dangerous-text-light: #64748B;
+
+  --dangerous-white: #FFFFFF;
+  --dangerous-border: #D9E2F0;
+
+  width: 100%;
+  overflow: hidden;
+  background: var(--dangerous-bg);
+  color: var(--dangerous-text);
+}
+
+.dangerous-page * {
+  box-sizing: border-box;
+}
+
+.dangerous-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.dangerous-hero {
+  position: relative;
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.dangerous-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.dangerous-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 25, 70, 0.94) 0%,
+      rgba(0, 43, 115, 0.82) 42%,
+      rgba(0, 43, 115, 0.35) 75%,
+      rgba(0, 43, 115, 0.15) 100%
+    );
+}
+
+.dangerous-hero-content {
+  position: relative;
+  z-index: 2;
+
+  padding: 100px 0 90px;
+
+  max-width: 850px;
+  margin-left: max(20px, calc((100vw - 1180px) / 2));
+}
+
+.dangerous-eyebrow {
+  display: inline-flex;
+
+  padding: 8px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+
+  color: var(--dangerous-white);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.dangerous-hero h1 {
+  margin: 22px 0 18px;
+
+  color: var(--dangerous-white);
+
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 1.02;
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.dangerous-hero h1 span {
+  display: block;
+  color: #6EA1FF;
+}
+
+.dangerous-hero-content > p {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.dangerous-hero-buttons {
+  display: flex;
+  gap: 14px;
+
+  margin-top: 32px;
+}
+
+.dangerous-btn-primary,
+.dangerous-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+  padding: 0 25px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.dangerous-btn-primary {
+  background: var(--dangerous-white);
+  color: var(--dangerous-primary);
+}
+
+.dangerous-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  color: var(--dangerous-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dangerous-btn-primary:hover,
+.dangerous-btn-outline:hover {
+  transform: translateY(-3px);
+}
+
+.dangerous-btn-primary:hover {
+  background: #EAF2FF;
+}
+
+.dangerous-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.dangerous-intro {
+  padding: 95px 0;
+  background: var(--dangerous-white);
+}
+
+.dangerous-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.dangerous-section-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--dangerous-secondary);
+
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+.dangerous-intro-content h2,
+.dangerous-heading h2,
+.dangerous-process-header h2,
+.dangerous-why-content h2 {
+  margin: 0 0 20px;
+
+  color: var(--dangerous-text);
+
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.dangerous-intro-content h2 span,
+.dangerous-heading h2 span,
+.dangerous-process-header h2 span,
+.dangerous-why-content h2 span {
+  color: var(--dangerous-primary);
+}
+
+.dangerous-intro-content > p {
+  margin: 0 0 17px;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.dangerous-text-link {
+  display: inline-flex;
+
+  margin-top: 10px;
+
+  color: var(--dangerous-primary);
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.dangerous-text-link:hover {
+  color: var(--dangerous-secondary);
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   INTRO CARD
+   ========================================================= */
+
+.dangerous-intro-card {
+  position: relative;
+
+  padding: 42px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--dangerous-primary),
+      var(--dangerous-primary-dark)
+    );
+
+  box-shadow: 0 25px 60px rgba(0, 43, 115, 0.18);
+
+  overflow: hidden;
+}
+
+.dangerous-intro-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -80px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dangerous-card-icon {
+  position: relative;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  color: var(--dangerous-white);
+
+  font-size: 18px;
+  font-weight: 900;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dangerous-intro-card h3 {
+  margin: 0 0 12px;
+
+  color: var(--dangerous-white);
+
+  font-size: 25px;
+}
+
+.dangerous-intro-card > p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.dangerous-card-line {
+  width: 100%;
+  height: 1px;
+
+  margin: 28px 0;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.dangerous-mini-points {
+  display: grid;
+  gap: 14px;
+}
+
+.dangerous-mini-points div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dangerous-mini-points strong {
+  color: #8DB6FF;
+  font-size: 13px;
+}
+
+.dangerous-mini-points span {
+  color: var(--dangerous-white);
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   SPECIALIZED SERVICES
+   ========================================================= */
+
+.dangerous-services {
+  padding: 100px 0;
+  background: var(--dangerous-bg);
+}
+
+.dangerous-heading {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.dangerous-heading > p {
+  margin: 0;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.dangerous-service-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.dangerous-service-card {
+  position: relative;
+
+  min-height: 285px;
+
+  padding: 30px 25px;
+
+  background: var(--dangerous-white);
+
+  border: 1px solid var(--dangerous-border);
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.dangerous-service-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(0, 59, 149, 0.25);
+
+  box-shadow: 0 18px 45px rgba(0, 43, 115, 0.10);
+}
+
+.dangerous-service-number {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  border-radius: 10px;
+
+  background: #EAF2FF;
+
+  color: var(--dangerous-primary);
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.dangerous-service-card h3 {
+  margin: 0 0 13px;
+
+  color: var(--dangerous-text);
+
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.dangerous-service-card p {
+  margin: 0;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.dangerous-process {
+  padding: 100px 0;
+
+  background: var(--dangerous-white);
+}
+
+.dangerous-process-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.7fr;
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 50px;
+}
+
+.dangerous-process-header > p {
+  margin: 0;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.dangerous-process-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--dangerous-border);
+  border-bottom: 1px solid var(--dangerous-border);
+}
+
+.dangerous-process-item {
+  min-height: 260px;
+
+  padding: 35px 28px;
+
+  border-right: 1px solid var(--dangerous-border);
+}
+
+.dangerous-process-item:last-child {
+  border-right: 0;
+}
+
+.dangerous-process-item > span {
+  display: block;
+
+  margin-bottom: 55px;
+
+  color: var(--dangerous-primary-light);
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.dangerous-process-item h3 {
+  margin: 0 0 12px;
+
+  color: var(--dangerous-text);
+
+  font-size: 19px;
+}
+
+.dangerous-process-item p {
+  margin: 0;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   WHY CITY EXPRESS
+   ========================================================= */
+
+.dangerous-why {
+  padding: 90px 0;
+
+  background: var(--dangerous-bg);
+}
+
+.dangerous-why-box {
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  gap: 70px;
+
+  padding: 60px;
+
+  border-radius: 24px;
+
+  background: var(--dangerous-white);
+
+  border: 1px solid var(--dangerous-border);
+
+  box-shadow: 0 20px 55px rgba(16, 42, 67, 0.06);
+}
+
+.dangerous-why-content > p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--dangerous-text-light);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.dangerous-why-list {
+  display: grid;
+
+  gap: 16px;
+
+  align-content: center;
+}
+
+.dangerous-why-list div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px;
+
+  border-radius: 10px;
+
+  background: var(--dangerous-bg);
+}
+
+.dangerous-why-list span {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--dangerous-primary);
+
+  color: var(--dangerous-white);
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.dangerous-why-list p {
+  margin: 0;
+
+  color: var(--dangerous-text);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.dangerous-cta {
+  padding: 75px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dangerous-primary-dark),
+      var(--dangerous-primary)
+    );
+}
+
+.dangerous-cta-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.dangerous-cta-content > div {
+  max-width: 760px;
+}
+
+.dangerous-cta-content span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #9FC2FF;
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 1.5px;
+}
+
+.dangerous-cta-content h2 {
+  margin: 0 0 10px;
+
+  color: var(--dangerous-white);
+
+  font-size: clamp(28px, 4vw, 42px);
+
+  line-height: 1.15;
+}
+
+.dangerous-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.dangerous-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 54px;
+
+  padding: 0 27px;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background: var(--dangerous-white);
+
+  color: var(--dangerous-primary);
+
+  font-size: 14px;
+  font-weight: 900;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.dangerous-cta-button:hover {
+  transform: translateY(-3px);
+
+  background: #EAF2FF;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .dangerous-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dangerous-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dangerous-process-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .dangerous-process-item:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--dangerous-border);
+  }
+
+  .dangerous-process-item:nth-child(3) {
+    border-right: 1px solid var(--dangerous-border);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+  .dangerous-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .dangerous-process-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dangerous-why-box {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 45px;
+  }
+
+  .dangerous-cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .dangerous-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+  .dangerous-hero {
+    min-height: 620px;
+  }
+
+  .dangerous-hero-content {
+    margin-left: auto;
+    padding: 80px 0;
+  }
+
+  .dangerous-hero h1 {
+    font-size: 43px;
+    letter-spacing: -1px;
+  }
+
+  .dangerous-hero-content > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .dangerous-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dangerous-btn-primary,
+  .dangerous-btn-outline {
+    width: 100%;
+  }
+
+  .dangerous-intro,
+  .dangerous-services,
+  .dangerous-process {
+    padding: 70px 0;
+  }
+
+  .dangerous-intro-content h2,
+  .dangerous-heading h2,
+  .dangerous-process-header h2,
+  .dangerous-why-content h2 {
+    font-size: 32px;
+  }
+
+  .dangerous-intro-card {
+    padding: 30px;
+  }
+
+  .dangerous-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dangerous-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dangerous-process-item {
+    min-height: auto;
+
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--dangerous-border);
+  }
+
+  .dangerous-process-item:last-child {
+    border-bottom: 0;
+  }
+
+  .dangerous-process-item > span {
+    margin-bottom: 25px;
+  }
+
+  .dangerous-why {
+    padding: 70px 0;
+  }
+
+  .dangerous-why-box {
+    padding: 30px 22px;
+    border-radius: 18px;
+  }
+
+  .dangerous-cta {
+    padding: 60px 0;
+  }
+
+  .dangerous-cta-button {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .dangerous-hero h1 {
+    font-size: 37px;
+  }
+
+  .dangerous-intro-card {
+    padding: 25px;
+  }
+
+  .dangerous-service-card {
+    padding: 25px 20px;
+  }
+
+}

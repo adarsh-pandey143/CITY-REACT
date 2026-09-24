@@ -101,8 +101,15 @@ const ContactUs = () => {
                   +91 82878-77656
                 </a>
 
-              </div>
+                 <span>
+                  Mobile No.
+                </span>
 
+                <a href="tel:+ 9818519775">
+                  +91  9818519775
+                </a>
+
+              </div>
               <div className="contact-detail">
 
                 <span>
@@ -187,19 +194,19 @@ const ContactUs = () => {
                 </span>
 
                 <span>
-                  Mata Ekvira building ,
+                 KHASRA NO.1960, ,
                 </span>
 
                 <span>
-                 radha nagar Tulij road, 
+                 SANJAY GRAM, BLOCK -C, 
                 </span>
 
                 <span>
-                  Nalasopara, East vasai, 
+                  GURUGRAM,, 
                 </span>
 
                 <span>
-                  Maharashtra 401209, India
+                  Gurgaon, Haryana, 122001
                 </span>
               </address>
 
@@ -545,10 +552,10 @@ const ContactUs = () => {
           </div>
 
 
-         <div className="map-wrapper">
+        <div className="map-wrapper">
   <iframe
-    title="City Express Courier - Nalasopara Office"
-    src="https://www.google.com/maps?q=Mata+Ekvira+Building,+Radha+Nagar,+Tulinj+Road,+Nalasopara+East,+Vasai,+Maharashtra+401209,+India&output=embed"
+    title="City Express Courier - Sanjay Gram Office"
+    src="https://www.google.com/maps?q=KHASRA+NO.+1960,+SANJAY+GRAM,+BLOCK+C,+GURUGRAM,+HARYANA+122001,+INDIA&output=embed"
     loading="lazy"
     allowFullScreen
     referrerPolicy="no-referrer-when-downgrade"

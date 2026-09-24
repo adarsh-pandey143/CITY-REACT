@@ -12,6 +12,7 @@ import intImg from "../assets/images/int.jpg";
 import surface from "../assets/images/surface.jpg";
 import train from "../assets/images/train.jpg";
 import flt from "../assets/images/flt.jpg";
+import dangerousGoods from "../assets/images/danger.jpg";
 
 import hero1 from "../assets/images/main3.jpg";
 import hero2 from "../assets/images/main4.jpg";
@@ -410,7 +411,7 @@ const Home = () => {
 
                         <h2>
 
-                            Complete Courier & Delivery Solutions
+                            Complete Courier,Cargo & Logistics Solutions
 
                         </h2>
 
@@ -744,6 +745,38 @@ const Home = () => {
 
                         </div>
 
+                      {/* ================= DANGEROUS GOODS ================= */}
+
+<div className="service-card dangerous-featured">
+
+    <img
+        src={dangerousGoods}
+        alt="Dangerous Goods Courier Service"
+    />
+
+    <div className="service-content">
+
+        <span className="service-badge">
+            SPECIALIZED SERVICE
+        </span>
+
+        <h3>
+            Dangerous Goods Experts
+        </h3>
+
+        <p>
+            Specialized courier and logistics support for shipments
+            requiring careful handling, secure processing and
+            professional transportation coordination.
+        </p>
+
+        <Link to="/services/dangerous-goods">
+            Explore Service →
+        </Link>
+
+    </div>
+
+</div>
 
                     </div>
 

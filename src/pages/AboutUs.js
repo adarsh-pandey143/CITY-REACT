@@ -5,7 +5,7 @@ import "./AboutUs.css";
 
 import heroImg from "../assets/images/abouts.jpg";
 import companyImg from "../assets/images/contacts.jpg";
-import chairmanImg from "../assets/images/owner1.jpg";
+import chairmanImg from "../assets/images/owner4.jpeg";
 
 const AboutUs = () => {
   return (
@@ -292,13 +292,13 @@ const AboutUs = () => {
 
               <img
                 src={chairmanImg}
-                alt="Jagjeet Singh Ahlawat, Founder and Chairman"
+                alt="Jagjeet Singh, Founder and Chairman"
               />
 
               <div className="chairman-image-caption">
 
                 <strong>
-                  Jagjeet Singh Ahlawat
+                  Jagjeet Singh 
                 </strong>
 
                 <span>
@@ -355,7 +355,7 @@ const AboutUs = () => {
               <div className="signature">
 
                 <h4>
-                  Jagjeet Singh Ahlawat
+                  Jagjeet Singh 
                 </h4>
 
                 <span>

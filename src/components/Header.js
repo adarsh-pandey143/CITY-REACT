@@ -422,6 +422,26 @@ const Header = () => {
                     </li>
 
 
+                          {/* 8. By dangerous goods */}
+
+                    <li>
+
+                      <NavLink
+                        to="/services/dangerous-goods"
+                        onClick={() => {
+
+                          setMobileMenu(false);
+
+                          setServiceMenu(false);
+
+                        }}
+                      >
+                        Dangerous Goods
+                      </NavLink>
+
+                    </li>
+
+
                   </ul>
 
                 </li>
