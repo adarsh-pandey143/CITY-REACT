@@ -5,7 +5,7 @@ import "./AboutUs.css";
 
 import heroImg from "../assets/images/abouts.jpg";
 import companyImg from "../assets/images/contacts.jpg";
-import chairmanImg from "../assets/images/owner4.jpeg";
+import chairmanImg from "../assets/images/owner5.jpeg";
 
 const AboutUs = () => {
   return (

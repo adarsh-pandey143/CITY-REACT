@@ -4,6 +4,7 @@
   "description": "R A Logistics - Express Cargo Logistics Website",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "ajv": "^8.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

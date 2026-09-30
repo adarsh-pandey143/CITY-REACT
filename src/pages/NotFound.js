@@ -1,5 +1,7 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 import "./NotFound.css";
 
 const GetQuote = () => {
@@ -16,6 +18,8 @@ const GetQuote = () => {
     message: "",
   });
 
+  const [isSending, setIsSending] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -25,14 +29,46 @@ const GetQuote = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Quote Request:", formData);
+    setIsSending(true);
 
-    alert(
-      "Thank you! Your quote request has been submitted. Our team will contact you shortly."
-    );
+    try {
+      await emailjs.send(
+        "service_o0asmpr",
+        "template_qsjhvrx",
+        formData,
+        "F0Q46a15zh_gh-Pea"
+      );
+
+      console.log("Quote Request:", formData);
+
+      alert(
+        "Thank you! Your quote request has been submitted. Our team will contact you shortly."
+      );
+
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        pickup: "",
+        delivery: "",
+        packageType: "",
+        weight: "",
+        deliveryType: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      alert(
+        "Sorry! Your quote request could not be sent. Please try again."
+      );
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -60,6 +96,7 @@ const GetQuote = () => {
             </p>
 
             <div className="quote-hero-points">
+
               <div className="quote-hero-point">
                 <span>✓</span>
                 Fast Response
@@ -74,6 +111,7 @@ const GetQuote = () => {
                 <span>✓</span>
                 Customized Solutions
               </div>
+
             </div>
 
           </div>
@@ -480,9 +518,13 @@ const GetQuote = () => {
                   <button
                     type="submit"
                     className="quote-submit-btn"
+                    disabled={isSending}
                   >
-                    Request My Quote
-                    <span>→</span>
+                    {isSending
+                      ? "Sending..."
+                      : "Request My Quote"}
+
+                    {!isSending && <span>→</span>}
                   </button>
 
                 </div>
@@ -535,3 +577,4 @@ const GetQuote = () => {
 };
 
 export default GetQuote;
+
