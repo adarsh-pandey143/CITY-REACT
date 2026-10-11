@@ -36,10 +36,10 @@ const GetQuote = () => {
 
     try {
       await emailjs.send(
-        "service_o0asmpr",
-        "template_qsjhvrx",
+        "service_nh6ttfg",
+        "template_foc2knv",
         formData,
-        "F0Q46a15zh_gh-Pea"
+        "8FOwewJEdNmRfPoZJ"
       );
 
       console.log("Quote Request:", formData);
